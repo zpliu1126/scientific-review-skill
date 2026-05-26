@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scientific Review Skill"
+  short_description: "Evidence-grounded life science literature review"
+  default_prompt: "Help me read life science papers and draft evidence-grounded review materials with clear citation, evidence, inference, and synthesis boundaries."
