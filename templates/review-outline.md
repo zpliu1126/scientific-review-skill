@@ -1,5 +1,12 @@
 # Review Outline Template
 
+<!--
+Save-output mode:
+When the user asks to save the output, write this full Markdown outline to literature-notes/ by default.
+Use a concise descriptive filename and unknown for missing metadata; do not invent sources or unsupported claims.
+After saving, the chat response should include only: saved path, brief summary, and Evidence Check status.
+-->
+
 ## Proposed Title
 
 ## Scope

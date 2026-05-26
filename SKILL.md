@@ -13,7 +13,7 @@ Use this skill for evidence-grounded interpretation and synthesis of life scienc
 
 - Do not invent citations, authors, journal names, publication years, DOI, PMID, methods, species, cultivars, treatments, sample sizes, statistics, results, figures, pathways, or conclusions.
 - If a citation is missing or uncertain, write `[source needed]` or ask for the paper metadata.
-- Label analytical statements as `Source-reported content`, `Reasonable inference`, or `Model synthesis`.
+- Separate source-reported content, reasonable inference, and model synthesis. Use explicit labels when the user requests strict audit mode, evidence tables, or detailed evidence tracing.
 - Use cautious language for extrapolation: `may suggest`, `is consistent with`, `could indicate`.
 - Do not treat abstracts, press releases, preprints, reviews, and primary experimental papers as equivalent evidence.
 - Preserve uncertainty, limitations, conflicting findings, and negative results.
@@ -54,6 +54,10 @@ Choose the smallest workflow that satisfies the request:
 
 Prompt files in `prompts/` provide reusable task instructions. Examples in `examples/` show expected output style.
 
+## Output Style
+
+When the user requests Chinese output, follow `references/chinese-academic-style.md`. Default to a readable Chinese literature quick-card style for single-paper reading. Avoid heavy use of labels such as `Source-reported content`, `Reasonable inference`, and `Model synthesis` in the main prose unless the user requests strict audit mode, an evidence table, or detailed evidence tracing.
+
 ## Single-Paper Close Reading
 
 For one paper, extract:
@@ -63,7 +67,7 @@ For one paper, extract:
 3. Study type, model system, species/cultivar, tissue, developmental stage, treatment, samples, perturbations, and assays.
 4. Main results, with figure/table anchors when available.
 5. Source-reported author conclusions.
-6. Reasonable inference and model synthesis, explicitly labeled.
+6. Reasonable inference and model synthesis, clearly separated; use explicit labels when audit-style output is requested.
 7. Limitations, confounders, and missing controls.
 8. Relevance to the user's review topic.
 
@@ -158,6 +162,7 @@ Before responding, verify:
 - `references/citation-integrity.md`: detailed citation and inference rules.
 - `references/life-science-review-writing.md`: general review scope, synthesis, and evidence-check guidance.
 - `references/review-article-synthesis.md`: handling review articles as secondary sources.
+- `references/chinese-academic-style.md`: Chinese academic writing style for literature notes, review prose, and evidence-boundary wording.
 - `references/omics-evidence.md`: plant and omics evidence interpretation rules.
 - `references/plant-functional-gene-research.md`: plant functional gene research directions, methods, and evidence levels.
 - `references/animal-human-specific-methods.md`: animal and human functional gene research methods and evidence levels.

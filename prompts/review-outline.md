@@ -3,6 +3,9 @@
 ```text
 Build a scientific review outline for the topic below using scientific-review-skill.
 
+Save-output mode:
+If the user asks to "save to file", "保存到文件", "写入 notes", "生成文献卡片文件", or equivalent, save the full outline as a Markdown file. Use literature-notes/ as the recommended default directory. Use a concise descriptive Markdown filename and use unknown for missing metadata rather than inventing it. After saving, respond in chat only with the saved path, a brief summary, and Evidence Check status.
+
 Topic:
 [insert topic]
 
@@ -29,4 +32,5 @@ Rules:
 - Do not invent references.
 - For omics-heavy reviews, distinguish expression association, pathway enrichment, co-expression, qRT-PCR/qPCR validation, population/comparative genomic evidence, and functional validation.
 - For animal or human reviews, distinguish cellular evidence, animal model evidence, human cohort evidence, and clinical or therapeutic validation.
+- Save-output mode does not weaken citation integrity, source tracing, evidence tiering, or missing-information labels.
 ```
