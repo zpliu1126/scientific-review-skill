@@ -51,3 +51,57 @@ Use scientific-review-skill to create an evidence matrix for these five papers o
 ## Important Limitation
 
 This skill improves evidence handling and writing structure. It does not replace expert scientific review, clinical judgment, statistical review, or verification against original full-text sources.
+
+
+
+## Install
+
+### User-level install
+
+Clone this repository into Codex's user skills directory:
+
+```bash
+mkdir -p ~/.agents/skills
+git clone https://github.com/zpliu1126/scientific-review-skill.git ~/.agents/skills/scientific-review-skill
+```
+
+Then reload skills in Codex or restart the Codex IDE extension.
+
+You can invoke the skill in Codex with:
+
+```text
+$scientific-review-skill
+```
+
+### Project-level install
+
+For a single project, place the skill under the project's `.agents/skills/` directory:
+
+```bash
+mkdir -p .agents/skills
+git clone https://github.com/zpliu1126/scientific-review-skill.git .agents/skills/scientific-review-skill
+```
+
+Then reload skills in Codex or restart the Codex IDE extension.
+
+You can invoke the skill in Codex with:
+
+```text
+$scientific-review-skill
+```
+
+### Update
+
+To update the skill later:
+
+```bash
+cd ~/.agents/skills/scientific-review-skill
+git pull
+```
+
+For a project-level installation:
+
+```bash
+cd .agents/skills/scientific-review-skill
+git pull
+```
