@@ -7,7 +7,7 @@ description: Use when reading life science literature, building evidence matrice
 
 ## Overview
 
-Use this skill for evidence-grounded interpretation and synthesis of life science literature. It provides a general review-writing workflow, with domain-specific support for plant and crop science, molecular biology, genomics, transcriptomics, multi-omics, animal models, human genetics, and biomedical studies. The central rule is traceability: every factual claim must be tied to a provided or verified source, and every interpretation must be labeled by evidence level.
+Use this skill for evidence-grounded interpretation and synthesis of life science literature. It provides a general review-writing workflow, with domain-specific support for plant and crop science, molecular biology, genomics, transcriptomics, multi-omics, functional gene network curation, animal models, human genetics, and biomedical studies. The central rule is traceability: every factual claim must be tied to a provided or verified source, and every interpretation must be labeled by evidence level.
 
 ## Non-Negotiable Rules
 
@@ -51,6 +51,8 @@ Choose the smallest workflow that satisfies the request:
 - **Evidence matrix**: use `templates/evidence-matrix.md`.
 - **Review outline**: use `templates/review-outline.md`.
 - **Review paragraph drafting**: use `templates/review-paragraph.md`.
+- **Plant literature discovery and prioritization**: use `prompts/plant-literature-discovery.md` when the user has a plant topic but has not collected PDFs or wants to know which papers to download first.
+- **Plant Trait and Stress Functional Gene Network Curation Workflow**: use `prompts/plant-functional-gene-network-curation.md` plus the plant gene inventory, regulatory edge table, gene evidence card, and network model templates.
 
 Prompt files in `prompts/` provide reusable task instructions. Examples in `examples/` show expected output style.
 
@@ -115,6 +117,53 @@ When the task involves plant functional genes, crop genes, plant molecular biolo
 
 When the task involves animal functional genes, human genetics, disease mechanisms, model organisms, cell lines, clinical cohorts, iPSC models, organoids, or biomedical reviews, follow `references/animal-human-specific-methods.md`.
 
+## Plant Trait and Stress Functional Gene Network Curation
+
+Use this workflow when the user asks to curate plant genes, functional evidence, or preliminary regulatory networks for a trait, stress response, hormone pathway, developmental process, gene family, crop topic, or molecular-breeding target. It applies to nitrogen response/NUE, drought, salt, cold, heat, phosphate starvation, ABA response, disease resistance, root architecture, flowering time, fiber development, yield traits, seed development, hormone signaling, and other plant topics.
+
+Inputs may include a topic, species priority, evidence scope, `papers/`, `literature-notes/`, user-provided gene lists, DEG/WGCNA/GWAS/QTL tables, public database notes, gget-style gene/ortholog/annotation outputs, SRA/GEO metadata notes, accession-linked paper notes, or manually curated seed papers.
+
+If the user has not collected PDFs or only provides a topic, start with the Literature Discovery and Prioritization Module in `prompts/plant-literature-discovery.md`. This module generates search keywords, database query strategies, candidate paper metadata, and a full-text priority list. If the user requests journal metrics, enable the Journal Metrics Enrichment Module and follow `references/journal-metrics-rules.md`. Discovery outputs go to `literature-notes/plant-gene-network-curation/literature_discovery/`:
+
+- `search_strategy.md`
+- `candidate_papers.csv` and `.md`
+- `fulltext_priority_list.md`
+- `need_fulltext.md`
+- `journal_metrics_summary.md`
+- `need_journal_metric_verification.md`
+
+Literature discovery is not full-text evidence curation. Candidate paper judgments must be labeled `metadata-level` or `abstract-level` unless full text was checked. Do not create high-confidence regulatory edges from metadata or abstracts alone. For paywalled papers, mark `need user/institutional access`; do not use or suggest illegal full-text sources.
+
+Journal metrics are auxiliary screening metadata only. Do not invent Impact Factor, JCR category/quartile, CiteScore, SJR, ISSN/eISSN, publisher, metric source, or metric year. Record metric year and metric source. Do not use journal metrics as evidence strength, and do not upgrade or downgrade functional gene or regulatory network evidence levels based on journal metrics.
+
+Default outputs go under `literature-notes/plant-gene-network-curation/`:
+
+- `topic_scope.md`
+- `plant_functional_gene_inventory.csv` and `.md`
+- `plant_regulatory_edge_table.csv` and `.md`
+- `network_nodes_for_cytoscape.csv`
+- `network_edges_for_cytoscape.csv`
+- `network_model.md`
+- `gene_cards/`
+- `need_verification.md`
+
+Classify genes as functionally validated, candidate, stress/trait-responsive, homolog-inferred, or database-annotated. Assign evidence levels using `references/plant-functional-gene-evidence-levels.md`: Level 1 direct regulatory/mechanistic evidence, Level 2 functional genetic evidence, Level 3 genetic mapping plus expression evidence, Level 4 omics association evidence, and Level 5 weak or indirect evidence.
+
+Classify edges using `references/plant-regulatory-edge-evidence-rules.md`: direct, indirect, genetic interaction, pathway association, co-expression only, homolog-inferred, or literature-inferred. Every gene and every edge must have a source. Unsourced edges must not enter the formal network edge table; place them in `need_verification.md`.
+
+Quality check before finalizing the workflow:
+
+- No unsourced genes or formal edges.
+- Candidate paper inventories are not treated as full-text evidence.
+- Journal metrics are sourced, year-labeled, and kept separate from evidence strength.
+- DEG, WGCNA, GO/KEGG, qPCR, and co-expression are not written as functional validation.
+- Co-expression is not written as direct regulation.
+- Homolog inference is not written as target-species validation.
+- Review-derived relationships are not treated as primary evidence unless the original paper was checked.
+- Every high-confidence edge has experimental support.
+- Missing DOI, PMID, gene ID, figure, table, or page values are marked as `unknown`, `[需要核实]`, or `[source needed]`.
+- Source-reported content, reasonable inference, and model synthesis remain separated.
+
 ## Review Outline
 
 Build outlines around claims, not paper-by-paper summaries. Each heading should have:
@@ -155,14 +204,19 @@ Before responding, verify:
 
 - `prompts/single-paper-close-reading.md`: prompt for one-paper deep reading.
 - `prompts/evidence-matrix.md`: prompt for comparing studies.
+- `prompts/plant-literature-discovery.md`: prompt for plant-topic literature discovery, candidate paper inventories, and full-text prioritization.
+- `prompts/plant-functional-gene-network-curation.md`: prompt for plant trait/stress functional gene and regulatory network curation.
 - `prompts/review-outline.md`: prompt for structuring a review.
 - `prompts/review-paragraph.md`: prompt for drafting sourced review prose.
-- `templates/`: reusable output templates.
+- `templates/`: reusable output templates, including literature search strategy, candidate paper inventory, full-text priority list, plant gene inventory, regulatory edge table, gene evidence card, and network model templates.
 - `examples/`: example outputs and expected formatting.
 - `references/citation-integrity.md`: detailed citation and inference rules.
 - `references/life-science-review-writing.md`: general review scope, synthesis, and evidence-check guidance.
 - `references/review-article-synthesis.md`: handling review articles as secondary sources.
 - `references/chinese-academic-style.md`: Chinese academic writing style for literature notes, review prose, and evidence-boundary wording.
+- `references/journal-metrics-rules.md`: journal metric enrichment, source, year, access, and interpretation-boundary rules.
 - `references/omics-evidence.md`: plant and omics evidence interpretation rules.
 - `references/plant-functional-gene-research.md`: plant functional gene research directions, methods, and evidence levels.
+- `references/plant-functional-gene-evidence-levels.md`: Level 1-5 evidence rules for plant functional gene curation.
+- `references/plant-regulatory-edge-evidence-rules.md`: regulatory edge directness, confidence, and source rules.
 - `references/animal-human-specific-methods.md`: animal and human functional gene research methods and evidence levels.

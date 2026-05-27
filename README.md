@@ -8,6 +8,9 @@ Scientific Review Skill helps an AI agent read life science literature, compare 
 - Multi-paper evidence matrices
 - Review outlines organized by scientific claims
 - Review paragraph drafting with citation traceability
+- Plant literature discovery and full-text prioritization when PDFs have not been collected
+- Journal metrics enrichment for candidate paper screening, with strict separation from evidence strength
+- Plant trait and stress functional gene network curation with source-traceable gene and edge tables
 - Explicit separation of source-reported content, reasonable inference, and model synthesis
 - General review scoping, evidence grouping, controversy synthesis, and gap analysis
 - Plant and omics evidence interpretation, including RNA-seq, DEG, GO/KEGG, WGCNA, qRT-PCR/qPCR, population genomics, comparative genomics, and functional validation boundaries
@@ -46,6 +49,114 @@ Example:
 
 ```text
 Use scientific-review-skill to create an evidence matrix for these five papers on drought-responsive transcription factors in rice transcriptome studies.
+```
+
+## Plant Gene Network Curation Workflow
+
+Use the Plant Trait and Stress Functional Gene Network Curation Workflow when you need to curate plant genes and regulatory relationships for a trait, stress response, hormone pathway, developmental process, gene family, or molecular-breeding topic.
+
+Default output directory:
+
+```text
+literature-notes/plant-gene-network-curation/
+```
+
+If you only have a topic and have not collected PDFs, run the Literature Discovery and Prioritization Module first. It writes:
+
+```text
+literature-notes/plant-gene-network-curation/literature_discovery/
+├── search_strategy.md
+├── candidate_papers.csv
+├── candidate_papers.md
+├── fulltext_priority_list.md
+├── journal_metrics_summary.md
+├── need_journal_metric_verification.md
+└── need_fulltext.md
+```
+
+This module ranks candidate papers for full-text acquisition. Candidate paper metadata and abstracts are not full-text evidence; they must be labeled `metadata-level` or `abstract-level`. Paywalled papers should be marked `need user/institutional access`, and illegal full-text sources must not be used.
+
+When Journal Metrics Enrichment is enabled, the candidate paper inventory can include JCR Impact Factor, JCR category/quartile, CiteScore, SJR, ISSN/eISSN, metric year, metric source, and access status. These metrics are only auxiliary screening metadata. They must not replace evidence type, experimental design, full-text verification, or functional gene evidence levels.
+
+Expected outputs include:
+
+- `topic_scope.md`
+- `plant_functional_gene_inventory.csv`
+- `plant_functional_gene_inventory.md`
+- `plant_regulatory_edge_table.csv`
+- `plant_regulatory_edge_table.md`
+- `network_nodes_for_cytoscape.csv`
+- `network_edges_for_cytoscape.csv`
+- `network_model.md`
+- `gene_cards/`
+- `need_verification.md`
+
+Core rule: every gene and every network edge must have a source. DEG, WGCNA, GO/KEGG, qPCR, co-expression, homolog inference, database annotation, and review mentions must not be written as functional validation or direct regulation unless primary evidence supports that claim.
+
+Literature discovery example:
+
+```text
+Run the Literature Discovery and Prioritization Module for the Plant Trait and Stress Functional Gene Network Curation Workflow.
+Topic: cotton fiber development.
+Species priority: cotton, Arabidopsis.
+Goal: identify candidate papers worth downloading and full-text reading before network curation.
+```
+
+Journal metrics enrichment example:
+
+```text
+Use scientific-review-skill.
+
+Run Plant Trait and Stress Functional Gene Network Curation Workflow.
+Start with Literature Discovery and Prioritization Module.
+Enable Journal Metrics Enrichment Module.
+
+Topic:
+drought stress functional genes and regulatory networks in plants.
+
+Species priority:
+Arabidopsis, rice, maize, wheat, cotton.
+
+Journal metrics:
+- Add JCR Impact Factor if available.
+- Add JCR quartile and category if available.
+- Add CiteScore and SJR as fallback metrics.
+- Record metric year and source.
+- Do not invent missing journal metrics.
+- Do not use journal metrics as evidence strength.
+
+Output:
+literature-notes/plant-gene-network-curation/literature_discovery/
+```
+
+Example 1:
+
+```text
+Run Plant Trait and Stress Functional Gene Network Curation Workflow.
+Topic: nitrogen response and NUE.
+Species priority: Arabidopsis, rice, maize, wheat, cotton.
+Evidence scope: include functional validation, candidate genes, omics associations, homolog-inferred genes, and regulatory network edges.
+Input sources: papers/, literature-notes/, user-provided gene list, user-provided DEG/WGCNA/GWAS/QTL table, public database notes, SRA/GEO metadata notes, accession-linked paper notes, manually curated seed papers.
+```
+
+Example 2:
+
+```text
+Run Plant Trait and Stress Functional Gene Network Curation Workflow.
+Topic: drought stress.
+Species priority: Arabidopsis, rice, maize, cotton.
+Evidence scope: include functional validation, candidate genes, omics associations, homolog-inferred genes, and regulatory network edges.
+Input sources: papers/, literature-notes/, and user-provided DEG/WGCNA/GWAS/QTL table.
+```
+
+Example 3:
+
+```text
+Run Plant Trait and Stress Functional Gene Network Curation Workflow.
+Topic: cotton fiber development.
+Species priority: cotton, Arabidopsis.
+Evidence scope: include functional validation, candidate genes, homolog-inferred genes, and regulatory network edges.
+Input sources: papers/, literature-notes/, public database notes, SRA/GEO metadata notes, accession-linked paper notes, and manually curated seed papers.
 ```
 
 ## Important Limitation
