@@ -46,6 +46,13 @@ Workflow:
    - Do not treat candidate paper metadata or abstracts as full-text evidence.
    - Enter full-text evidence curation only after PDFs, extracted text, or verified full-text notes are available.
 
+0.5. Run PDF structure parsing when PDFs are available.
+   - Use prompts/pdf-structure-parsing.md before extracting genes, functional evidence, regulatory edges, cited-reference leads, figure/table evidence, or methods details from PDFs.
+   - Write topic workflow outputs to literature-notes/plant-gene-network-curation/{topic}/pdf_structure/.
+   - Check parsing_manifest.csv before curation.
+   - Preserve parser_used, parser_status, fallback_used, parser confidence, and section uncertainty in downstream evidence cards.
+   - If Introduction is not stable, write [Introduction 标题未稳定识别，正文结构需人工复核] and continue as section-uncertain full-text reading when full text is available.
+
 1. Define scope.
    - Record topic, species priority, input sources, evidence scope, inclusion/exclusion criteria, and source basis.
    - State whether evidence is based on full text, abstract, user notes, database notes, or omics tables.
@@ -87,6 +94,7 @@ Evidence and wording rules:
 - Distinguish Source-reported content, Reasonable inference, and Model synthesis in the final outputs.
 
 Final quality check:
+0. Does every PDF used for full-text curation have parser_used, fallback_used, text-layer status, structure_report, and explicit section statuses?
 1. Does every gene have a source?
 2. Does every edge have a source?
 3. Were DEG, WGCNA, GO/KEGG, and co-expression kept below functional validation?

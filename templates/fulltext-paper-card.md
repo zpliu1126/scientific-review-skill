@@ -3,6 +3,8 @@
 <!--
 Use this template for PDF/full-text close reading. It is more detailed than the quick single-paper card and should be paired with the Cited Relevant Literature Mining Module when reading a full paper.
 
+Before using this template on a PDF file, run the PDF Structure Parsing Module when possible and preserve parser metadata below. If section detection is uncertain, continue reading when full text is available, but label the reading mode as section-uncertain full-text reading.
+
 Recommended saved filename:
 年份_第一作者_短标题_期刊.md
 
@@ -15,7 +17,30 @@ Do not invent missing metadata, methods, statistics, figures, genes, species, cu
 - Full-text status:
 - Topic:
 - User question or review use:
+- PDF parser used:
+- Parser confidence:
+- Section detection status: confirmed sections / partial sections / section-uncertain full-text reading / parser failed
+- Introduction detected:
+- Methods detected:
+- Results detected:
+- Discussion detected:
+- References detected:
+- Figure captions detected:
+- Table captions detected:
+- Section uncertainty notes:
 - Cited literature mining: enabled / disabled / not requested
+
+If Introduction was not stably detected, write:
+
+```text
+[Introduction 标题未稳定识别，正文结构需人工复核]
+```
+
+If full text is available, keep reading as:
+
+```text
+section-uncertain full-text reading
+```
 
 ## 2. 文献信息
 

@@ -5,7 +5,9 @@ Scientific Review Skill helps an AI agent read life science literature, compare 
 ## What It Supports
 
 - Single-paper close reading
+- PDF structure parsing before full-text close reading
 - Full-text PDF close reading with cited-reference mining
+- Batch PDF literature review with parser manifest and section uncertainty tracking
 - Multi-paper evidence matrices
 - Review outlines organized by scientific claims
 - Review paragraph drafting with citation traceability
@@ -41,7 +43,7 @@ scientific-review-skill/
 └── references/
 ```
 
-`assets/` and `scripts/` are reserved for future reusable assets and deterministic validators. They are intentionally unused in the current version.
+`scripts/` contains deterministic helpers for PDF text-layer checks and structured PDF parsing. `assets/` is reserved for future reusable assets.
 
 ## Suggested Use
 
@@ -52,6 +54,100 @@ Example:
 ```text
 Use scientific-review-skill to create an evidence matrix for these five papers on drought-responsive transcription factors in rice transcriptome studies.
 ```
+
+## PDF Structure Parsing Module
+
+Use the PDF Structure Parsing Module, 中文名“PDF 结构化解析模块”, before single-paper PDF close reading, batch PDF close reading, cited-reference mining, or plant functional gene evidence curation.
+
+It converts PDFs into structured Markdown/JSON/TEI when possible and records parser confidence, fallback, text-layer status, detected sections, captions, and manual-review needs. This avoids relying only on pypdf-style plain text extraction, which can lose headings, two-column reading order, figure/table captions, and reference context.
+
+Default output:
+
+```text
+literature-notes/pdf-structure/
+```
+
+Topic workflow output:
+
+```text
+literature-notes/plant-gene-network-curation/{topic}/pdf_structure/
+```
+
+Expected output structure:
+
+```text
+pdf_structure/
+├── parsed_text/
+│   ├── {paper_slug}.md
+│   ├── {paper_slug}.json
+│   └── {paper_slug}.tei.xml
+├── structure_reports/
+│   └── {paper_slug}_structure_report.md
+├── parsing_manifest.csv
+└── parsing_failures.md
+```
+
+Run:
+
+```bash
+python scripts/parse_pdf_structure.py \
+  --input papers/ \
+  --output literature-notes/pdf-structure/ \
+  --backend auto
+```
+
+If GROBID is running as a service:
+
+```bash
+python scripts/parse_pdf_structure.py \
+  --input papers/ \
+  --output literature-notes/pdf-structure/ \
+  --backend grobid \
+  --grobid-url http://localhost:8070
+```
+
+For scanned PDFs, enable OCR only for image-only files:
+
+```bash
+python scripts/parse_pdf_structure.py \
+  --input papers/ \
+  --output literature-notes/pdf-structure/ \
+  --backend auto \
+  --ocr \
+  --ocr-language eng+chi_sim
+```
+
+Backend priority for `--backend auto`:
+
+1. GROBID
+2. Docling
+3. Marker
+4. PyMuPDF4LLM
+5. OCRmyPDF only for scanned/image-only PDFs before parser fallback
+
+Optional backend installation:
+
+```bash
+# GROBID service, CPU-friendly
+docker run --rm --init --ulimit core=0 -p 8070:8070 grobid/grobid:0.9.0-crf
+
+# Python backends
+python -m pip install docling
+python -m pip install marker-pdf
+python -m pip install pymupdf4llm
+
+# OCRmyPDF on Debian/Ubuntu
+sudo apt-get install ocrmypdf tesseract-ocr tesseract-ocr-eng
+sudo apt-get install tesseract-ocr-chi-sim
+```
+
+If Introduction is not stably detected, downstream full-text cards must include:
+
+```text
+[Introduction 标题未稳定识别，正文结构需人工复核]
+```
+
+Do not stop reading if full text is available. Continue as `section-uncertain full-text reading` and do not present uncertain section boundaries as confirmed.
 
 ## Cited Relevant Literature Mining Module
 
@@ -87,7 +183,8 @@ literature-notes/plant-gene-network-curation/{topic}/cited_references/
 Workflow chain:
 
 ```text
-Full-text Paper Reading
+PDF Structure Parsing
+-> Full-text Paper Reading
 -> Cited Relevant Literature Mining
 -> cited_reference_inventory.csv
 -> merge into candidate_papers.csv

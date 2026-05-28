@@ -1,13 +1,13 @@
 ---
 name: scientific-review-skill
-description: Use when reading life science literature, mining relevant cited papers from full-text PDFs, building evidence matrices, outlining reviews, or drafting review paragraphs that require accurate citations, evidence grading, and clear separation between source evidence, inference, and synthesis.
+description: Use when parsing scientific PDFs into structured text, reading life science literature, mining cited papers from full-text PDFs, building evidence matrices, outlining reviews, or drafting review paragraphs that require accurate citations, evidence grading, and clear separation between source evidence, inference, and synthesis.
 ---
 
 # Scientific Review Skill
 
 ## Overview
 
-Use this skill for evidence-grounded interpretation and synthesis of life science literature. It provides a general review-writing workflow, with domain-specific support for plant and crop science, molecular biology, genomics, transcriptomics, multi-omics, functional gene network curation, animal models, human genetics, and biomedical studies. The central rule is traceability: every factual claim must be tied to a provided or verified source, and every interpretation must be labeled by evidence level.
+Use this skill for evidence-grounded interpretation and synthesis of life science literature. It provides a general review-writing workflow, structured PDF parsing before full-text reading, and domain-specific support for plant and crop science, molecular biology, genomics, transcriptomics, multi-omics, functional gene network curation, animal models, human genetics, and biomedical studies. The central rule is traceability: every factual claim must be tied to a provided or verified source, and every interpretation must be labeled by evidence level.
 
 ## Non-Negotiable Rules
 
@@ -38,6 +38,8 @@ Before producing a final scientific answer, identify available source material:
 - User notes only: state that findings are based on user-provided notes.
 - Review articles: treat as secondary sources and follow `references/review-article-synthesis.md`; do not treat review synthesis as original experimental results.
 
+For PDF inputs, run the PDF Structure Parsing Module before close reading, batch review, cited-reference mining, or plant functional gene evidence curation whenever file parsing is in scope. Use the parser outputs as source text, but keep parser confidence separate from scientific evidence strength.
+
 When the user asks for current literature, search reliable scholarly sources when available and cite the sources used.
 
 ## General Review Synthesis
@@ -48,6 +50,7 @@ For broad life science reviews, define the review question, scope, inclusion/exc
 
 Choose the smallest workflow that satisfies the request:
 
+- **PDF Structure Parsing Module / PDF 结构化解析模块**: use `prompts/pdf-structure-parsing.md`, `references/pdf-parsing-backends.md`, `references/pdf-section-heading-rules.md`, `templates/pdf-structure-report.md`, `scripts/check_pdf_text_layer.py`, and `scripts/parse_pdf_structure.py` before full-text close reading, batch PDF review, cited-reference mining, or functional gene evidence curation from PDFs.
 - **Single-paper close reading**: use `templates/single-paper-close-reading.md`.
 - **Full-text paper close reading**: use `templates/fulltext-paper-card.md` for PDF or complete full-text reading.
 - **Cited Relevant Literature Mining Module / 被引相关文献挖掘模块**: use `prompts/cited-relevant-literature-mining.md`, `templates/cited-relevant-literature-table.md`, `templates/cited-reference-inventory.md`, and `references/cited-literature-mining-rules.md` when a full-text paper should also yield cited-reference leads.
@@ -58,6 +61,77 @@ Choose the smallest workflow that satisfies the request:
 - **Plant Trait and Stress Functional Gene Network Curation Workflow**: use `prompts/plant-functional-gene-network-curation.md` plus the plant gene inventory, regulatory edge table, gene evidence card, and network model templates.
 
 Prompt files in `prompts/` provide reusable task instructions. Examples in `examples/` show expected output style.
+
+## PDF Structure Parsing
+
+Use this module before single-paper PDF close reading, batch PDF close reading, cited-reference mining, or functional gene evidence curation. Do not rely only on pypdf-style plain text extraction, because it can lose scientific section headings, two-column reading order, figure/table captions, and references context.
+
+Default output:
+
+```text
+literature-notes/pdf-structure/
+```
+
+Topic workflow output:
+
+```text
+literature-notes/plant-gene-network-curation/{topic}/pdf_structure/
+```
+
+Expected files under the output directory:
+
+- `parsed_text/{paper_slug}.md`
+- `parsed_text/{paper_slug}.json`
+- `parsed_text/{paper_slug}.tei.xml` when GROBID TEI is available
+- `structure_reports/{paper_slug}_structure_report.md`
+- `parsing_manifest.csv`
+- `parsing_failures.md`
+
+Backend priority for `--backend auto`:
+
+1. GROBID for scientific paper TEI/XML structure.
+2. Docling for complex layout, tables, and mixed figure/text pages.
+3. Marker for Markdown/JSON with section, table, equation, and image cues.
+4. PyMuPDF4LLM as lightweight Markdown fallback.
+5. OCRmyPDF only for scanned/image-only PDFs, before handing the searchable PDF to the parser chain.
+
+Run:
+
+```bash
+python scripts/parse_pdf_structure.py \
+  --input papers/ \
+  --output literature-notes/pdf-structure/ \
+  --backend auto
+```
+
+For GROBID service mode:
+
+```bash
+python scripts/parse_pdf_structure.py \
+  --input papers/ \
+  --output literature-notes/pdf-structure/ \
+  --backend grobid \
+  --grobid-url http://localhost:8070
+```
+
+For a topic workflow:
+
+```bash
+python scripts/parse_pdf_structure.py \
+  --input papers/ \
+  --output literature-notes/plant-gene-network-curation/flavonoid/pdf_structure/ \
+  --backend auto
+```
+
+The parser must not delete or move original PDFs. It must not overwrite existing parsed outputs unless `--force` is specified. For each PDF, `parsing_manifest.csv` must record `parser_used`, `parser_status`, `has_text_layer`, `page_count`, `fallback_used`, detected title/abstract/sections, Introduction/Methods/Results/Discussion/References status, figure/table caption status, parser confidence, manual-review need, and notes.
+
+If Introduction is not stably detected, write:
+
+```text
+[Introduction 标题未稳定识别，正文结构需人工复核]
+```
+
+If full text is available, continue as `section-uncertain full-text reading`. Do not stop close reading only because Introduction was not detected, and do not present uncertain section boundaries as confirmed.
 
 ## Output Style
 
@@ -78,13 +152,13 @@ For one paper, extract:
 
 If a requested field is absent, write `not reported in provided text`.
 
-For PDF/full-text close reading, use `templates/fulltext-paper-card.md`. In addition to the paper's own deep reading card, run the Cited Relevant Literature Mining Module unless the user explicitly asks not to. Add section `## 14. 本文引用的相关文献线索` to the reading card.
+For PDF/full-text close reading, run the PDF Structure Parsing Module first when the PDF file is available, then use `templates/fulltext-paper-card.md`. Preserve parser metadata and section uncertainty in the Source Basis section. In addition to the paper's own deep reading card, run the Cited Relevant Literature Mining Module unless the user explicitly asks not to. Add section `## 14. 本文引用的相关文献线索` to the reading card.
 
 ## Cited Relevant Literature Mining
 
 Use this module to identify topic-relevant papers cited by the current full-text paper and convert them into seed papers for the next literature discovery round. It is especially useful for recovering classic papers, core original studies, functional gene papers, regulatory relationship evidence, method references, and high-quality reviews that keyword searches may miss.
 
-Inspect the current paper's Introduction, Results, Discussion, and References. Do not mechanically copy the full References section. Keep only cited papers that satisfy the relevance rules in `references/cited-literature-mining-rules.md`. Every retained cited paper must include citation context from the current paper and a relevance reason for the current topic.
+Inspect the current paper's Introduction, Results, Discussion, and References using parsed structure when available. If section detection is uncertain, continue with `section-uncertain full-text reading` and use local citation context, page/figure/table anchors, and parser notes instead of pretending section boundaries are confirmed. Do not mechanically copy the full References section. Keep only cited papers that satisfy the relevance rules in `references/cited-literature-mining-rules.md`. Every retained cited paper must include citation context from the current paper and a relevance reason for the current topic.
 
 Default output goes to `literature-notes/cited-literature/`. If a topic workflow directory exists, write to:
 
@@ -103,7 +177,8 @@ Expected files:
 Workflow chain:
 
 ```text
-Full-text Paper Reading
+PDF Structure Parsing
+-> Full-text Paper Reading
 -> Cited Relevant Literature Mining
 -> cited_reference_inventory.csv
 -> merge into candidate_papers.csv
@@ -178,6 +253,12 @@ If the user has not collected PDFs or only provides a topic, start with the Lite
 
 Literature discovery is not full-text evidence curation. Candidate paper judgments must be labeled `metadata-level` or `abstract-level` unless full text was checked. Do not create high-confidence regulatory edges from metadata or abstracts alone. For paywalled papers, mark `need user/institutional access`; do not use or suggest illegal full-text sources.
 
+When PDFs are available for plant functional gene curation, run the PDF Structure Parsing Module before extracting genes, regulatory relationships, figure/table evidence, or cited-reference leads. For topic workflows, write parser outputs to:
+
+```text
+literature-notes/plant-gene-network-curation/{topic}/pdf_structure/
+```
+
 Journal metrics are auxiliary screening metadata only. Do not invent Impact Factor, JCR category/quartile, CiteScore, SJR, ISSN/eISSN, publisher, metric source, or metric year. Record metric year and metric source. Do not use journal metrics as evidence strength, and do not upgrade or downgrade functional gene or regulatory network evidence levels based on journal metrics.
 
 Default outputs go under `literature-notes/plant-gene-network-curation/`:
@@ -238,6 +319,13 @@ Before responding, verify:
 - No unsupported bibliographic details were added.
 - Source-reported content, reasonable inference, and model synthesis are visibly separated where analysis is requested.
 - The output states whether it is based on full text, abstract, metadata, user notes, or searched sources.
+- For PDF-based reading, `parsing_manifest.csv` records every PDF's parser, fallback, text-layer status, section status, confidence, and manual-review flag.
+- Successful PDF parses have `parsed_text/` output and a `structure_report`.
+- Scanned/image-only PDFs are marked, and OCRmyPDF is used only for those PDFs when OCR is enabled.
+- Introduction / Methods / Results / Discussion / References statuses are explicit.
+- Uncertain sections are not presented as confirmed.
+- `section-uncertain full-text reading` is preserved in the full-text paper card when needed.
+- Original PDFs were not deleted or moved.
 - For full-text PDF reading, the paper's deep reading card includes cited-literature section 14 or explains why cited-reference mining was not run.
 - Cited relevant literature tables do not mechanically copy the full References section.
 - Every retained cited paper has citation context, relevance reason, paper type, evidence role, priority, and full-text need status.
@@ -253,6 +341,8 @@ Before responding, verify:
 ## Resource Map
 
 - `prompts/single-paper-close-reading.md`: prompt for one-paper deep reading.
+- `prompts/pdf-structure-parsing.md`: prompt for the PDF Structure Parsing Module.
+- `prompts/batch-pdf-literature-review.md`: prompt for batch PDF review after structured parsing.
 - `prompts/cited-relevant-literature-mining.md`: prompt for mining topic-relevant cited papers from a full-text paper.
 - `prompts/evidence-matrix.md`: prompt for comparing studies.
 - `prompts/plant-literature-discovery.md`: prompt for plant-topic literature discovery, candidate paper inventories, and full-text prioritization.
@@ -260,11 +350,14 @@ Before responding, verify:
 - `prompts/review-outline.md`: prompt for structuring a review.
 - `prompts/review-paragraph.md`: prompt for drafting sourced review prose.
 - `templates/fulltext-paper-card.md`: detailed PDF/full-text reading card with cited-literature section 14.
+- `templates/pdf-structure-report.md`: report template for parser metadata, detected sections, captions, and manual-review notes.
 - `templates/cited-relevant-literature-table.md`: per-paper cited relevant literature table.
 - `templates/cited-reference-inventory.md`: global cited-reference inventory, priority list, and verification templates.
 - `templates/`: reusable output templates, including literature search strategy, candidate paper inventory, full-text priority list, plant gene inventory, regulatory edge table, gene evidence card, and network model templates.
 - `examples/`: example outputs and expected formatting.
 - `references/citation-integrity.md`: detailed citation and inference rules.
+- `references/pdf-parsing-backends.md`: backend selection, optional installation notes, OCR handling, and parser output interpretation.
+- `references/pdf-section-heading-rules.md`: section heading synonyms, uncertainty labels, and manual-review rules.
 - `references/cited-literature-mining-rules.md`: relevance filtering, citation context, deduplication, priority, and evidence-boundary rules for cited-reference mining.
 - `references/life-science-review-writing.md`: general review scope, synthesis, and evidence-check guidance.
 - `references/review-article-synthesis.md`: handling review articles as secondary sources.
