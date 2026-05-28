@@ -5,10 +5,12 @@ Scientific Review Skill helps an AI agent read life science literature, compare 
 ## What It Supports
 
 - Single-paper close reading
+- Full-text PDF close reading with cited-reference mining
 - Multi-paper evidence matrices
 - Review outlines organized by scientific claims
 - Review paragraph drafting with citation traceability
 - Plant literature discovery and full-text prioritization when PDFs have not been collected
+- Backward citation mining through the Cited Relevant Literature Mining Module
 - Journal metrics enrichment for candidate paper screening, with strict separation from evidence strength
 - Plant trait and stress functional gene network curation with source-traceable gene and edge tables
 - Explicit separation of source-reported content, reasonable inference, and model synthesis
@@ -50,6 +52,62 @@ Example:
 ```text
 Use scientific-review-skill to create an evidence matrix for these five papers on drought-responsive transcription factors in rice transcriptome studies.
 ```
+
+## Cited Relevant Literature Mining Module
+
+Use the Cited Relevant Literature Mining Module, 中文名“被引相关文献挖掘模块”, during single-paper PDF/full-text close reading when you want the reading card to also surface topic-relevant papers cited by the current paper.
+
+This module is designed for backward citation mining:
+
+- recover classic or core papers missed by keyword search
+- identify original research cited by high-quality papers
+- expand candidate_papers.csv and need_fulltext.md with seed papers
+- support functional gene curation, regulatory network curation, mechanism reviews, and evidence matrices
+
+It reads the current paper's Introduction, Results, Discussion, and References, then keeps only cited papers relevant to the current topic. It does not mechanically copy the full References section. Cited papers are literature discovery leads, not verified full-text evidence.
+
+Default output:
+
+```text
+literature-notes/cited-literature/
+```
+
+Topic workflow output:
+
+```text
+literature-notes/plant-gene-network-curation/{topic}/cited_references/
+├── per_paper/
+│   └── {paper_slug}_cited_relevant_literature.md
+├── cited_reference_inventory.csv
+├── cited_reference_inventory.md
+├── cited_reference_priority_list.md
+└── need_reference_verification.md
+```
+
+Workflow chain:
+
+```text
+Full-text Paper Reading
+-> Cited Relevant Literature Mining
+-> cited_reference_inventory.csv
+-> merge into candidate_papers.csv
+-> update need_fulltext.md
+-> next-round full-text evidence curation
+```
+
+Example:
+
+```text
+Use scientific-review-skill.
+Read this PDF in full-text close-reading mode.
+Also run the Cited Relevant Literature Mining Module.
+
+Topic: nitrogen use efficiency genes and breeding in wheat.
+Output:
+literature-notes/plant-gene-network-curation/nitrogen-use-efficiency/cited_references/
+```
+
+To merge cited-reference leads into candidate discovery, import Priority A/B rows from `cited_reference_inventory.csv`, deduplicate by DOI, PMID, or normalized title plus year, mark the source basis as `cited-reference lead`, and add papers with `need_fulltext = yes` or `maybe` to `need_fulltext.md`.
 
 ## Plant Gene Network Curation Workflow
 

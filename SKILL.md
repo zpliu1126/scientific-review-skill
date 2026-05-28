@@ -1,6 +1,6 @@
 ---
 name: scientific-review-skill
-description: Use when reading life science literature, building evidence matrices, outlining reviews, or drafting review paragraphs that require accurate citations, evidence grading, and clear separation between source evidence, inference, and synthesis.
+description: Use when reading life science literature, mining relevant cited papers from full-text PDFs, building evidence matrices, outlining reviews, or drafting review paragraphs that require accurate citations, evidence grading, and clear separation between source evidence, inference, and synthesis.
 ---
 
 # Scientific Review Skill
@@ -16,6 +16,7 @@ Use this skill for evidence-grounded interpretation and synthesis of life scienc
 - Separate source-reported content, reasonable inference, and model synthesis. Use explicit labels when the user requests strict audit mode, evidence tables, or detailed evidence tracing.
 - Use cautious language for extrapolation: `may suggest`, `is consistent with`, `could indicate`.
 - Do not treat abstracts, press releases, preprints, reviews, and primary experimental papers as equivalent evidence.
+- Treat cited references from a paper as literature discovery leads, not verified evidence, until those cited papers have been read or independently verified.
 - Preserve uncertainty, limitations, conflicting findings, and negative results.
 - For medical or translational implications, avoid clinical advice unless the source explicitly supports it.
 
@@ -48,6 +49,8 @@ For broad life science reviews, define the review question, scope, inclusion/exc
 Choose the smallest workflow that satisfies the request:
 
 - **Single-paper close reading**: use `templates/single-paper-close-reading.md`.
+- **Full-text paper close reading**: use `templates/fulltext-paper-card.md` for PDF or complete full-text reading.
+- **Cited Relevant Literature Mining Module / 被引相关文献挖掘模块**: use `prompts/cited-relevant-literature-mining.md`, `templates/cited-relevant-literature-table.md`, `templates/cited-reference-inventory.md`, and `references/cited-literature-mining-rules.md` when a full-text paper should also yield cited-reference leads.
 - **Evidence matrix**: use `templates/evidence-matrix.md`.
 - **Review outline**: use `templates/review-outline.md`.
 - **Review paragraph drafting**: use `templates/review-paragraph.md`.
@@ -74,6 +77,47 @@ For one paper, extract:
 8. Relevance to the user's review topic.
 
 If a requested field is absent, write `not reported in provided text`.
+
+For PDF/full-text close reading, use `templates/fulltext-paper-card.md`. In addition to the paper's own deep reading card, run the Cited Relevant Literature Mining Module unless the user explicitly asks not to. Add section `## 14. 本文引用的相关文献线索` to the reading card.
+
+## Cited Relevant Literature Mining
+
+Use this module to identify topic-relevant papers cited by the current full-text paper and convert them into seed papers for the next literature discovery round. It is especially useful for recovering classic papers, core original studies, functional gene papers, regulatory relationship evidence, method references, and high-quality reviews that keyword searches may miss.
+
+Inspect the current paper's Introduction, Results, Discussion, and References. Do not mechanically copy the full References section. Keep only cited papers that satisfy the relevance rules in `references/cited-literature-mining-rules.md`. Every retained cited paper must include citation context from the current paper and a relevance reason for the current topic.
+
+Default output goes to `literature-notes/cited-literature/`. If a topic workflow directory exists, write to:
+
+```text
+literature-notes/plant-gene-network-curation/{topic}/cited_references/
+```
+
+Expected files:
+
+- `per_paper/{paper_slug}_cited_relevant_literature.md`
+- `cited_reference_inventory.csv`
+- `cited_reference_inventory.md`
+- `cited_reference_priority_list.md`
+- `need_reference_verification.md`
+
+Workflow chain:
+
+```text
+Full-text Paper Reading
+-> Cited Relevant Literature Mining
+-> cited_reference_inventory.csv
+-> merge into candidate_papers.csv
+-> update need_fulltext.md
+-> next-round full-text evidence curation
+```
+
+Boundary rules:
+
+- Prioritize original research papers. Review papers may be listed as `review for reference mining` or background only.
+- Do not treat cited papers as full-text evidence until their own full text has been read.
+- Do not add functional genes, regulatory relationships, mechanisms, or network edges from cited papers to formal evidence tables until verified from those cited papers.
+- If DOI, PMID, title, year, journal, or citation context is incomplete, write `[需要核实]` or add the item to `need_reference_verification.md`.
+- Deduplicate global inventory records by DOI, PMID, or normalized title plus year.
 
 ## Multiple-Paper Evidence Matrix
 
@@ -194,6 +238,12 @@ Before responding, verify:
 - No unsupported bibliographic details were added.
 - Source-reported content, reasonable inference, and model synthesis are visibly separated where analysis is requested.
 - The output states whether it is based on full text, abstract, metadata, user notes, or searched sources.
+- For full-text PDF reading, the paper's deep reading card includes cited-literature section 14 or explains why cited-reference mining was not run.
+- Cited relevant literature tables do not mechanically copy the full References section.
+- Every retained cited paper has citation context, relevance reason, paper type, evidence role, priority, and full-text need status.
+- Cited references are not treated as verified evidence before full-text reading.
+- Priority A/B cited papers are added to `cited_reference_inventory.csv` when file output is requested.
+- Ambiguous, incomplete, or failed reference parses are added to `need_reference_verification.md`.
 - Omics findings are not overstated as functional or causal evidence without validation.
 - Population, evolutionary, and comparative genomics findings are not overstated as functional proof without appropriate validation.
 - Cell-line, animal-model, human-cohort, and clinical evidence are not conflated.
@@ -203,14 +253,19 @@ Before responding, verify:
 ## Resource Map
 
 - `prompts/single-paper-close-reading.md`: prompt for one-paper deep reading.
+- `prompts/cited-relevant-literature-mining.md`: prompt for mining topic-relevant cited papers from a full-text paper.
 - `prompts/evidence-matrix.md`: prompt for comparing studies.
 - `prompts/plant-literature-discovery.md`: prompt for plant-topic literature discovery, candidate paper inventories, and full-text prioritization.
 - `prompts/plant-functional-gene-network-curation.md`: prompt for plant trait/stress functional gene and regulatory network curation.
 - `prompts/review-outline.md`: prompt for structuring a review.
 - `prompts/review-paragraph.md`: prompt for drafting sourced review prose.
+- `templates/fulltext-paper-card.md`: detailed PDF/full-text reading card with cited-literature section 14.
+- `templates/cited-relevant-literature-table.md`: per-paper cited relevant literature table.
+- `templates/cited-reference-inventory.md`: global cited-reference inventory, priority list, and verification templates.
 - `templates/`: reusable output templates, including literature search strategy, candidate paper inventory, full-text priority list, plant gene inventory, regulatory edge table, gene evidence card, and network model templates.
 - `examples/`: example outputs and expected formatting.
 - `references/citation-integrity.md`: detailed citation and inference rules.
+- `references/cited-literature-mining-rules.md`: relevance filtering, citation context, deduplication, priority, and evidence-boundary rules for cited-reference mining.
 - `references/life-science-review-writing.md`: general review scope, synthesis, and evidence-check guidance.
 - `references/review-article-synthesis.md`: handling review articles as secondary sources.
 - `references/chinese-academic-style.md`: Chinese academic writing style for literature notes, review prose, and evidence-boundary wording.
