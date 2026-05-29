@@ -59,6 +59,7 @@ Choose the smallest workflow that satisfies the request:
 - **Review paragraph drafting**: use `templates/review-paragraph.md`.
 - **Plant literature discovery and prioritization**: use `prompts/plant-literature-discovery.md` when the user has a plant topic but has not collected PDFs or wants to know which papers to download first.
 - **Plant Trait and Stress Functional Gene Network Curation Workflow**: use `prompts/plant-functional-gene-network-curation.md` plus the plant gene inventory, regulatory edge table, gene evidence card, and network model templates.
+- **Yuque cloud document upload**: use `references/yuque-cloud-upload.md` when publishing literature cards, evidence notes, or review outputs to a Yuque knowledge base through Yuque MCP or the Yuque API.
 
 Prompt files in `prompts/` provide reusable task instructions. Examples in `examples/` show expected output style.
 
@@ -311,6 +312,12 @@ Draft paragraphs with this sequence:
 
 Never include a citation that was not supplied or verified. If a paragraph needs a source, use `[source needed]`.
 
+## 云文档上传：Yuque MCP / API 工作流
+
+When the user asks to upload literature cards, evidence notes, or review outputs to Yuque, follow `references/yuque-cloud-upload.md`. The short rule is: get `login` with `yuque_get_user`, create or identify the knowledge base namespace, upload a small test document with `yuque_create_doc`, use a minimal-log API workflow for large batches if MCP returns full `body` or `body_html`, then verify both `yuque_list_docs` and `yuque_get_toc`.
+
+Do not report Yuque upload completion until all target documents exist in `yuque_list_docs`, all target documents are visible in `yuque_get_toc`, each document has `title`, `slug`, and `id`, no `FAILED` records remain unresolved, and the final upload report has been printed. If the documents exist but the TOC is incomplete, report `文档已创建，但目录树尚未完全修复。` and fix the TOC with `yuque_update_toc` before claiming completion.
+
 ## Quality Check Before Finalizing
 
 Before responding, verify:
@@ -362,6 +369,7 @@ Before responding, verify:
 - `references/life-science-review-writing.md`: general review scope, synthesis, and evidence-check guidance.
 - `references/review-article-synthesis.md`: handling review articles as secondary sources.
 - `references/chinese-academic-style.md`: Chinese academic writing style for literature notes, review prose, and evidence-boundary wording.
+- `references/yuque-cloud-upload.md`: Yuque MCP / API cloud document upload workflow, TOC verification, and troubleshooting rules.
 - `references/journal-metrics-rules.md`: journal metric enrichment, source, year, access, and interpretation-boundary rules.
 - `references/omics-evidence.md`: plant and omics evidence interpretation rules.
 - `references/plant-functional-gene-research.md`: plant functional gene research directions, methods, and evidence levels.

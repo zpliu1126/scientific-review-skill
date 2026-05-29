@@ -15,6 +15,7 @@ Scientific Review Skill helps an AI agent read life science literature, compare 
 - Backward citation mining through the Cited Relevant Literature Mining Module
 - Journal metrics enrichment for candidate paper screening, with strict separation from evidence strength
 - Plant trait and stress functional gene network curation with source-traceable gene and edge tables
+- Yuque MCP / API cloud document upload workflow with TOC verification and troubleshooting
 - Explicit separation of source-reported content, reasonable inference, and model synthesis
 - General review scoping, evidence grouping, controversy synthesis, and gap analysis
 - Plant and omics evidence interpretation, including RNA-seq, DEG, GO/KEGG, WGCNA, qRT-PCR/qPCR, population genomics, comparative genomics, and functional validation boundaries
@@ -247,6 +248,14 @@ Expected outputs include:
 - `need_verification.md`
 
 Core rule: every gene and every network edge must have a source. DEG, WGCNA, GO/KEGG, qPCR, co-expression, homolog inference, database annotation, and review mentions must not be written as functional validation or direct regulation unless primary evidence supports that claim.
+
+## Yuque MCP / API Cloud Document Upload
+
+When publishing literature cards or review outputs to a Yuque knowledge base, follow `references/yuque-cloud-upload.md`.
+
+The workflow requires getting the current `login` with `yuque_get_user`, creating or identifying the knowledge base namespace, testing one document with `yuque_create_doc`, using minimal-log API upload for large batches when MCP returns full document bodies, and checking both `yuque_list_docs` and `yuque_get_toc` before reporting completion.
+
+If documents exist but are missing from the Yuque directory tree, repair the TOC with `yuque_update_toc`. Do not report the upload as complete until the document list and TOC both contain every target document.
 
 Literature discovery example:
 
