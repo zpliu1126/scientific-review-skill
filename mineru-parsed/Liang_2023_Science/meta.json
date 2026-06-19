@@ -1,0 +1,13 @@
+{
+  "original_pdf": "papers\\smallRNA\\Liang_2023_Science.pdf",
+  "source_pdf": "mineru-parsed\\Liang_2023_Science\\source.pdf",
+  "data_id": "Liang_2023_Science",
+  "batch_id": "3040cf5c-2118-4d46-ad21-30db195fef99",
+  "state": "done",
+  "full_zip_url": "https://cdn-mineru.openxlab.org.cn/result/2026-06-07/5208ae10-bf5e-4a77-bede-042e2ef76be5.zip",
+  "parsed_time": "2026-06-07T05:09:08.968932+00:00",
+  "model_version": "vlm",
+  "language": "en",
+  "full_md_zip_member": "full.md",
+  "content_list_zip_member": "51810d7d-9b89-4cb4-b2c5-922c03b7187a_content_list.json"
+}

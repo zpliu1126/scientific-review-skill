@@ -1,0 +1,13 @@
+{
+  "original_pdf": "papers\\smallRNA\\Song_2015_PLOS Genetics.pdf",
+  "source_pdf": "mineru-parsed\\Song_2015_PLOS Genetics\\source.pdf",
+  "data_id": "Song_2015_PLOS_Genetics",
+  "batch_id": "3040cf5c-2118-4d46-ad21-30db195fef99",
+  "state": "done",
+  "full_zip_url": "https://cdn-mineru.openxlab.org.cn/result/2026-06-07/1db59673-d8c0-4ec2-88c8-b181211a5772.zip",
+  "parsed_time": "2026-06-07T05:09:15.048325+00:00",
+  "model_version": "vlm",
+  "language": "en",
+  "full_md_zip_member": "full.md",
+  "content_list_zip_member": "16585add-190f-410d-a868-9253bd99bd46_content_list.json"
+}

@@ -1,0 +1,13 @@
+{
+  "original_pdf": "papers\\smallRNA\\Sun_2023_Nature Biotechnology.pdf",
+  "source_pdf": "mineru-parsed\\Sun_2023_Nature Biotechnology\\source.pdf",
+  "data_id": "Sun_2023_Nature_Biotechnology",
+  "batch_id": "3040cf5c-2118-4d46-ad21-30db195fef99",
+  "state": "done",
+  "full_zip_url": "https://cdn-mineru.openxlab.org.cn/result/2026-06-07/85a957d8-fda2-4bbb-a43d-800fffc198ec.zip",
+  "parsed_time": "2026-06-07T05:09:17.550710+00:00",
+  "model_version": "vlm",
+  "language": "en",
+  "full_md_zip_member": "full.md",
+  "content_list_zip_member": "4d8711a9-4729-4d7b-9427-9f0dbbe28707_content_list.json"
+}

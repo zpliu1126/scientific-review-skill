@@ -1,0 +1,428 @@
+# 植物小 RNA 的产生、作用方式、功能及在农业中的应用前景
+
+杨怀昊，郑丙莲
+
+复旦大学生命科学学院，复杂性状的遗传调控全国重点实验室，上海 200438
+
+摘要：植物小 RNA (small RNA, sRNA) 是植物基因表达调控及基因组稳定性的关键调控因子。根据产生途径及作用方式的不同，其主要分为微小 RNA (microRNA, miRNA) 和小干扰 RNA (small interfering RNA, siRNA) 两大类。这些不同类型的 sRNA 依赖多种加工蛋白产生，也依赖不同效应蛋白帮助其发挥功能，并以不同的方式广泛地参与植物各类发育调控与环境响应的过程。近年来，多物种中的高通量测序数据鉴定到了越来越多新型植物 sRNA，sRNA 在拟南芥 (Arabidopsis thaliana) 及各类作物中的研究进展也促进了对其产生方式、调控模式及其生物学功能的深入理解。本文系统综述了不同类型植物 sRNA 的研究进展，主要包括其生物合成途径、作用机制与生物学功能，并结合现有技术讨论了植物 sRNA 在农业中的应用方式及其作为新型 RNA 农药的应用前景，旨在为植物 sRNA 的深入研究及农业应用提供理论基础。
+
+关键词：植物小 RNA；miRNA；siRNA；phasiRNA；RNA 农药
+
+# Biogenesis, action, function of plant small RNAs and their potential application in agriculture
+
+Huaihao Yang, Binglian Zheng
+
+State Key Laboratory of Genetics and Development of Complex Phenotypes, School of Life Sciences, Fudan University, Shanghai 200438, China
+
+Abstract: Plant small RNAs (sRNAs) are essential regulators of gene expression and genome stability in plants. Based on their biogenesis and mechanisms of action, they are primarily classified into two major categories: microRNAs (miRNAs) and small interfering RNAs (siRNAs). These sRNAs rely on distinct processing proteins for their production and effector proteins to execute their functions, playing pivotal roles in diverse developmental processes and environmental responses. Recent advances in next-generation sequencing have identified numerous novel sRNAs across multiple plant species, while studies in Arabidopsis thaliana and various crops have significantly enhanced our understanding of their biogenesis, regulatory networks, and biological functions. In this review, we systematically summarize the research progress on different classes of plant sRNAs, focusing on their biosynthetic pathways, molecular mechanisms, and biological function. Furthermore, we discuss the potential applications of plant sRNAs in agriculture, including their prospects as next-generation RNA pesticides, supported by current technological developments. This review aims to provide a theoretical foundation for further research on plant sRNAs and their agricultural applications.
+
+Keywords: plant small RNA; miRNA; siRNA; phasiRNA; RNA pesticides
+
+植物内源产生的小 RNA(small RNA, sRNA)主要包括微小 RNA(microRNA, miRNA)和小干扰 RNA(small interfering RNA, siRNA)两类，后者主要可细分为异染色质小干扰 RNA(heterochromatic siRNA, hc-siRNA)和从 RNA 聚合酶 II(Pol II)转录本衍生的相位次级小干扰 siRNA(phased secondary siRNA, phasiRNA)。这两类 sRNA 的产生都依赖于双链 RNA(double-stranded RNA, dsRNA)的形成，不同来源的 dsRNA 被一类 RNase III 家族的核酸内切酶 Dicer-like(DCLs)蛋白进行一系列切割加工后可以产生 21\~24 nt 的 sRNA。在作用机制上，miRNA 与 siRNA 均需要结合其效应蛋白 ARGONAUTE (AGO)形成 RNA 介导的沉默复合物(RNA-induced silencing complex, RISC)，通过序列匹配的方式发挥其抑制靶基因表达的作用。随着高通量测序技术的快速发展，在植物中还发现了一些新的 sRNA 类型。例如：双链断裂诱导的 sRNA(double-strand break induced sRNA, diRNA)、rRNA/tRNA 衍生的 sRNA、表观激活的 siRNA(epigenetically activated siRNA, easiRNA)等，这些新型的 sRNA 为理解植物 sRNA 的功能提供了新的见解[1\~3]。植物内源产生的各类不同来源的 sRNA 形成了复杂而又精细的调控网络，这些 sRNA 参与调控了植物从营养生长到生殖生长中各类重要的发育过程，也在植物应对不同生物和非生物胁迫的过程中发挥重要的作用。值得一提的是，基于 sRNA 抑制靶基因效率高、特异性好等优点，利用 sRNA 工具开发的新型 RNA 农药在农业生产中具有广泛的应用前景。本文将系统介绍植物 sRNA 的产生途径、作用方式及其主要的生物学功能，并结合现有技术总结植物 sRNA 在农业中作为新型 RNA 农药的应用前景。
+
+# 1 植物内源 sRNA 的产生途径
+
+# 1.1 植物 miRNA 的产生途径
+
+miRNA 是一类内源的非编码基因的产物，动物和植物的基因组中都普遍存在内源的 MIRNA 基因位点。在植物中，大部分 MIRNA 基因都位于基因间区，作为独立的转录单元被 RNA 聚合酶 Pol II 转录。与其他 Pol II 转录本类似，MIRNA 基因的初级转录产物 primary miRNA(pri-miRNA)具有 5'端帽子和 3'端的 poly(A)结构 $^{[4]}$ ，并且通过自身序列匹配形成包含茎环结构的双链 RNA。随后，pri-miRNA 被 Dicer-like 1(DCL1)切割形成前体 miRNA (precursor miRNA, pre-miRNA)，pre-miRNA 又进一步被 DCL1 切割产生 miRNA/miRNA\*双链体 $^{[5]}$ 。DCL1 蛋白对 miRNA 前体的加工需要在双链 RNA 结合蛋白 HYPONASTIC LEAVES 1(HYL1)与锌指结构域蛋白 SERRATE(SE)的帮助下完成 $^{[6,7]}$ 。这三个主要的 miRNA 加工蛋白可以在细胞核中形成切割复合体 (dicing body, D-body) $^{[8]}$ 。研究发现，由 SE 介导的相分离过程能够促进 D-body 的形成，从而高效地进行 miRNA 的加工 $^{[9]}$ 。与动物不同的是，植物新生的 miRNA/miRNA\* 双链体产生后，miRNA/miRNA\*双链体需要进一步被甲基转移酶 HUA ENHANCER 1(HEN1)在 3'末端进行 2'-O-甲基化修饰 $^{[10]}$ ，以避免 miRNA 末端被 HEN1 SUPPRESSOR 1(HESO1)与 UTP:RNA URIDYLYLTRANSFERASE 1(URT1)尿苷化后介导的降解 $^{[11\sim14]}$ ，从而增强成熟 miRNA 的稳定性。双链体中的 miRNA 链 (又称引导链)被装载至 AGO1 蛋白，完成 RISC 功能复合物的组装，而 miRNA\*链(又称乘客链)随后会被降解(图 1A)。
+
+![](images/c1dc8a49c871ff0b742bcae14d979f3f8c805b5c49c6a948415f2fcd4abfd1cb.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+    A["miRNAs"] --> B["MIRNA位点"]
+    B --> C["pri-miRNA"]
+    C --> D["pre-miRNA"]
+    D --> E["DCL1"]
+    E --> F["SE"]
+    E --> G["HYL1"]
+    D --> H["DCL1"]
+    H --> I["SE"]
+    H --> J["HYL1"]
+    D --> K["HEN1"]
+    K --> L["miRNA RISC"]
+    L --> M["AGO1"]
+    style A fill:#f9f,stroke:#333
+    style B fill:#ccf,stroke:#333
+```
+</details>
+
+![](images/e8ab87ef0d0bcec0ab27a3c78e22703b76d8ebe71bc62045c02e068133808ac5.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+    A["hc-siRNA"] --> B["TE位点"]
+    B --> C["P4R2-dsRNA"]
+    C --> D["DCL3"]
+    D --> E["HEN1"]
+    E --> F["HOXA"]
+    F --> G["AGO4/6/9"]
+    G --> H["hc-siRNA"]
+    C --> I["Pol IV and RDR2"]
+```
+</details>
+
+![](images/6383e2ed9bdbc1bb60c84544db86270d14cefd7d1a4d3e4762361ba005a9c3ef.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+    A["PHAS位点"] --> B["AGO1"]
+    B --> C["miRNA"]
+    C --> D["SGS3 RDR6"]
+    D --> E["DCL4"]
+    D --> F["DCL5"]
+    E --> G["..."]
+    F --> H["..."]
+    I["HEN1"] --> J["..."]
+    K["21-nt phasiRNA"] --> L["..."]
+    M["24-nt phasiRNA"] --> N["..."]
+    O["Pol II"] --> P["..."]
+    Q["单子叶植物特有"] --> R["..."]
+```
+</details>
+
+图 1 植物内源 sRNA 的产生途径  
+Fig. 1 The biogenesis of endogenous plant small RNAs   
+A: miRNA 的产生途径。MIRNA 位点由 Pol II 转录产生的初级转录本 pri-miRNA 经过 DCL1 切割复合体的两次切割形成 miRNA/miRNA\*双链体，双链体被 HEN1 甲基化后产生成熟的 miRNA 并被装载至效应蛋白 AGO1 中。B: hc-siRNA 的产生途径。在转座子(TE)及重复序列区域，由 Pol IV 转录的 30\~40 nt 的短转录本通过 RDR2 形成双链 RNA，该双链 RNA 随后被 DCL3 切割成长度为 24-nt 的 hc-siRNA 双链体，双链体被 HEN1 甲基化后产生成熟的 hc-siRNA 并被装载至效应蛋白 AGO4/6/9 中。C: phasiRNA 的产生途径。在 PHAS 位点，Pol II 产生的转录本被 miRNA 切割，RNA 结合蛋白 SGS3 帮助 RDR6 将切割后的单链 RNA 加工成双链 RNA，该双链 RNA 随后被 DCL4 或 DCL5(单子叶植物特有)切割成长度为 21-nt 或 24-nt 的 phasiRNA 双链体，双链体被 HEN1 甲基化后产生成熟的 phasiRNA 并被装载至对应的效应蛋白中。
+
+# 1.2 植物 siRNA 的产生途径
+
+植物内源产生的 siRNA 主要包含两类：一类是由 miRNA 介导切割产生的次级 phasiRNA，另一类是从异染色质重复序列转座子(transposable element, TE)区域产生的 hc-siRNA。与 miRNA 不同，大部分植物内源 siRNA 前体的双链结构不是通过自身折叠形成，而是需要一类 RNA 依赖的 RNA 聚合酶 (RNA-dependent RNA polymerase, RDRs)以单链 RNA 为模板合成双链 RNA。在拟南芥(Arabidopsis$thaliana$ )中，主要发挥作用的 RDRs 是 RDR1、RDR2 与 RDR6 $^{[15]}$ 。其中，RDR2 主要参与 hc-siRNA 的生物合成过程，而 RDR6 则主要参与 phasiRNA 的生物合成过程。
+
+# 1.2.1 hc-siRNA 的产生
+
+hc-siRNA 是植物中特有的一类 siRNA。其产生依赖于植物特有的 RNA 聚合酶 Pol IV 的转录。Pol IV 可以在单个位点多次转录，产生多条长度仅为 30\~40 nt 的短转录本(P4RNA)。P4RNA 通过 RDR2形成双链 RNA，该双链 RNA 随后被 DCL3 切割成长度为 24-nt 的 hc-siRNA 双链体 $^{[16]}$ ，这也被称为“一个前体 P4RNA 产生一个 hc-siRNA”的模型 $^{[17]}$ 。生化实验证明 Pol IV 与 RDR2 存在互作 $^{[18]}$ ，而最近的结构生物学研究进一步阐释了 Pol IV 和 RDR2 的活性也依赖于这种紧密的连接：在这个 Pol IV-RDR2 的聚合酶复合体中，P4RNA 被直接传递给 RDR2，从而合成 hc-siRNA 前体的第二条链 $^{[19]}$ 。另一项研究解析了 DCL3 与双链 pre-siRNA 复合物的结构，DCL3 的 PAZ 结构域和 RNase IIIb 结构域能在双链 siRNA 前体的其中一条链上准确地测量 24 个核苷酸的距离，从而产生长度特征为 24-nt 的 hc-siRNA $^{[20]}$ 。DCL3 切割产生的 hc-siRNA 双链体通过 HEN1 完成 3'末端的甲基化后，其引导链被加载到 AGO4、AGO6 或 AGO9 蛋白上(图 1B) $^{[21,22]}$ 。这类 RISC 复合物在 RNA 介导的 DNA 甲基化(RNA-dependent DNA methylation, RdDM)这一通路中发挥关键作用，通过转录水平基因沉默(transcriptional gene silencing, TGS)的方式抑制基因表达。
+
+# 1.2.2 phasiRNA 的产生
+
+phasiRNAs是由miRNA切割介导产生的一类次级siRNA，其前体可以是PolII转录的mRNA或者长链非编码RNA(long non-coding RNA, lncRNA)。当miRNA所在的RISC复合物切割其靶标后，切割产物可以被RDR6加工成双链RNA，从而被不同DCL蛋白以连续切割的方式产生顺序排列的21-nt或24-nt的phasiRNA，因此呈现出准确的相位排列特征(图1C)。这些能产生phasiRNA的位点被称为PHAS位点。编码基因类型的PHAS位点主要包括PRR、MYB与NB-LRR几个家族，这些mRNA被不同的miRNA切割，介导产生的phasiRNA通常靶标同家族的基因位点[23\~25]。首先发现的phasiRNA来自拟南芥中一类非编码的TAS位点，由于TAS位点产生的phasiRNA能靶向其他基因，因此又被称为反式siRNA(trans-acting siRNA, tasiRNA)。TAS位点被RISC复合物切割后，其靶标RNA的 $5^{\prime}$ 片段或 $3^{\prime}$ 片段会在RNA结合蛋白SUPPRESSOR OF GENE SILENCING 3(SGS3)的帮助下被RDR6转化为dsRNA。随后 DCL4 在双链 RNA 结合因子 DRB 蛋白的协助下切割出长度为 21-nt 的 phasiRNA $^{[26]}$ 。TAS 位点在各类植物中普遍存在，其中 miR390 切割 TAS3 介导产生的 tasiRNA 能靶向调控生长素响应因子 ARF，这一通路在各类陆地植物中高度保守 $^{[27]}$ 。
+
+当 mRNA 被 miRNA 切割后，依赖 RDR6 产生的 dsRNA 除了可以被 DCL4 切割为 21-nt 的 phasiRNA 外，部分 dsRNA 还可能被 DCL2 切割形成 22-nt siRNA。在植物正常的发育过程，DCL2 介导的 22-nt siRNA 丰度远远不及 DCL4 介导的 21-nt siRNA $^{[28,29]}$ 。但在病原物侵染、缺氮胁迫、ABA 胁迫等多种异常的生长环境下，当 DCL4 的活性受到抑制或需要进入降解步骤的异常 RNA 显著增多时 $^{[30\sim33]}$ ，DCL2 介导产生的 22-nt siRNA 显著增加，并且介导大量次级 siRNA 的扩增，通过翻译抑制的方式抑制植物生长发育，从而帮助植物响应病原物侵染及环境胁迫 $^{[30,31,33]}$ 。
+
+在单子叶禾本科植物中首先发现了另一类生殖发育相关的 phasiRNA，这些 phasiRNA 同样来源于非编码 RNA。在水稻(Oryza sativa)和玉米(Zea mays)的研究中发现，这些 phasiRNA 在花药中富集，在减数分裂前后大量积累 $^{[34,35]}$ 。根据 phasiRNA 的长度可以把生殖发育相关的 phasiRNA 分为 21-nt 和 24-nt 两类。21-nt 的生殖 phasiRNA 是由 miR2118 介导产生并由 DCL4 完成切割 $^{[36,37]}$ ，而 24-nt 的生殖 phasiRNA 由 miR2275 介导产生，并由单子叶植物中特异存在的 DCL5 完成切割 $^{[38,39]}$ 。近年来，随着不同物种高通量测序数据的完善，已有研究在多种双子叶植物中也鉴定到了 21-nt 与 24-nt 的 phasiRNA $^{[40,41]}$ 。研究发现 miRNA 的长度对于介导 phasiRNA 产生非常重要，能介导 phasiRNA 产生的 miRNA 的长度通常为 22-nt。一些 pre-miRNA 的茎环结构中存在不完全匹配产生的凸起，这类 pre-miRNA 被 DCL1 切割后可以产生 22-nt 的 miRNA $^{[42]}$ 。另外，一些 21-nt 的 miRNA 可能由于 3' 端未被甲基化而加上单尿苷化修饰，从而将其长度改变为 22-nt $^{[43]}$ 。但无论 22-nt 的 miRNA 是如何产生的，其长度都是被切割的靶标 RNA 是否能被加工为 phasiRNA 的关键因素。
+
+# 2 植物 sRNA 的作用方式
+
+不同类型的植物 sRNA 可以通过切割靶标 RNA、介导 DNA 甲基化、介导翻译抑制等作用方式发挥其基因沉默的功能。这些不同的作用方式在很大程度上是由结合 sRNA 的效应蛋白 AGO 的功能决定的。拟南芥基因组编码 10 种单拷贝的 AGO 蛋白，分别被命名为 AGO1\~AGO10。而在其他开花植物中，AGO 蛋白家族存在不同程度的扩张，产生多个同源的拷贝并分化出一些新的类型。根据进化关系可以将 AGO 蛋白家族分为三个主要的分支：AGO1/5/10、AGO2/3/7、AGO4/6/8/9 $^{[44]}$ 。已有研究表明，不同类型的 AGO 蛋白对 sRNA 的选择性装载受到 sRNA 的 5' 端碱基类型、sRNA 长度及其二级结构的影响。例如：AGO1 偏好结合 5' 端为 U 的 sRNA，AGO5 偏好结合 5' 端为 C 的 sRNA，而 AGO2/7 以及 AGO4/6/9 结合的 sRNA 存在 5' 端为 A 的偏好性 $^{[45,46]}$ 。21, 22-nt 的 sRNA 通常被装载至 AGO1/5/10 或 AGO2/3/7 这两个分支的 AGO 蛋白，而介导 DNA 甲基化的 24-nt 的 hc-sRNA 通常被装载至 AGO4/6/9 这一分支的 AGO 蛋白中 $^{[22,47]}$ 。
+
+绝大多数植物 miRNA 都采用切割靶标的作用方式完成基因沉默，且大部分 miRNA 与其靶标 RNA 的序列是完全配对的。miRNA 切割后的靶标 RNA 可能会直接被核酸外切酶降解 $^{[48,49]}$ ，也可能会在SGS3 的帮助下成为 RDR6 的底物，产生 dsRNA 后被进一步加工为次级 phasiRNA $^{[26]}$ 。然而，研究发现一些在 DRB2 而非 HYL1 的帮助下产生的 miRNA 也可以靶向目标 RNA 的 3'UTR 区域介导翻译抑制 $^{[50]}$ 。在一些特殊的例子中，miRNA 还可以介导 DNA 甲基化，水稻中存在由 DCL3 切割产生的 24-nt miRNA，这些 miRNA 类似由 Pol IV 产生的 hc-siRNA，被装载至 AGO4 中后介导 DNA 甲基化。
+
+不同长度的 siRNA 与不同 AGO 蛋白结合后发挥功能的方式也各不相同。21-nt siRNA 的作用方式与 miRNA 类似，主要通过切割靶标 RNA 的方式完成基因沉默。DCL2 蛋白产生的内源 22-nt siRNA 可以通过翻译抑制的方式限制其靶标 RNA 的正常翻译过程，也可以发挥与 22-nt miRNA 类似的介导次级 siRNA 产生的功能 $^{[31]}$ 。而 24-nt 的 hc-siRNA 与 AGO4/6/9 形成的 RISC 复合物则通过 RdDM 途径发挥异染色质沉默的功能(图 2)。在经典的 RdDM 通路中，包含 24-nt siRNA 的 RISC 复合物会与另一个植物特有的 RNA 聚合酶 Pol V 产生的转录本通过序列匹配的方式结合，并招募从头 DNA 甲基化酶 DRM2 至特定位点，从而完成其靶标位点的 CHH 甲基化 $^{[51]}$ 。近年研究发现，AGO4-siRNA 复合物可以通过不依赖 Pol V 招募的模式靶向没有 DNA 甲基化的区域，从而完成新位点的从头 RdDM，而这种模式中 AGO4-siRNA 复合物的招募可能依赖于 Pol II 产生的转录本 $^{[52,53]}$ 。
+
+![](images/96071fc8086043e41e731e31edca28cf4006347a84a976787dff46e0274643c0.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+    A["miRNAs"] -->|PTGS| B["phasiRNAs"]
+    C["切割靶标RNA"] --> D["AGO1"]
+    E["介导翻译抑制"] --> F["AGO1"]
+    B --> G["AGOs 21-nt phasiRNA"]
+    B --> H["AGOs 24-nt phasiRNA"]
+    G --> I["TGS"]
+    H --> I
+    I --> J["hc-siRNAs"]
+    K["Pol V"] --> L["RdDM靶标"]
+    M["DRM2"] --> L
+    L --> N["AGO4/6/9"]
+    style A fill:#f9f,stroke:#333
+    style B fill:#ccf,stroke:#333
+    style C fill:#cfc,stroke:#333
+    style E fill:#fcc,stroke:#333
+    style K fill:#ffc,stroke:#333
+```
+</details>
+
+图2 植物sRNA的作用方式  
+Fig. 2 Molecular mechanisms of plant small RNAs   
+植物 miRNA 主要通过切割靶标 RNA 的方式发挥作用，通过转录后水平基因沉默(post-transcriptional gene silencing, PTGS)的方式抑制基因表达，但部分植物 miRNA 也能介导翻译抑制。与之不同的是，hc-siRNA 则通过另一种方式发挥其基因沉默的作用：24-nt 的 hc-siRNA 与 AGO4/6/9 形成的 RISC 复合物通过 RdDM 途径发挥异染色质沉默的功能，通过转录水平基因沉默(transcriptional gene silencing, TGS)的方式抑制基因表达。不同长度的 phasiRNA 可能存在不同的作用方式，21-nt 的 phasiRNA 与 miRNA 类似，主要通过 PTGS 途径发挥作用，而 24-nt 的 phasiRNA 则更有可能通过 TGS 的途径发挥作用 $^{[54]}$ 。
+
+# 3 植物 sRNA 的功能
+
+# 3.1 miRNA调控植物发育与环境响应
+
+miRNA 介导的基因沉默作为 RNA 转录后水平调控的核心单元，其靶标涵盖了不同类型的转录因子、植物免疫相关的 R 基因，以及其他类型的调控蛋白 $^{[55]}$ 。在模式植物拟南芥以及水稻、小麦(Triticum aestivum)、玉米、大豆(Glycine max)等主要作物的 miRNA 功能研究中发现，特定 miRNA 对应靶标的调控关系在不同物种的植物中是高度保守的。例如：miR156 调控 SPL 家族的转录因子、miR159 调控 MYB 类型转录因子、miR160 调控生长素响应因子 ARF、miR172 调控 AP2 类型的转录因子等 $^{[55\sim60]}$ 。因此，miRNA 广泛地参与调控植物各个阶段的生长发育过程以及各类环境胁迫的响应(图 3)。在植物生长发育过程中，miRNA 一方面能调控植物顶端分生组织的干细胞命运，参与不同植物器官原基的起始，调控腋芽分化、花原基形成等发育阶段的转变；另一方面还能调控不同组织或器官的发育，影响叶片发育、花器官发育以及胚胎/胚乳发育等过程中的形态建成模式 $^{[61\sim68]}$ 。
+
+植物顶端分生组织干细胞命运的维持受到miRNA的调控，其典型的例子包括miR394-LCR-WUS通路。miR394通过在茎尖分生组织(shoot apicalmeristem, SAM)的组织中心(organization center, OC)中抑制 F-box 泛素连接酶基因 LCR 的表达，从而解除 LCR 对 OC 中 WUS 蛋白的抑制，维持茎尖分生组织 OC 的干细胞特性 $^{[69]}$ 。miR394 通过抑制 LCR 的表达还影响了 LCR 在植物不同组织中其他下游靶标所参与的发育过程，包括叶片形态建成、腋芽分生组织(axillary meristem, AM)的起始等 $^{[70,71]}$ 。在叶片极性建立的过程中，miR165/166 在叶原基远轴面降解 HD-ZIP III 类型转录因子 PHB 与 PHV 的转录本，导致了 PHB/PHV 仅在近轴面积累的极性分布特征，从而调控了叶片近远轴的极性建立 $^{[61\sim63]}$ 。miR165/166 仅在远轴面的表达特征同样受到 miR390 介导的 tasiRNA-ARF3 通路的调控，由于 ARF3 能激活 miR165/166 的表达，miR390-TAS3 介导产生的 tasiRNA 在近轴面抑制 ARF3 直接导致了 miR165/166 在远轴面积累的分布特征 $^{[72,73]}$ 。miR156-SPL-miR172 调控通路影响植物营养生长到生殖生长阶段的转变是另一个典型的发育调控案例。研究发现 miR156 的过表达导致植物晚花 $^{[74\sim76]}$ ，而 miR172 的过表达则促进植物提前开花。由于 AP2-like 基因抑制植物的开花过程，miR172 对 AP2-like 基因的抑制直接促进了植物的成花转变 $^{[77,78]}$ ，而 miR172 的转录又受到 miR156 靶标 SPL 的调控。因此在植物幼年阶段，高丰度的 miR156 抑制了靶标 SPL 的表达，AP2-like 基因抑制开花过程。当植物达到成年阶段时,随着 miR156 转录活性的降低 $^{[79]}$ , SPL 蛋白的积累激活了 miR172 的转录,miR172 靶向 AP2-like 转录本使其降解,从而触发成花转变 $^{[74]}$ 。
+
+![](images/1792878fa51d4791a02ea5bef5eaf503cce7aff2acd5613b2006d91cd1d93b5f.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+    A["miR156 miR159"] --> D["植物生长发育"]
+    B["miR165 miR166"] --> D
+    C["miR172 miR394"] --> D
+    D --> E["干细胞特性 SAM"]
+    D --> F["器官发育"]
+    D --> G["成花转变"]
+    H["miRNAs"] --> I["病毒/真菌/细菌侵染"]
+    H --> J["高温/干旱胁迫"]
+    I --> K["盐胁迫"]
+    I --> L["低温胁迫"]
+    J --> M["高温/干旱胁迫"]
+```
+</details>
+
+图 3 miRNA 调控植物发育与胁迫响应  
+Fig. 3 The regulatory roles of miRNAs in plant development and stress response   
+植物miRNA参与调控植物干细胞命运、不同植物器官原基的起始、植物器官发育等各个阶段的生长发育过程，另外，miRNA还广泛地参与植物应对各类生物与非生物环境胁迫的响应过程。
+
+除了植物自身发育外，miRNA在植物的环境胁迫响应中也发挥重要的调控作用。植物miRNA参与胁迫响应的功能研究已经在多篇综述文章中被全面地总结[55,59]。其参与调控环境胁迫的主要模式为：不同生物与非生物胁迫能激活或抑制特定miRNA的表达，从而抑制或激活这些miRNA靶基因参与的信号通路，介导植物对胁迫的响应。例如：冷胁迫与病原菌侵染诱导miR393的表达，miR393通过靶向生长素受体基因TIR1/AFB抑制生长素信号通路，增强植物耐冷能力、激活植物的免疫反应[80,81]。在高温胁迫下，HSP激活miR398的表达，miR398抑制其靶标基因CSD1/CSD2、促进热激转录因子的表达，从而增强植物耐热性[82]。干旱胁迫下，miR169表达下调，帮助其靶基因NFYA5在干旱胁迫下的激活表达；miR167a表达下调，解除对其靶基因IAR3的抑制，促进生长素的积累和侧根发育，从而增强植物对干旱的适应能力[83,84]。
+
+# 3.2 hc-siRNA 调控异染色质沉默
+
+如前文所述，依赖Pol IV-RDR2-DCL3加工通路产生的24-nt hc-siRNA主要通过RNA介导的DNA甲基化(RdDM)途径发挥作用。hc-siRNA的生物学功能主要为介导异染色质区域的重复序列和转座子沉默，进而调控植物基因组稳定性[85]；同时其介导的CHH类型DNA甲基化也能调控特定的基因表达，如印迹基因、距离转座子元件较近的基因或启动子区域存在转座子插入的基因等[86,87]。在拟南芥中，RdDM途径的突变体并未表现出明显的发育表型。但在作物中，RdDM相关基因的突变则会导致众多异常的多效发育表型(表1)。水稻OsNRPD1a/b与OsDCL3a等RdDM相关基因的突变导致分蘖增加、营养生长异常[88\~90]；玉米PolIV的大亚基ZmRPD1的突变导致了叶片极性发育、植株形态、性别决定异常等现象[91,92]；番茄(Solanum lycopersicum)SlNRPD1的缺失引起的重复序列CHH低甲基化，影响了其邻近的SlWOXs/SlPINs及其下游信号通路的基因表达，进而导致胚胎发育缺陷和种子败育[93]；在蔓菁(Brassica rapa)、荠菜(Capsella rubella)等其他十字花科物种中也发现RdDM突变体的花粉发育及种子发育的异常[94,95]。另外，hc-siRNA介导的RdDM还参与了不同倍性植物的杂交障碍的调控过程[96,97]。
+
+# 3.3 次级 phasiRNA 是植物生殖发育调控的重要参与者
+
+与 miRNA 作用方式类似，部分 miRNA 切割靶标后产生的次级 phasiRNA 在植物生长发育与胁迫响应过程也扮演着重要的角色，例如前文提到的 TAS 位点产生的 tasiRNA 影响叶片极性发育等。除 TAS 位点以外，NAC、MYB、NB-LRR 类型的 PHAS 位点产生的 phasiRNA 也在干旱胁迫、植物损伤修复、植物免疫等过程中发挥重要的作用 $^{[24,99\sim102]}$ 。
+
+在单子叶禾本科中发现的另一类特征明显的生殖发育相关的 phasiRNA 主要在花药中富集。由 miR2118 介导产生的 21-nt phasiRNA 在减数分裂前大量积累；而在减数分裂期，miR2275 介导产生的 24-nt phasiRNA 也主要聚集于绒毡层和减数分裂细胞中 $^{[35]}$ 。在玉米中，促进21-nt phasiRNA产生的转录因子OCL4突变后导致温敏型雄性不育 $^{[103]}$ 。在水稻中，敲除miR2118的部分拷贝或21-nt phasiRNA的效应蛋白AGO5c/MEL1都会导致雄性不育的表型 $^{[37,104]}$ 。在用于两系法创制杂交水稻的“农垦58S”光周期敏感雄性不育系品种中，PMS1与PMS3作为miR2118的靶标，在长日照条件下积累21-nt的phasiRNA，进而导致光敏型雄性不育 $^{[35,104,105]}$ 。而24-nt phasiRNA则主要在绒毡层发育过程中发挥作用，因为驱动这类phasiRNA前体表达的MS23与bHLH类型转录因子EAT1定位于绒毡层。eat1与ms23突变体中大部分24-nt phasiRNA都不再产生，且绒毡层不能正常启动程序性细胞死亡过程，造成雄性不育 $^{[106,107]}$ 。单子叶植物特有的DCL5能介导24-nt phasiRNA的产生，在玉米的dcl5突变体中，花药发育短小，绒毡层细胞存在缺陷，并且具备温敏型雄性不育的表型 $^{[39]}$ 。尽管生殖发育相关phasiRNA的功能和导致育性缺陷的作用机制还存在很多未知，已有的研究提示了这些21-nt与24-nt的phasiRNA在单子叶植物中具有保守地调控雄性育性的功能。
+
+表 1 不同物种中 RdDM 相关基因突变的发育表型  
+Table 1 The developmental phenotypes of mutants in RdDM pathway among species 
+
+<table><tr><td>突变基因</td><td>物种</td><td>主要发育表型</td><td>参考文献</td></tr><tr><td>OsNRPD1a/b</td><td>水稻(Oryza sativa)</td><td>植株矮小、分蘖增加</td><td>[88]</td></tr><tr><td>OsDCL3a</td><td>水稻</td><td>植株矮小、叶倾角增大、分枝减少</td><td>[89]</td></tr><tr><td>OsNRPD2</td><td>水稻</td><td>植株矮小、抽穗异常、种子败育</td><td>[90]</td></tr><tr><td>ZmRPD1(RMR6)</td><td>玉米(Zea mays)</td><td>植株矮小、节间缩短、性别决定异常</td><td>[91,92]</td></tr><tr><td>SlNRPD1/NRPE1</td><td>番茄(Solanum lycopersicum)</td><td>生长发育迟缓、种子败育、果实发育异常</td><td>[93,98]</td></tr><tr><td>BraA.NRPD1/RDR2/NRPE1</td><td>蔓菁(Brassica rapa)</td><td>种子发育异常</td><td>[95]</td></tr><tr><td>CrNRPD1</td><td>荠菜(Capsella rubella)</td><td>花粉发育异常</td><td>[94]</td></tr></table>
+
+# 3.4 其他类型 sRNA 的功能
+
+除了典型的 miRNA、hc-siRNA、tasiRNA/ phasiRNA 外，研究发现植物体内还存在一些新型的内源 sRNA，包括双链断裂诱导的 sRNA (double-strand break induced sRNA, diRNA) $^{[2]}$ 、rRNA/tRNA 衍生的 sRNA $^{[108,109]}$ 以及表观激活的 siRNA (epigenetically activated siRNA, easiRNA) 等。diRNA 特异地产生于 DNA 双链断裂位点的邻近序列，主要装载于 AGO2 蛋白并通过其招募 IDN2/CDC5/ ADA2b 等 DSB 修复相关的蛋白，从而促进 DNA 双链断裂的同源重组修复 $^{[110\sim112]}$ 。tRNA 衍生的 sRNA 片段 (tRNA-derived RNA fragment, tRF) 种类繁多，根据其不同的切割方式产生了 tRF-5s、tRF-3s 及 5' 或 3' 的 tRNA 半分子 (tRNA halves) 等类型，通过切割靶标基因、介导翻译抑制等方式，参与植物氧化应激、冷热胁迫等环境胁迫的响应 $^{[113]}$ ，也参与根瘤发生、抗真菌侵染等植物与微生物互作的生物学过程 $^{[109,114]}$ 。与 tRF 类似的是，在拟南芥、小麦、大麦 (Hordeumvulgare)、蔓菁等植物中都发现了来源于植物 rRNA 的 sRNA 片段(rRNA-derived fragment, rRF)，这些 rRFs 通常在环境胁迫或微生物侵染时产生 $^{[3]}$ 。有关 rRFs 参与调控生物学过程的报道目前仍然较少，其作用机制及具体功能还需进一步的探究。
+
+easiRNA 是一类衍生于特定条件下激活的转座子 RNA 的次级 siRNA。在体细胞中，easiRNA 可以通过 PTGS 途径与非经典的 RDR6-RdDM 通路沉默转座元件 $^{[115,116]}$ 。而在拟南芥雄配子体中，花粉营养细胞激活的转座子 RNA 在被 miR845a/b 切割后可以依赖 RDR6-DCL4 通路产生 21, 22-nt 的 easiRNA $^{[1,117]}$ ；另外，研究发现拟南芥花粉中 easiRNA 的积累也依赖于 Pol IV，在 nrpd1a 突变体中从转座子位点产生的 19-nt 至 24-nt 的 sRNA 都显著减少 $^{[118]}$ 。花粉营养细胞中产生的部分 easiRNA 存在假尿苷化修饰( $\Psi$ ) 的特征，这些 easiRNA 可以与 AGO5 或 AGO9 结合，并在转录因子 ARID1 的帮助下从营养细胞移动至精细胞，参与精细胞中转座子的沉默 $^{[119\sim121]}$ ，并且参与调控不同倍性植物杂交过程中产生的三倍体阻遏现象 $^{[118,122,123]}$ 。值得一提的是，另一项研究发现在拟南芥胚胎发育过程中，easiRNA 与 H3K9me2 修饰的沉积存在很强的关联性，且这种关联性不依赖于经典的维持型 H3K9me2 甲基化酶 SUVH4/5/6，反而可能通过 RdDM 通路介导 sRNA 依赖的 H3K9me2 的建立 $^{[124]}$ 。
+
+# 4 sRNA 在农业中的应用前景
+
+基于植物 sRNA 在植物发育与环境响应过程中的功能研究，miRNA、siRNA 通路与重要农艺性状间的调控图谱越发完善，这为作物改良提供了很多新靶点。由于 sRNA 具备抑制靶基因效率高、特异性好、具备远距离移动能力等优点，sRNA 的调控可以作为实现作物改良、抗虫、抗病的重要工具。通过内源调控工具直接调节植物体内 miRNA 或其靶基因的表达可以实现部分农艺性状的改良 $^{[125,126]}$ ，而通过外源施加 dsRNA 或依赖纳米颗粒递送 siRNA 的方式为新型 sRNA 农药的开发提供了更广阔的应用前景 $^{[127,128]}$ 。
+
+调节内源 sRNA 通路的手段包括过表达内源miRNA 或针对特定靶点设计的人工 miRNA (artificial miRNA, amiRNA) $^{[129]}$ ，以及利用 miRNA 模拟靶标(target mimic, TM)解除 miRNA 对其靶基因的抑制等(图 4A) $^{[130,131]}$ 。根据已报道的 miRNA 对不同性状的调控图谱，过表达特定 miRNA 可以抑制目标农艺性状的负调控基因，从而促进优良性状的形成。例如，在小麦中过表达 miR1139 改善了缺磷植株的生物量、光合作用以及磷吸收能力等性状 $^{[132]}$ ；在水稻中，过表达 OsMIR397 可以促进穗分枝、提高籽粒大小，有效提高了水稻产量 $^{[133]}$ ；在大豆中，GmMIR156 的过表达导致分枝增加、籽粒变大，显著提高了产量等。amiRNA 技术则在作物响应各类生物与非生物胁迫的性状改良中有更多的应用。例如：利用 amiRNA 骨架表达经小麦黄化叶病毒(wheat yellow mosaic virus, WYMV)侵染后鉴定到的病毒来源 siRNA(virus-derived siRNA, vsiRNA)可以显著提高小麦对多种常见的病原微生物的抗病能力 $^{[134]}$ 。
+
+同样，对于受到miRNA负调控的目标性状，可以通过敲除或者降低miRNA的水平来促进目标性状的获得。使用miRNA模拟靶标或短串联模拟靶标(short tandem target mimic, STTM)可以解除miRNA对靶标的抑制[135]。其原理为，经过设计的模拟靶标RNA可以作为分子海绵结合miRNA，但由于存在与miRNA不完全配对泡状结构，导致miRNA不能切割模拟靶标，并且模拟靶标还能启动miRNA的靶向降解，从而解除对miRNA靶基因的抑制[135\~137]。STTM技术对农艺性状的影响已经在多种作物中被报道。例如，在小麦中，利用STTM靶向miR319可以影响小麦的株高、分蘖数及产量[138]；在水稻中利用STTM敲降miR166可以提升植株耐旱能力[139]；在番茄中利用STTM敲降miR482/2118可以增强植株对假单胞菌和疫霉菌的抗性等[140]。
+
+与内源调控miRNA及其对应靶标的方式相比，外源施加siRNA或双链RNA介导的RNA干扰(RNA interference, RNAi)更加具备成为新型RNA农药的潜力(图4B)。在使用方式上，直接喷施dsRNA是新型RNA农药最简便、最适合大规模应用的施用方法，针对特定昆虫或病原微生物的dsRNA或siRNA被昆虫或病原微生物摄入后可以干扰其发育，从而减轻病虫害对作物的影响[141\~143]，这类新型RNAi农药具备效率高、特异性好、环境毒害低等优势，但直接喷施的方式需要dsRNA的大量合成，降低dsRNA的工业级大规模生产成本是该技术能实际应用的关键。2023年，首款针对科罗拉多马铃薯甲虫的喷施型双链RNA农药Ledprona获得了美国环境保护署的批准[144]，其采用了经优化的无细胞大规模dsRNA合成技术，从发酵废料中获取大量原料，利用优化的低耗能流程降低了约 $80\%$ 的成本[145]。利用对植物有益的微生物向作物递送dsRNA是另一种RNAi的应用方式，为传统的转基因操作提供了一种可行的替代方案[60,146]，但使用经过设计的微生物是否会对土壤及植物原有的根际微生物群落产生影响还有待进一步的研究。另外，siRNA及dsRNA在环境中的稳定性及其递送效率也是在新型农药开发过程中需要关注的重要特性，近年来不断发展的纳米颗粒递送sRNA或dsRNA的技术则是一种新型且高效的sRNA递送方式。纳米颗粒可保护RNA免受核酸酶降解，能更加有效地将RNA递送至植物细胞。例如：层状双氢氧化物(layered double hydroxides, LDH)纳米颗粒能保护其负载的dsRNA免受核酸酶的降解。将负载dsRNA的LDH纳米颗粒喷施到植物叶片上能实现dsRNA的持续释放，增强植物对病毒的抗性[127,147,148]。此外，单壁碳纳米管(single-walled carbon nanotubes, SWNTs)、棒状金纳米颗粒(gold nanorods, AuNR)、DNA纳米结构等其他类型的纳米颗粒也可作为dsRNA或siRNA分子的载体[128,149,150]。综上所述，这些优化的siRNA/dsRNA生产流程以及各类新型sRNA递送方式有助于基于sRNA基因沉默原理的新型RNA农药开发，这类RNA新型农药在植物病虫害防治方面展现出了巨大的应用潜力。
+
+![](images/f20ed01aaa940602dacb8f736d3b44cdb69b322c5e0c83732b6ada3e2d88cf87.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+    A["内源sRNA调控"] --> B["TM/STTM"]
+    A --> C["人工miRNA"]
+    B --> D["miRNA靶标"]
+    C --> E["人工miRNA靶标"]
+    D --> F["AGO1"]
+    E --> G["AGO1"]
+```
+</details>
+
+![](images/459e33460ca9102f9ebad9553fbef189e277ca19854cd834804e5b839d5ea788.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+    A["外源dsRNA/sRNA工具"] --> B["喷施dsRNA"]
+    A --> C["纳米颗粒递送"]
+    B --> D["dsRNA"]
+    C --> E["NP"]
+    D --> F["水处理"]
+    E --> G["NP + NP"]
+```
+</details>
+
+图 4 sRNA 在农业中的应用前景  
+Fig. 4 Potential application of sRNAs in agricultural enhancement   
+A：内源 sRNA 调控，主要利用人工 miRNA、miRNA 模拟靶标(TM)或短串联模拟靶标(STTM)等方式来调节目标农艺性状相关基因的表达。B：外源 dsRNA/sRNA 工具，主要采用喷施或纳米颗粒递送等外源施加 siRNA/dsRNA 的手段实现新型 sRNA 农药的应用。
+
+# 参考文献(References):
+
+[1] Slotkin RK, Vaughn M, Borges F, Tanurdžić M, Becker JD, Feijó JA, Martienssen RA. Epigenetic reprogramming and small RNA silencing of transposable elements in pollen. Cell, 2009, 136(3): 461–472. [DOI]   
+[2] Wei W, Ba ZQ, Gao M, Wu Y, Ma YT, Amiard S, White CI, Rendtlew Danielsen JM, Yang YG, Qi YJ. A role for small RNAs in DNA double-strand break repair. Cell, 2012, 149(1): 101–112. [DOI]   
+[3] Panstruga R, Spanu P. Transfer RNA and ribosomal RNA fragments – emerging players in plant–microbe interactions. New Phytol, 2024, 241(2): 567–577. [DOI]   
+[4] Xie ZX, Allen E, Fahlgren N, Calamar A, Givan SA, Carrington JC. Expression of Arabidopsis MIRNA genes. Plant Physiol, 2005, 138(4): 2145–2154. [DOI]   
+[5] Kurihara Y, Watanabe Y. Arabidopsis micro-RNA biogenesis through Dicer-like 1 protein functions. Proc Natl Acad Sci USA, 2004, 101(34): 12753–12758. [DOI]   
+[6] Han MH, Goud S, Song L, Fedoroff N. The Arabidopsis double-stranded RNA-binding protein HYL1 plays a role in microRNA-mediated gene regulation. Proc Natl Acad
+
+Sci USA, 2004, 101(4): 1093–1098. [DOI]  
+[7] Yang L, Liu ZQ, Lu F, Dong AW, Huang H. SERRATE is a novel nuclear regulator in primary microRNA processing in Arabidopsis. Plant J, 2006, 47(6): 841–850. [DOI]   
+[8] Fang YD, Spector DL. Identification of nuclear dicing bodies containing proteins for microRNA biogenesis in living Arabidopsis plants. Curr Biol, 2007, 17(9): 818–823. [DOI]   
+[9] Xie DQ, Chen M, Niu JR, Wang L, Li Y, Fang XF, Li PL, Qi YJ. Phase separation of SERRATE drives dicing body assembly and promotes miRNA processing in Arabidopsis. Nat Cell Biol, 2021, 23(1): 32–39. [DOI]   
+[10] Yu B, Yang ZY, Li JJ, Minakhina S, Yang MC, Padgett RW, Steward R, Chen XM. Methylation as a crucial step in plant microRNA biogenesis. Science, 2005, 307(5711): 932–935. [DOI]   
+[11] Li JJ, Yang ZY, Yu B, Liu J, Chen XM. Methylation protects miRNAs and siRNAs from a 3'-end uridylation activity in Arabidopsis. Curr Biol, 2005, 15(16): 1501–1507. [DOI]   
+[12] Ren GD, Chen XM, Yu B. Uridylation of miRNAs by hen1 suppressor1 in Arabidopsis. Curr Biol, 2012, 22(8): 695–700. [DOI]   
+[13] Tu B, Liu L, Xu C, Zhai JX, Li SB, Lopez MA, Zhao YY, Yu Y, Ramachandran V, Ren GD, Yu B, Li SG, Meyers BC, Mo BX, Chen XM. Distinct and cooperative activities of HESO1 and URT1 nucleotidyl transferases in microRNA turnover in Arabidopsis. PLoS Genet, 2015, 11(4): e1005119. [DOI]   
+[14] Ramachandran V, Chen XM. Degradation of microRNAs by a family of exoribonucleases in Arabidopsis. Science, 2008, 321(5895): 1490–1492. [DOI]   
+[15] Willmann MR, Endres MW, Cook RT, Gregory BD. The functions of RNA-dependent RNA polymerases in Arabidopsis. Arabidopsis Book, 2011, 9: e0146. [DOI]   
+[16] Blevins T, Podicheti R, Mishra V, Marasco M, Wang J, Rusch D, Tang HX, Pikaard CS. Identification of Pol IV and RDR2-dependent precursors of 24 nt siRNAs guiding de novo DNA methylation in Arabidopsis. eLife, 2015, 4: e09591. [DOI]   
+[17] Zhai JX, Bischof S, Wang HF, Feng SH, Lee TF, Teng C, Chen XY, Park SY, Liu LS, Gallego-Bartolome J, Liu WL, Henderson IR, Meyers BC, Austin I, Jacobsen SE. A one precursor one siRNA model for Pol IV-dependent siRNA biogenesis. Cell, 2015, 163(2): 445–455. [DOI]   
+[18] Haag JR, Ream TS, Marasco M, Nicora CD, Norbeck AD, Pasa-Tolic L, Pikaard CS. In vitro transcription activities of Pol IV, Pol V, and RDR2 reveal coupling of
+
+Pol IV and RDR2 for dsRNA synthesis in plant RNA silencing. Mol Cell, 2012, 48(5): 811–818. [DOI]   
+[19] Huang K, Wu XX, Fang CL, Xu ZG, Zhang HW, Gao J, Zhou CM, You LL, Gu ZX, Mu WH, Feng Y, Wang JW, Zhang Y. Pol IV and RDR2: A two-RNA-polymerase machine that produces double-stranded RNA. Science, 2021, 374(6575): 1579–1586. [DOI]   
+[20] Wang Q, Xue Y, Zhang LX, Zhong ZH, Feng SH, Wang CS, Xiao LF, Yang ZL, Harris CJ, Wu Z, Zhai JX, Yang MJ, Li SS, Jacobsen SE, Du JM. Mechanism of siRNA production by a plant Dicer-RNA complex in dicing-competent conformation. Science, 2021, 374(6571): 1152–1157. [DOI]   
+[21] Zilberman D, Cao XF, Jacobsen SE. ARGONAUTE4 control of locus-specific siRNA accumulation and DNA and histone methylation. Science, 2003, 299(5607): 716–719. [DOI]   
+[22] Havecker ER, Wallbridge LM, Hardcastle TJ, Bush MS, Kelly KA, Dunn RM, Schwach F, Doonan JH, Baulcombe DC. The Arabidopsis RNA-directed DNA methylation argonautes functionally diverge based on their expression and interaction with target loci. Plant Cell, 2010, 22(2): 321–334. [DOI]   
+[23] Howell MD, Fahlgren N, Chapman EJ, Cumbie JS, Sullivan CM, Givan SA, Kasschau KD, Carrington JC. Genome-wide analysis of the RNA-DEPENDENT RNA POLYMERASE6/DICER-LIKE4 pathway in Arabidopsis reveals dependency on miRNA- and tasiRNA-directed targeting. Plant Cell, 2007, 19(3): 926–942. [DOI]   
+[24] Zhai JX, Jeong DH, De Paoli E, Park S, Rosen BD, Li YP, González AJ, Yan Z, Kitto SL, Grusak MA, Jackson SA, Stacey G, Cook DR, Green PJ, Sherrier DJ, Meyers BC. MicroRNAs as master regulators of the plant NB-LRR defense gene family via the production of phased, trans-acting siRNAs. Genes Dev, 2011, 25(23): 2540–2553. [DOI]   
+[25] Xia R, Zhu H, An YQ, Beers EP, Liu ZR. Apple miRNAs and tasiRNAs with novel regulatory networks. Genome Biol, 2012, 13(6): R47. [DOI]   
+[26] Fei QL, Xia R, Meyers BC. Phased, secondary, small interfering RNAs in posttranscriptional regulatory networks. Plant Cell, 2013, 25(7): 2400–2415. [DOI]   
+[27] Liu YL, Teng C, Xia R, Meyers BC. PhasiRNAs in plants: their biogenesis, genic sources, and roles in stress responses, development, and reproduction. Plant Cell, 2020, 32(10): 3059–3080. [DOI]   
+[28] Moissiard G, Parizotto EA, Himber C, Voinnet O. Transitivity in Arabidopsis can be primed, requires the
+
+redundant action of the antiviral Dicer-like 4 and Dicer-like 2, and is compromised by viral-encoded suppressor proteins. RNA, 2007, 13(8): 1268–1278. [DOI]   
+[29] Bouché N, Laressergues D, Gasciolli V, Vaucheret H. An antagonistic function for Arabidopsis DCL2 in development and a new function for DCL4 in generating viral siRNAs. EMBO J, 2006, 25(14): 3347–3356. [DOI]   
+[30] Yan Y, Xie YP, Gao Q, Pan YJ, Tang XL, Liu YL, Li WY, Guo HW. Distinct regulation of mRNA decay pathways by ABA enhances Nitrate Reductase 1/2-derived siRNAs production and stress adaptation. Mol Plant, 2025, 18(5): 853–871. [DOI]   
+[31] Wu HH, Li BS, Iwakawa HO, Pan YJ, Tang XL, Ling-hu QY, Liu YL, Sheng SX, Feng L, Zhang H, Zhang XY, Tang ZH, Xia XL, Zhai JX, Guo HW. Plant 22-nt siRNAs mediate translational repression and stress adaptation. Nature, 2020, 581(7806): 89–93. [DOI]   
+[32] Katsarou K, Mavrothalassiti E, Dermauw W, Van Leeuwen T, Kalantidis K. Combined activity of DCL2 and DCL3 is crucial in the defense against potato spindle tuber viroid. PLoS Pathog, 2016, 12(10): e1005936. [DOI]   
+[33] Deleris A, Gallego-Bartolome J, Bao J, Kasschau KD, Carrington JC, Voinnet O. Hierarchical action and inhibition of plant Dicer-like proteins in antiviral defense. Science, 2006, 313(5783): 68–71. [DOI]   
+[34] Johnson C, Kasprzewska A, Tennessen K, Fernandes J, Nan GL, Walbot V, Sundaresan V, Vance V, Bowman LH. Clusters and superclusters of phased small RNAs in the developing inflorescence of rice. Genome Res, 2009, 19(8): 1429–1440. [DOI]   
+[35] Zhai JX, Zhang H, Arikit S, Huang K, Nan GL, Walbot V, Meyers BC. Spatiotemporally dynamic, cell-type-dependent premeiotic and meiotic phasiRNAs in maize anthers. Proc Natl Acad Sci USA, 2015, 112(10): 3146–3151. [DOI]   
+[36] Song XW, Li PC, Zhai JX, Zhou M, Ma LJ, Liu B, Jeong DH, Nakano M, Cao SY, Liu CY, Chu CC, Wang XJ, Green PJ, Meyers BC, Cao XF. Roles of DCL4 and DCL3b in rice phased small RNA biogenesis. Plant J, 2012, 69(3): 462–474. [DOI]   
+[37] Araki S, Le NT, Koizumi K, Villar-Briones A, Nonomura KI, Endo M, Inoue H, Saze H, Komiya R. miR2118-dependent U-rich phasiRNA production in rice anther wall development. Nat Commun, 2020, 11(1): 3115. [DOI]   
+[38] Kakrana A, Mathioni SM, Huang K, Hammond R, Vandivier L, Patel P, Arikit S, Shevchenko O, Harkess AE, Kingham B, Gregory BD, Leebens-Mack JH, Meyers BC. Plant 24-nt reproductive phasiRNAs from
+
+intramolecular duplex mRNAs in diverse monocots. Genome Res, 2018, 28(9): 1333–1344. [DOI]   
+[39] Teng C, Zhang H, Hammond R, Huang K, Meyers BC, Walbot V. Dicer-like 5 deficiency confers temperature-sensitive male sterility in maize. Nat Commun, 2020, 11(1): 2912. [DOI]   
+[40] Pokhrel S, Huang K, Bélanger S, Zhan JP, Caplan JL, Kramer EM, Meyers BC. Pre-meiotic 21-nucleotide reproductive phasiRNAs emerged in seed plants and diversified in flowering plants. Nat Commun, 2021, 12(1): 4941. [DOI]   
+[41] Xia R, Chen CJ, Pokhrel S, Ma WQ, Huang K, Patel P, Wang FX, Xu J, Liu ZC, Li JG, Meyers BC. 24-nt reproductive phasiRNAs are broadly present in angiosperms. Nature Commun, 2019, 10(1): 627. [DOI]   
+[42] Chen HM, Chen LT, Patel K, Li YH, Baulcombe DC, Wu SH. 22-nucleotide RNAs trigger secondary siRNA biogenesis in plants. Proc Natl Acad Sci USA, 2010, 107(34): 15269–15274. [DOI]   
+[43] Fei QL, Yu Y, Liu L, Zhang Y, Baldrich P, Dai Q, Chen XM, Meyers BC. Biogenesis of a 22-nt microRNA in Phaseoleae species by precursor-programmed uridylation. Proc Natl Acad Sci USA, 2018, 115(31): 8037–8042. [DOI]   
+[44] Zhang H, Xia R, Meyers BC, Walbot V. Evolution, functions, and mysteries of plant ARGONAUTE proteins. Curr Opin Plant Biol, 2015, 27: 84–90. [DOI]   
+[45] Mi SJ, Cai T, Hu YG, Chen YM, Hodges E, Ni FR, Wu L, Li S, Zhou HY, Long CZ, Chen S, Hannon GJ, Qi YJ. Sorting of small RNAs into Arabidopsis Argonaute complexes is directed by the 5 terminal nucleotide. Cell, 2008, 133(1): 116–127. [DOI]   
+[46] Takeda A, Iwasaki S, Watanabe T, Utsumi M, Watanabe Y. The mechanism selecting the guide strand from small RNA duplexes is different among Argonaute proteins. Plant Cell Physiol, 2008, 49(4): 493-500. [DOI]   
+[47] Zhan JP, Meyers BC. Plant small RNAs: their biogenesis, regulatory roles, and functions. Annu Rev Plant Biol, 2023, 74: 21–51. [DOI]   
+[48] Souret FF, Kastenmayer JP, Green PJ. AtXRN4 degrades mRNA in Arabidopsis and its substrates include selected miRNA targets. Mol Cell, 2004, 15(2): 173–183. [DOI]   
+[49] Zhang ZH, Hu FQ, Sung MW, Shu C, Castillo-Gonzalez C, Koiwa H, Tang GL, Dickman M, Li PW, Zhang XR. RISC-interacting clearing 3'-5' exoribonucleases (RICEs) degrade uridylated cleavage fragments to maintain functional RISC in Arabidopsis thaliana. eLife, 2017, 6: e24466. [DOI]
+
+[50] Reis RS, Hart-Smith G, Eamens AL, Wilkins MR, Waterhouse PM. Gene regulation by translational inhibition is determined by Dicer partnering proteins. Nat Plants, 2015, 1(3): 14027. [DOI]   
+[51] Matzke MA, Mosher RA. RNA-directed DNA methylation: an epigenetic pathway of increasing complexity. Nat Rev Genet, 2014, 15(6): 394–408. [DOI]   
+[52] Zheng BL, Wang ZM, Li SB, Yu B, Liu JY, Chen XM. Intergenic transcription by RNA Polymerase II coordinates Pol IV and Pol V in siRNA-directed transcriptional gene silencing in Arabidopsis. Genes Dev, 2009, 23(24): 2850–2860. [DOI]   
+[53] Sigman MJ, Panda K, Kirchner R, McLain LL, Payne H, Peasari JR, Husbands AY, Slotkin RK, McCue AD. An siRNA-guided ARGONAUTE protein directs RNA polymerase V to initiate DNA methylation. Nat Plants, 2021, 7(11): 1461–1474. [DOI]   
+[54] Zhang M, Ma XX, Wang CY, Li Q, Meyers BC, Springer NM, Walbot V. CHH DNA methylation increases at 24-PHAS loci depend on 24-nt phased small interfering RNAs in maize meiotic anthers. New Phytol, 2021, 229(5): 2984–2997. [DOI]   
+[55] Tang JY, Chu CC. MicroRNAs in crop improvement: fine-tuners for complex traits. Nat Plants, 2017, 3: 17077. [DOI]   
+[56] Jones-Rhoades MW, Bartel DP, Bartel B. MicroRNAs and their regulatory roles in plants. Annu Rev Plant Biol, 2006, 57: 19–53. [DOI]   
+[57] Chen XM. Small RNAs and their roles in plant development. Annu Rev Cell Dev Biol, 2009, 25: 21–44. [DOI]   
+[58] D'Ario M, Griffiths-Jones S, Kim M. Small RNAs: big impact on plant development. Trends Plant Sci, 2017, 22(12): 1056–1068. [DOI]   
+[59] Song XW, Li Y, Cao XF, Qi YJ. MicroRNAs and their regulatory roles in plant-environment interactions. Annu Rev Plant Biol, 2019, 70: 489–525. [DOI]   
+[60] Ouyang WQ, Sun HD, Wang Y. Unlocking the small RNAs: local and systemic modulators for advancing agronomic enhancement. J Genet Genomics, 2024, doi:10.1016/j.jgg.2024.12.011. [DOI]   
+[61] Juarez MT, Kui JS, Thomas J, Heller BA, Timmermans MCP. MicroRNA-mediated repression of rolled leaf1 specifies maize leaf polarity. Nature, 2004, 428(6978): 84–88. [DOI]   
+[62] Kidner CA, Martienssen RA. Spatially restricted microRNA directs leaf polarity through ARGONAUTE1. Nature, 2004, 428(6978): 81–84. [DOI]   
+[63] Mallory AC, Reinhart BJ, Jones-Rhoades MW, Tang GL,
+
+Zamore PD, Barton MK, Bartel DP. MicroRNA control of PHABULOSA in leaf development: importance of pairing to the microRNA 5 region. EMBO J, 2004, 23(16): 3356–3364. [DOI]   
+[64] Armenta-Medina A, Lepe-Soltero D, Xiang DQ, Datla R, Abreu-Goodger C, Gillmor CS. Arabidopsis thaliana miRNAs promote embryo pattern formation beginning in the zygote. Dev Biol, 2017, 431(2): 145–151. [DOI]   
+[65] Zhao YS, Wang SY, Wu WY, Li L, Jiang T, Zheng BL. Clearance of maternal barriers by paternal miR159 to initiate endosperm nuclear division in Arabidopsis. Nat Commun, 2018, 9(1): 5011. [DOI]   
+[66] Nikovics K, Blein T, Peaucelle A, Ishida T, Morin H, Aida M, Laufs P. The balance between the MIR164A and CUC2 genes controls leaf margin serration in Arabidopsis. Plant Cell, 2006, 18(11): 2929–2945. [DOI]   
+[67] Rodriguez RE, Mecchia MA, Debernardi JM, Schommer C, Weigel D, Palatnik JF. Control of cell proliferation in Arabidopsis thaliana by microRNA miR396. Development, 2010, 137(1): 103–112. [DOI]   
+[68] Chen XM. A microRNA as a translational repressor of APETALA2 in Arabidopsis flower development. Science, 2004, 303(5666): 2022–2025. [DOI]   
+[69] Knauer S, Holt AL, Rubio-Somoza I, Tucker EJ, Hinze A, Pisch M, Javelle M, Timmermans MC, Tucker MR, Laux T. A protodermal miR394 signal defines a region of stem cell competence in the Arabidopsis shoot meristem. Dev Cell, 2013, 24(2): 125–132. [DOI]   
+[70] Song JB, Huang SQ, Dalmay T, Yang ZM. Regulation of leaf morphology by microRNA394 and its target LEAF CURLING RESPONSIVENESS. Plant Cell Physiol, 2012, 53(9): 1669. [DOI]   
+[71] Liu LY, Hu BB, Guo SY, Xue ZH, Wang T, Zhang C. miR394 and LCR cooperate with TPL to regulate AM initiation. Nat Commun, 2024, 15(1): 10156. [DOI]   
+[72] Chitwood DH, Nogueira FTS, Howell MD, Montgomery TA, Carrington JC, Timmermans MCP. Pattern formation via small RNA mobility. Genes Dev, 2009, 23(5): 549–554. [DOI]   
+[73] Nogueira FT, Timmermans MC. An interplay between small regulatory RNAs patterns leaves. Plant Signal Behav, 2007, 2(6): 519–521. [DOI]   
+[74] Wu G, Park MY, Conway SR, Wang JW, Weigel D, Poethig RS. The sequential action of miR156 and miR172 regulates developmental timing in Arabidopsis. Cell, 2009, 138(4): 750–759. [DOI]   
+[75] Chuck G, Meeley R, Irish E, Sakai H, Hake S. The maize tasselseed4 microRNA controls sex determination and
+
+meristem cell fate by targeting Tasselseed6/indeterminate spikelet1. Nat Genet, 2007, 39(12): 1517–1521. [DOI]   
+[76] Xie KB, Wu CQ, Xiong LZ. Genomic organization, differential expression, and interaction of SQUAMOSA promoter-binding-like transcription factors and microRNA156 in rice. Plant Physiology, 2006, 142(1): 280–293. [DOI]   
+[77] Aukerman MJ, Sakai H. Regulation of flowering time and floral organ identity by a microRNA and its APETALA2-like target genes. Plant Cell, 2003, 15(11): 2730–2741. [DOI]   
+[78] Jung JH, Seo YH, Seo PJ, Reyes JL, Yun J, Chua NH, Park CM. The GIGANTEA-regulated microRNA172 mediates photoperiodic flowering independent of CONSTANS in Arabidopsis. Plant Cell, 2007, 19(9): 2736–2748. [DOI]   
+[79] Cheng YJ, Shang GD, Xu ZG, Yu S, Wu LY, Zhai D, Tian SL, Gao J, Wang L, Wang JW. Cell division in the shoot apical meristem is a trigger for miR156 decline and vegetative phase transition in Arabidopsis. Proc Natl Acad Sci USA, 2021, 118(46): e2115667118. [DOI]   
+[80] Liu YR, Wang KX, Li DY, Yan JP, Zhang WJ. Enhanced cold tolerance and tillering in switchgrass (Panicum virgatum L.) by heterologous expression of Osa-miR393a. Plant Cell Physiol, 2017, 58(12): 2226–2240. [DOI]   
+[81] Navarro L, Dunoyer P, Jay F, Arnold B, Dharmasiri N, Estelle M, Voinnet O, Jones JDG. A plant miRNA contributes to antibacterial resistance by repressing auxin signaling. Science, 2006, 312(5772): 436–439. [DOI]   
+[82] Guan QM, Lu XY, Zeng HT, Zhang YY, Zhu JH. Heat stress induction of miR398 triggers a regulatory loop that is critical for thermotolerance in Arabidopsis. Plant J, 2013, 74(5): 840–851. [DOI]   
+[83] Li WX, Oono Y, Zhu JH, He XJ, Wu JM, Iida K, Lu XY, Cui XP, Jin HL, Zhu JK. The Arabidopsis NFYA5 transcription factor is regulated transcriptionally and posttranscriptionally to promote drought resistance. Plant Cell, 2008, 20(8): 2238–2251. [DOI]   
+[84] Kinoshita N, Wang H, Kasahara H, Liu J, Macpherson C, Machida Y, Kamiya Y, Hannah MA, Chua NH. IAA-Ala Resistant3, an evolutionarily conserved target of miR167, mediates Arabidopsis root architecture changes during high osmotic stress. Plant Cell, 2012, 24(9): 3590–3602. [DOI]   
+[85] Mirouze M, Reinders J, Bucher E, Nishimura T, Schneeberger K, Ossowski S, Cao J, Weigel D, Paszkowski J, Mathieu O. Selective epigenetic control of
+
+retrotransposition in Arabidopsis. Nature, 2009, 461(7262): 427–430. [DOI]   
+[86] Vu TM, Nakamura M, Calarco JP, Susaki D, Lim PQ, Kinoshita T, Higashiyama T, Martienssen RA, Berger F. RNA-directed DNA methylation regulates parental genomic imprinting at several loci in Arabidopsis. Development, 2013, 140(14): 2953–2960. [DOI]   
+[87] Soppe WJ, Jacobsen SE, Alonso-Blanco C, Jackson JP, Kakutani T, Koornneef M, Peeters AJ. The late flowering phenotype of fwa mutants is caused by gain-of-function epigenetic alleles of a homeodomain gene. Mol Cell, 2000, 6(4): 791–802. [DOI]   
+[88] Xu L, Yuan K, Yuan M, Meng XB, Chen M, Wu JG, Li JY, Qi YJ. Regulation of rice tillering by RNA-directed DNA methylation at miniature inverted-repeat transposable elements. Mol Plant, 2020, 13(6): 851–863. [DOI]   
+[89] Wei LY, Gu LF, Song XW, Cui XK, Lu ZK, Zhou M, Wang LL, Hu FY, Zhai JX, Meyers BC, Cao XF. Dicer-like 3 produces transposable element-associated 24-nt siRNAs that control agricultural traits in rice. Proc Natl Acad Sci USA, 2014, 111(10): 3877–3882. [DOI]   
+[90] Chakraborty T, Trujillo JT, Kendall T, Mosher RA. A null allele of the pol IV second subunit impacts stature and reproductive development in Oryza sativa. Plant J, 2022, 111(3): 748–755. [DOI]   
+[91] Erhard KF Jr, Stonaker JL, Parkinson SE, Lim JP, Hale CJ, Hollick JB. RNA polymerase IV functions in paramutation in Zea mays. Science, 2009, 323(5918): 1201–1205. [DOI]   
+[92] Parkinson SE, Gross SM, Hollick JB. Maize sex determination and abaxial leaf fates are canalized by a factor that maintains repressed epigenetic states. Dev Biol, 2007, 308(2): 462–473. [DOI]   
+[93] Feng YX, Wang YM, Wang T, Liu LT. NUCLEAR RNA POLYMERASE D1 is essential for tomato embryogenesis and desiccation tolerance in seeds. Cell Rep, 2025, 44(3): 115345. [DOI]   
+[94] Wang ZX, Butel N, Santos-González J, Borges F, Yi J, Martienssen RA, Martinez G, Köhler C. Polymerase IV plays a crucial role in pollen development in Capsella. Plant Cell, 2020, 32(4): 950–966. [DOI]   
+[95] Grover JW, Kendall T, Baten A, Burgess D, Freeling M, King GJ, Mosher RA. Maternal components of RNA-directed DNA methylation are required for seed development in Brassica rapa. Plant J, 2018, 94(4): 575–582. [DOI]   
+[96] Wang ZX, Butel N, Santos-González J, Simon L, Wärdig C, Köhler C. Transgenerational effect of mutants in the RNA-directed DNA methylation pathway on the
+
+triploid block in Arabidopsis. Genome Biol, 2021, 22(1): 141. [DOI]   
+[97] Satyaki PRV, Gehring M. Paternally acting canonical RNA-directed DNA methylation pathway genes sensitize Arabidopsis endosperm to paternal genome dosage. Plant Cell, 2019, 31(7): 1563–1578. [DOI]   
+[98] Gouil Q, Baulcombe DC. DNA methylation signatures of the plant chromomethyltransferases. PLoS Genet, 2016, 12(12): e1006526. [DOI]   
+[99] Lin JS, Lin CC, Lin HH, Chen YC, Jeng ST. MicroR828 regulates lignin and $H_{2}O_{2}$ accumulation in sweet potato on wounding. New Phytol, 2012, 196(2): 427–440. [DOI]   
+[100] Zhang Y, Xia R, Kuang HH, Meyers BC. The diversification of plant NBS-LRR defense genes directs the evolution of microRNAs that target them. Mol Biol Evol, 2016, 33(10): 2692–2705. [DOI]   
+[101] Sosa-Valencia G, Palomar M, Covarrubias AA, Reyes JL. The legume miR1514a modulates a NAC transcription factor transcript to trigger phasiRNA formation in response to drought. J Exp Bot, 2017, 68(8): 2013–2026. [DOI]   
+[102] Xie JB, Yang XH, Song YP, Du QZ, Li Y, Chen JH, Zhang DQ. Adaptive evolution and functional innovation of Populus-specific recently evolved microRNAs. New Phytol, 2017, 213(1): 206–219. [DOI]   
+[103] Yadava P, Tamim S, Zhang H, Teng C, Zhou X, Meyers BC, Walbot V. Transgenerational conditioned male fertility of HD-ZIP IV transcription factor mutant ocl4: impact on 21-nt phasiRNA accumulation in pre-meiotic maize anthers. Plant Reprod, 2021, 34(2): 117–129. [DOI]   
+[104] Komiya R, Ohyanagi H, Niihama M, Watanabe T, Nakano M, Kurata N, Nonomura KI. Rice germline-specific Argonaute MEL1 protein binds to phasiRNAs generated from more than 700 lincRNAs. Plant J, 2014, 78(3): 385–397. [DOI]   
+[105] Ding JH, Lu Q, Ouyang YD, Mao HL, Zhang PB, Yao JL, Xu CG, Li XH, Xiao JH, Zhang QF. A long noncoding RNA regulates photoperiod-sensitive male sterility, an essential component of hybrid rice. Proc Natl Acad Sci USA, 2012, 109(7): 2654–2659. [DOI]   
+[106] Nan GL, Zhai JX, Arikit S, Morrow D, Fernandes J, Mai L, Nguyen N, Meyers BC, Walbot V. MS23, a master basic helix-loop-helix factor, regulates the specification and development of the tapetum in maize. Development, 2017, 144(1): 163–172. [DOI]   
+[107] Ono S, Liu H, Tsuda K, Fukai E, Tanaka K, Sasaki T, Nonomura KI. EAT1 transcription factor, a non-cell-autonomous regulator of pollen production, activates meiotic small RNA biogenesis in rice anther tapetum. PLoS Genet, 2018, 14(2): e1007238. [DOI]
+
+[108] You CJ, He WR, Hang RL, Zhang CJ, Cao XF, Guo HW, Chen XM, Cui J, Mo BX. FIERY1 promotes microRNA accumulation by suppressing rRNA-derived small interfering RNAs in Arabidopsis. Nat Commun, 2019, 10(1): 4424. [DOI]   
+[109] Gu HQ, Lian B, Yuan YX, Kong C, Li Y, Liu C, Qi YJ. A 5' tRNA-Ala-derived small RNA regulates anti-fungal defense in plants. Sci China Life Sci, 2022, 65(1): 1–15. [DOI]   
+[110] Liu MM, Ba ZQ, Costa-Nunes P, Wei W, Li LX, Kong F, Li Y, Chai JJ, Pontes O, Qi YJ. IDN2 interacts with RPA and facilitates DNA double-strand break repair by homologous recombination in Arabidopsis. Plant Cell, 2017, 29(3): 589–599. [DOI]   
+[111] Ba ZQ, Qi YJ. Small RNAs: emerging key players in DNA double-strand break repair. Sci China Life Sci, 2013, 56(10): 933–936. [DOI]   
+[112] Jiang JM, Ou XL, Han DL, He ZP, Liu S, Mao N, Zhang ZH, Peng CL, Lai JB, Yang CW. A diRNA–protein scaffold module mediates SMC5/6 recruitment in plant DNA repair. Plant Cell, 2022, 34(10): 3899–3914. [DOI]   
+[113] Ma X, Liu C, Cao X. Plant transfer RNA-derived fragments: biogenesis and functions. J Integr Plant Biol, 2021, 63(8): 1399–1409. [DOI]   
+[114] Ren B, Wang XT, Duan JB, Ma JX. Rhizobial tRNA-derived small RNAs are signal molecules regulating plant nodulation. Science, 2019, 365(6456): 919–922. [DOI]   
+[115] Fultz D, Choudury SG, Slotkin RK. Silencing of active transposable elements in plants. Curr Opin Plant Biol, 2015, 27: 67–76. [DOI]   
+[116] Kim EY, Wang L, Lei Z, Li H, Fan WW, Cho J. Ribosome stalling and SGS3 phase separation prime the epigenetic silencing of transposons. Nat Plants, 2021, 7(3): 303–309. [DOI]   
+[117] Creasey KM, Zhai JX, Borges F, Van Ex F, Regulski M, Meyers BC, Martienssen RA. miRNAs trigger widespread epigenetically activated siRNAs from transposons in Arabidopsis. Nature, 2014, 508(7496): 411–415. [DOI]   
+[118] Martinez G, Wolff P, Wang ZX, Moreno-Romero J, Santos-González J, Conze LL, DeFraia C, Slotkin RK, Köhler C. Paternal easiRNAs regulate parental genome dosage in Arabidopsis. Nat Genet, 2018, 50(2): 193–198. [DOI]   
+[119] Martínez G, Panda K, Köhler C, Slotkin RK. Silencing in sperm cells is directed by RNA movement from the surrounding nurse cell. Nat Plants, 2016, 2: 16030. [DOI]   
+[120] Wu WY, Li L, Zhao Y, Zhao YS, Jiang T, McCormick S, Zheng BL. Heterochromatic silencing is reinforced by ARID1-mediated small RNA movement in Arabidopsis
+
+pollen. New Phytol, 2020, 229(6): 3269–3280. [DOI]   
+[121] Herridge RP, Dolata J, Migliori V, de Santis Alves C, Borges F, Schorn AJ, van Ex F, Lin A, Bajczyk M, Parent JS, Leonardi T, Hendrick A, Kouzarides T, Martienssen RA. Pseudouridine guides germline small RNA transport and epigenetic inheritance. Nat Struct Mol Biol, 2025, 32(2): 277–286. [DOI]   
+[122] Borges F, Parent JS, van Ex F, Wolff P, Martinez G, Köhler C, Martienssen RA. Transposon-derived small RNAs triggered by miR845 mediate genome dosage response in Arabidopsis. Nat Genet, 2018, 50(2): 186–192. [DOI]   
+[123] Pachamuthu K, Simon M, Borges F. Targeted suppression of siRNA biogenesis in Arabidopsis pollen promotes triploid seed viability. Nat Commun, 2024, 15(1): 4612. [DOI]   
+[124] Parent JS, Cahn J, Herridge RP, Grimanelli D, Martienssen RA. Small RNAs guide histone methylation in Arabidopsis embryos. Genes Dev, 2021, 35(11–12): 841–846. [DOI]   
+[125] Rabuma T, Sanan-Mishra N. Artificial miRNAs and target-mimics as potential tools for crop improvement. Physiol Mol Biol Plants, 2025, 31(1): 67–91. [DOI]   
+[126] Sharma D, Vanshika, Kaur A, Manchanda P. miRNA-based Genetic Engineering for Crop Improvement and Production of Functional Foods. Cham: Springer International Publishing, 2022, 401–429. [DOI]   
+[127] Mitter N, Worrall EA, Robinson KE, Li P, Jain RG, Taochy C, Fletcher SJ, Carroll BJ, Lu GQM, Xu ZP. Clay nanosheets for topical delivery of RNAi for sustained protection against plant viruses. Nat Plants, 2017, 3: 16207. [DOI]   
+[128] Zhang H, Goh NS, Wang JW, Pinals RL, González-Grandío E, Demirer GS, Butrus S, Fakra SC, Del Rio Flores A, Zhai R, Zhao B, Park SJ, Landry MP. Nanoparticle cellular internalization is not required for RNA delivery to mature plant leaves. Nat Nanotechnol, 2022, 17(2): 197–205. [DOI]   
+[129] Schwab R, Ossowski S, Riester M, Warthmann N, Weigel D. Highly specific gene silencing by artificial microRNAs in Arabidopsis. Plant Cell, 2006, 18(5): 1121–1133. [DOI]   
+[130] Franco-Zorrilla JM, Valli A, Todesco M, Mateos I, Puga MI, Rubio-Somoza I, Leyva A, Weigel D, García JA, Paz-Ares J. Target mimicry provides a new mechanism for regulation of microRNA activity. Nat Genet, 2007, 39(8): 1033–1037. [DOI]   
+[131] Todesco M, Rubio-Somoza I, Paz-Ares J, Weigel D. A collection of target mimics for comprehensive analysis
+
+of microRNA function in Arabidopsis thaliana. PLoS Genet, 2010, 6(7): e1001031. [DOI]   
+[132] Liu ZP, Wang XY, Chen X, Shi GQ, Bai QQ, Xiao K. TaMIR1139: a wheat miRNA responsive to Pi-starvation, acts a critical mediator in modulating plant tolerance to Pi deprivation. Plant Cell Rep, 2018, 37(9): 1293–1309. [DOI]   
+[133] Zhang YC, Yu Y, Wang CY, Li ZY, Liu Q, Xu J, Liao JY, Wang XJ, Qu LH, Chen F, Xin PY, Yan CY, Chu JF, Li HQ, Chen YQ. Overexpression of microRNA OsmiR397 improves rice yield by increasing grain size and promoting panicle branching. Nat Biotechnol, 2013, 31(9): 848–852. [DOI]   
+[134] Liu P, Zhang XX, Zhang F, Xu MZ, Ye ZX, Wang K, Liu S, Han XL, Cheng Y, Zhong KL, Zhang TY, Li LZ, Ma YZ, Chen M, Chen JP, Yang J. A virus-derived siRNA activates plant immunity by interfering with ROS scavenging. Mol Plant, 2021, 14(7): 1088–1103. [DOI]   
+[135] Yan J, Gu YY, Jia XY, Kang WJ, Pan SJ, Tang XQ, Chen XM, Tang GL. Effective small RNA destruction by the expression of a short tandem target mimic in Arabidopsis. Plant Cell, 2012, 24(2): 415–427. [DOI]   
+[136] Mei J, Jiang N, Ren GD. The F-box protein HAWAIIAN SKIRT is required for mimicry target-induced microRNA degradation in Arabidopsis. J Integr Plant Biol, 2019, 61(11): 1121–1127. [DOI]   
+[137] Guo MW, Fan YH, Ren GD. Molecular basis of microRNA stability and degradation in plants. Hereditas (Beijing), 2025, doi:10.16288/j.yczz.25-030.
+郭梦玮，樊友宏，任国栋. 植物 miRNA 稳定性与降解的分子基础. 遗传, 2025, doi:10.16288/j.yczz.25-030. [DOI]   
+[138] Jian C, Hao PG, Hao CY, Liu SJ, Mao HD, Song QL, Zhou YB, Yin SN, Hou J, Zhang WJ, Zhao HX, Zhang XY, Li T. The miR319/TaGAMYB3 module regulates plant architecture and improves grain yield in common wheat (Triticum aestivum). New Phytol, 2022, 235(4): 1515–1530. [DOI]   
+[139] Zhang JS, Zhang H, Srivastava AK, Pan YJ, Bai JJ, Fang JJ, Shi HZ, Zhu JK. Knockdown of rice MicroRNA166 confers drought resistance by causing leaf rolling and altering stem xylem development. Plant Physiol, 2018, 176(3): 2082–2094. [DOI]   
+[140] Canto-Pastor A, Santos BAMC, Valli AA, Summers W, Schornack S, Baulcombe DC. Enhanced resistance to bacterial and oomycete pathogens by short tandem target mimic RNAs in tomato. Proc Natl Acad Sci USA, 2019, 116(7): 2755–2760. [DOI]
+
+[141] Zhao JH, Liu QY, Xie ZM, Guo HS. Exploring the challenges of RNAi-based strategies for crop protection. Adv Biotechnol (Singap), 2024, 2(3): 23. [DOI]   
+[142] Qiao LL, Lan C, Capriotti L, Ah-Fong A, Nino Sanchez J, Hamby R, Heller J, Zhao HW, Glass NL, Judelson HS, Mezzetti B, Niu DD, Jin HL. Spray-induced gene silencing for disease control is dependent on the efficiency of pathogen RNA uptake. Plant Biotechnol J, 2021, 19(9): 1756–1768. [DOI]   
+[143] Yu N, Christiaens O, Liu JS, Niu JZ, Cappelle K, Caccia S, Huvenne H, Smagghe G. Delivery of dsRNA for RNAi in insects: an overview and future directions. Insect Sci, 2013, 20(1): 4–14. [DOI]   
+[144] Rodrigues TB, Mishra SK, Sridharan K, Barnes ER, Alyokhin A, Tuttle R, Kokulapalan W, Garby D, Skizim NJ, Tang YW, Manley B, Aulisa L, Flannagan RD, Cobb C, Narva KE. First sprayable Double-stranded RNA-based biopesticide product targets proteasome subunit beta type-5 in Colorado potato beetle (Leptinotarsa decemlineata). Front Plant Sci, 2021, 12: 728652. [DOI]   
+[145] Blake WJ, Cunningham DS, Maceachran D, Abshire JR, Gupta M. Cell-free production of ribonucleic acid: EP4293104A3. 2024-04-24. [DOI]   
+[146] Fang RX. Microbe-induced gene silencing explores interspecies RNAi and opens up possibilities of crop protection. Sci China Life Sci, 2024, 67(3): 626–628. [DOI]   
+[147] Mujtaba M, Wang DP, Carvalho LB, Oliveira JL, do Espirito Santo Pereira A, Sharif R, Jogaiah S, Paidi MK, Wang LC, Ali Q, Fraceto LF. Nanocarrier-mediated delivery of miRNA, RNAi, and CRISPR-Cas for plant protection: current trends and future directions. ACS Agric Sci Technol, 2021, 1(5): 417–435. [DOI]   
+[148] Worrall EA, Bravo-Cazar A, Nilon AT, Fletcher SJ, Robinson KE, Carr JP, Mitter N. Exogenous application of RNAi-inducing Double-stranded RNA inhibits aphid-mediated transmission of a plant virus. Front Plant Sci, 2019, 10: 265. [DOI]   
+[149] Demirer GS, Zhang H, Goh NS, Pinals RL, Chang R, Landry MP. Carbon nanocarriers deliver siRNA to intact plant cells for efficient gene knockdown. Sci Adv, 2020, 6(26): eaaz0495. [DOI]   
+[150] Zhang H, Zhang HL, Demirer GS, González-Grandío E, Fan CH, Landry MP. Engineering DNA nanostructures for siRNA delivery in plants. Nat Protoc, 2020, 15(9): 3064–3087. [DOI]

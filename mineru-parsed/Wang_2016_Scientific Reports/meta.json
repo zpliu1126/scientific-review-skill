@@ -1,0 +1,13 @@
+{
+  "original_pdf": "papers\\smallRNA\\Wang_2016_Scientific Reports.pdf",
+  "source_pdf": "mineru-parsed\\Wang_2016_Scientific Reports\\source.pdf",
+  "data_id": "Wang_2016_Scientific_Reports",
+  "batch_id": "3040cf5c-2118-4d46-ad21-30db195fef99",
+  "state": "done",
+  "full_zip_url": "https://cdn-mineru.openxlab.org.cn/result/2026-06-07/ec388838-3c99-4d8c-abb0-43931ab1594a.zip",
+  "parsed_time": "2026-06-07T05:09:35.579930+00:00",
+  "model_version": "vlm",
+  "language": "en",
+  "full_md_zip_member": "full.md",
+  "content_list_zip_member": "30f25543-cecf-4958-8742-88926b379530_content_list.json"
+}

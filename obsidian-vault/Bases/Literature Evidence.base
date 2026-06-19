@@ -1,0 +1,47 @@
+filters:
+  and:
+    - file.hasTag("topic/plant-small-rna")
+    - file.ext == "md"
+properties:
+  title:
+    displayName: Title
+  year:
+    displayName: Year
+  paper_type:
+    displayName: Paper Type
+  status:
+    displayName: Status
+  doi:
+    displayName: DOI
+views:
+  - type: table
+    name: Literature Notes
+    filters:
+      and:
+        - file.hasTag("literature/review")
+    order:
+      - file.name
+      - title
+      - year
+      - paper_type
+      - doi
+      - status
+  - type: table
+    name: Evidence Tables
+    filters:
+      and:
+        - file.hasTag("evidence/claim-table")
+    order:
+      - file.name
+      - source_note
+      - paper_type
+      - status
+  - type: table
+    name: Concept Notes
+    filters:
+      and:
+        - file.hasTag("concept")
+    order:
+      - file.name
+      - title
+      - status

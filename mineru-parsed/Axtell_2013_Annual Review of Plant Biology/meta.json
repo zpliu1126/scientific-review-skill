@@ -1,0 +1,13 @@
+{
+  "original_pdf": "papers\\smallRNA\\Axtell_2013_Annual Review of Plant Biology.pdf",
+  "source_pdf": "mineru-parsed\\Axtell_2013_Annual Review of Plant Biology\\source.pdf",
+  "data_id": "Axtell_2013_Annual_Review_of_Plant_Biology",
+  "batch_id": "2ceac761-b382-4a6c-9381-0adc651790be",
+  "state": "done",
+  "full_zip_url": "https://cdn-mineru.openxlab.org.cn/result/2026-06-07/61b4a696-72e7-4ac8-87a9-ea7afdebbbaa.zip",
+  "parsed_time": "2026-06-07T05:05:33.065840+00:00",
+  "model_version": "vlm",
+  "language": "en",
+  "full_md_zip_member": "full.md",
+  "content_list_zip_member": "1df3a32a-465c-4f26-a79a-7fa8fef6237e_content_list.json"
+}

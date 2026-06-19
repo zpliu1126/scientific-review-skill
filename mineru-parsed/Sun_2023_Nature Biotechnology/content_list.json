@@ -1,0 +1,970 @@
+[
+    {
+        "type": "text",
+        "text": "The role of transposon inverted repeats in balancing drought tolerance and yieldrelated traits in maize ",
+        "text_level": 1,
+        "bbox": [
+            62,
+            150,
+            885,
+            258
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the format provided by the authors and unedited ",
+        "bbox": [
+            60,
+            291,
+            250,
+            318
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "nature biotechnology ",
+        "bbox": [
+            62,
+            48,
+            342,
+            75
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Article ",
+        "bbox": [
+            62,
+            116,
+            122,
+            131
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "https://doi.org/10.1038/s41587-022-01470-4 ",
+        "bbox": [
+            655,
+            118,
+            946,
+            132
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Supplementary Results ",
+        "text_level": 1,
+        "bbox": [
+            126,
+            95,
+            356,
+            112
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Generating a dynamic sRNAome and transcriptome map of a global maize diversity panel ",
+        "text_level": 1,
+        "bbox": [
+            124,
+            124,
+            870,
+            165
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "RNA silencing is a conserved gene regulatory mechanism operating in most eukaryotes, and is mediated by small (18- to 26-nt) non-coding RNAs complementary to their target RNAs. In plants, these small RNAs (sRNAs) can be divided into microRNAs (miRNAs, derived from hairpin RNAs) and short interfering RNAs (siRNAs, generated from double-stranded RNAs) 40 . To gain more information on the maize pan-sRNAome landscape, we performed a large-scale sRNA sequencing (sRNA-seq) experiment on a maize association panel consisting of 338 natural accessions, which are the major materials of a previously published group of maize lines collected worldwide and exhibiting broad genetic diversity 31 . In total, we constructed 676 libraries for sRNA-seq from total RNAs extracted from all 338 accessions grown under well-watered (WW) and drought-stressed (DS) conditions. Sequencing generated \\~20 million (M) reads per library on average. We then implemented a series of bioinformatics steps for quality-control and sRNA identification (Methods), resulting in \\~6.62 billion reads of 18\\~26-nt sRNAs and \\~9.8 M reads per accession on average that could be mapped to the B73 V4 reference genome (Supplementary Results Table 1) 17 . Among these sRNAs, 21-, 22- and 24- nt sRNAs had the highest expression levels (according to the number of redundant sRNA reads), while 24-nt sRNAs had the largest numbers of sRNA species (according to the distinct sRNA reads) and the highest ratios of uniquely mapped sRNAs. Of these distinct sRNAs, 258 (\\~0.0001%) were expressed at more than $1 0 ^ { 6 }$ reads across the 676 libraries and contributed 37.24% of total expression, while most sRNAs in the remaining 62.76% were expressed at less than $1 0 ^ { 6 }$ reads. Based on the analyses of maize accession CIMBL55, we determined that the distinct sRNAs were highly reproducibly identified in three different biological samples under both WW and DS conditions (Supplementary Results Fig. 1), indicating the reproducibility and robustness of our experiments and analyses. ",
+        "bbox": [
+            122,
+            171,
+            873,
+            769
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/d2526620b70e1d623673e4efa7ce6ee96a4ca7b1f5e5d2ed0d2605f1c904f1fa.jpg",
+        "table_caption": [
+            "Supplementary Results Table 1. Summary of sRNA reads obtained from 676 sRNA-seq libraries. "
+        ],
+        "table_footnote": [
+            "a Reads after quality control. "
+        ],
+        "table_body": "<table><tr><td></td><td>Quality filteringa</td><td>Size filteringb</td><td>rRNA etc. filteringc</td><td>Genome mappingd</td><td>Totale</td></tr><tr><td>Redundant</td><td>20,578,605</td><td>18,488,387</td><td>13,698,627</td><td>9,799,798</td><td>6,624,663,247</td></tr><tr><td>Distinct</td><td>4,269,850</td><td>4,015,113</td><td>3,815,845</td><td>2,142,183</td><td>245,993,170</td></tr></table>",
+        "bbox": [
+            126,
+            806,
+            831,
+            895
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "aside_text",
+        "text": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32 ",
+        "bbox": [
+            82,
+            97,
+            102,
+            910
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "1 ",
+        "bbox": [
+            492,
+            913,
+            504,
+            923
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "b Reads 18-26 nt in length. ",
+            "c Reads after eliminating those matching tRNAs, rRNAs, snRNAs, and snoRNAs. ",
+            "d Reads mapped to the B73 reference genome with no mismatch allowed. ",
+            "e The total reads of 676 libraries used to identify s- and sc-traits. "
+        ],
+        "bbox": [
+            124,
+            85,
+            759,
+            159
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "chart",
+        "img_path": "images/940c438571f6a2192bfc0527095926a6a7ff480bae55d9cd077600dfac958dad.jpg",
+        "content": "| Group | CIMBL55 WW rep1 | CIMBL55 WW rep2 | CIMBL55 WW rep3 | CIMBL55 DS rep1 | CIMBL55 DS rep2 | CIMBL55 DS rep3 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Row 1 | 0.97 | 0.97 | 0.93 | 0.89 | 0.93 | 0.95 |\n| Row 2 | 0.97 | 0.98 | 0.98 | 0.89 | 0.93 | 0.95 |\n| Row 3 | 0.97 | 0.98 | 0.93 | 0.89 | 0.93 | 0.95 |\nThe data is presented in a grid format with rows and columns labeled 'CIMBL55' and 'DS'. The scatter points are represented as dots connected by lines, and the numerical values above each dot indicate the correlation coefficient.",
+        "chart_caption": [
+            "Supplementary Results Fig. 1 | Correlations between distinct sRNA species detected in three biological repeats (rep1-3) for accession CIMBL55 grown under WW or DS conditions. High correlations (R>=0.89) among the repeats for each growth condition highlight the reproducibility of the treatments and sRNA-seq of this study. "
+        ],
+        "chart_footnote": [],
+        "sub_type": "scatter",
+        "bbox": [
+            263,
+            172,
+            732,
+            338
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "chart",
+        "img_path": "images/c9283b2737815b70fa6c183f20a0c2ed1c0dcd34432eb35c397b7d11baa7b0e1.jpg",
+        "content": "| Reads cover | Genome coverage (%) | Gap number (x10⁷) |\n| ----------- | ------------------- | ----------------- |\n| 0           | 100                 | 8                 |\n| 10          | 75                  | 14                |\n| 20          | 70                  | 15                |\n| 30          | 68                  | 15.5              |\n| 40          | 66                  | 15.5              |\n| 50          | 65                  | 15.5              |\n| 60          | 64                  | 15.5              |\n| 70          | 63                  | 15.5              |\n| 80          | 62                  | 15.5              |\n| 90          | 61                  | 15.5              |\n| 100         | 60                  | 15.5              |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "line",
+        "bbox": [
+            221,
+            432,
+            472,
+            653
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "chart",
+        "img_path": "images/14d0c0319e9f599abcf56d813ec3dfdb3f2584d99c1c3d733ebeb1f013e289fc.jpg",
+        "content": "| Gap length threshold (bp) | Genome coverage (%) | Cluster number (bp) |\n| ------------------------- | ------------------- | ------------------- |\n| 0                         | 75                  | 10^4                |\n| 100                       | 85                  | 10^6                |\n| 200                       | 90                  | 10^7                |\n| 300                       | 92                  | 10^6                |\n| 400                       | 93                  | 10^5                |\n| 500                       | 94                  | 10^4                |",
+        "chart_caption": [
+            "Supplementary Results Fig. 2 | a. The genomic coverage by sRNAs with different cutoffs (upper panel), and the genomic gaps not covered by sRNAs with different cutoffs (lower panel). b. The amounts of genomic gaps with different length cutoff (upper panel), and the amount and average size of sRNA clusters with different gap length cutoff (lower panel). The vertical dashed gray lines in (a) and (b) indicate the various cutoffs. "
+        ],
+        "chart_footnote": [],
+        "sub_type": "bar_line",
+        "bbox": [
+            502,
+            432,
+            778,
+            653
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Given that many sRNAs may be derived from the same transcript, and that their expression levels will thus be highly correlated 34 , sRNA clusters were generated to evaluate sRNA expression. We defined that a genomic region expressed an sRNA cluster if this region was covered by at least 10 sRNA reads and the gap length between two adjacent sRNAs was no larger than 200 bp (Methods, Supplementary Results Fig. 2a, b, vertical dashed lines). Bioinformatics analyses with stringent filters identified 192,852 sRNAs across the 676 libraries (7.77% of total sRNAs) and 359,533 sRNA clusters with an average length of 5,392 bp, which were treated as sRNA traits (s-traits) and sRNA cluster traits (sc-traits), respectively (Methods, Supplementary Results Table 1). ",
+        "bbox": [
+            122,
+            769,
+            873,
+            903
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "aside_text",
+        "text": "33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53 ",
+        "bbox": [
+            77,
+            86,
+            102,
+            900
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "2 ",
+        "bbox": [
+            492,
+            913,
+            504,
+            923
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            122,
+            87,
+            870,
+            175
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "We also performed transcriptome deep sequencing (mRNA-seq) of 394 libraries generated from RNAs extracted from 197 maize accessions (a core germplasm of the populations used for sRNA-seq) grown under WW and DS conditions. In total, 1323.95 Gb and 1340.47 Gb clean data were generated by mRNA-seq under WW and DS conditions, respectively (Supplementary Results Table 2). For each library, an average of 44.8 M (WW) and 45.4 M (DS) clean reads mapped to the maize B73 V4 genome for gene expression calculation. Expression of 12,554 genes showed significant differences $( \\mathsf { p } < 2 . 2 5 \\times 1 0 ^ { - 7 }$ , 0.01 / n, paired t-test) between WW and DS conditions, among which 2,914 genes had a change in expression over 2-fold $( \\mathsf { I o g } 2 \\mathsf { I F C } | \\geq 1 )$ between WW and DS conditions. Based on the expression of sRNAs and genes, we explored the synergistic regulatory networks involving sRNAs and protein-coding genes associated with maize drought responses. ",
+        "bbox": [
+            122,
+            180,
+            873,
+            454
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/88bba58a1f503bc0dd2ce930cda44b7fb71c072f824dad37ba8c20437d182524.jpg",
+        "table_caption": [
+            "Supplementary Results Table 2. Summary of RNA reads obtained from 394 mRNA-seq libraries. "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td>Total raw data (Gb)</td><td>Total clean data (Gb)</td><td>Q30 bases rate (%)</td><td>Clean reads rate (%)</td><td>Average clean reads number</td></tr><tr><td>W</td><td>1351.38</td><td>1323.95</td><td> $92.29 \\pm 1.52$ </td><td> $97.97 \\pm 0.62$ </td><td>44,803,760</td></tr><tr><td>DS</td><td>1364.31</td><td>1340.47</td><td> $92.26 \\pm 0.75$ </td><td> $98.25 \\pm 0.25$ </td><td>45,362,676</td></tr></table>",
+        "bbox": [
+            124,
+            508,
+            828,
+            608
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "eGWAS of the sRNAome and transcriptome ",
+        "text_level": 1,
+        "bbox": [
+            124,
+            619,
+            549,
+            637
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Previously, 1.25 M SNP markers (B73 V2 genome) of the maize accessions used in this study were identified 31 . eGWAS on drought-related environment-specific straits, sc-traits, and mRNAs using these SNPs (\\~1.23 M remaining after conversion to their B73 V4 genome coordinates) were implemented to map eQTLs that controlled environmental adaptation (Supplementary Results Fig. 3a). We thus identified a large number of environment-specific eQTLs, with an average eQTL size of \\~7.6 kb. Most drought-responsive s-traits (1,695, 99.6%) and sc-traits (4,147, 99.9%) had only one associated seQTL (Supplementary Results Fig. 3b, c). In this study, an eQTL was defined as a cis eQTL when the distance between the eQTL and the location of its target expression trait was less than 20 kb. All other cases (> 20 kb) were considered trans eQTLs. According to this criterion, the majority of seQTLs (86.8%) regulating sc-traits were trans seQTLs (Supplementary Results Fig. 3d). To investigate the cis- and trans-seQTLs for sRNAs, we classified the seQTLs thus: if the distance between an seQTL and its closest sRNA is no more than 20 kb (<=20 kb), then this seQTL is a cis-seQTL; otherwise it is a trans-seQTL. Based on this standard, we determined that 34% of the total seQTLs under WW condition and 52.5% of total seQTLs under DS condition were cis-seQTLs, and the remaining were trans-seQTLs. In addition, most seQTLs (73.7% of s-trait seQTLs and 83.3% of sc-trait seQTLs) were environment-specific (detected under either WW or DS conditions), and only a small proportion of seQTLs were shared (detected under both WW and DS conditions). For example, a unique seQTL regulating miR167c expression was detected only under WW conditions, while the seQTL associated with sRNA158798 (derived from the miR827 locus) expression was only detected under DS conditions (Supplementary Results Fig. 3e-i). ",
+        "bbox": [
+            122,
+            642,
+            873,
+            892
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "aside_text",
+        "text": "54\n55\n56\n57\n58\n59\n60\n61\n62\n63\n64\n65\n66\n67\n68\n69\n70\n71\n72\n73\n74\n75\n76\n77\n78\n79\n80\n81\n82\n83 ",
+        "bbox": [
+            77,
+            89,
+            102,
+            890
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "3 ",
+        "bbox": [
+            492,
+            913,
+            505,
+            923
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            122,
+            87,
+            873,
+            382
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/fb0830e8b78132a82c53cf32b4abdc89bd50bc37f58714592f58fb4a3c5fdaa2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n    A[\"1.22M SNPs\"] --> B[\"GWAS\"]\n    C[\"Associated SNPs\"] --> B\n    D[\"Candidate SNPs\"] --> E[\"Grouping by distance\"]\n    F[\"eQTLs\"] --> E\n    B --> G[\"Expression quantification of s-traits/sRNA-clusters and genes under WW and DS conditions\"]\n    B --> H[\"Benjamini-Hochberg correction for multiple testing\"]\n    E --> I[\"Merge associated SNPs (<10kb apart) into candidate eQTLs that include >3 associated SNPs\"]\n    E --> J[\"Remove less significant (or small joint effect) candidates in LD (r²>0.1)\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            141,
+            391,
+            389,
+            670
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "chart",
+        "img_path": "images/fe8b42f7536273a542edcafb63711975dac949b2e079d951c7069db4373a5541.jpg",
+        "content": "| Genotype | 1seQTLs | 2seQTLs | >2seQTLs |\n|---|---|---|---|\n| WW (1/n) | 3526 | 1577 | 1071 |\n| WW (Bonferroni<0.05) | 1150 | 24 | 0 |\n| DS (1/n) | 4045 | 1801 | 199 |\n| DS (Bonferroni<0.05) | 1278 | 10 | 3 |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "bar",
+        "bbox": [
+            391,
+            391,
+            628,
+            521
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "chart",
+        "img_path": "images/5fbe7f7fc481f5dce316ca3111c9559c07c1444a6cdd539f5aa6f6350d1f67d5.jpg",
+        "content": "| Genotype | 1seQTLs | 2seQTLs | >2seQTLs |\n|---|---|---|---|\n| WW (1/n) (Bonferroni<0.05) | 5849 | 2449 | 2345 |\n| WW (Bonferroni<0.05) | 3060 | 28 | 0 |\n| DS (1/n) (Bonferroni<0.05) | 6697 | 2246 | 1099 |\n| DS (Bonferroni<0.05) | 3212 | 6 | 0 |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "bar",
+        "bbox": [
+            621,
+            391,
+            860,
+            518
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "chart",
+        "img_path": "images/77e700012efd7319d8e058ff33c6a779b651d60f243304946acbfb527c519a91.jpg",
+        "content": "| Distance | WW (1/n) | WW (Bonferroni<0.05) | DS (1/n) | DS (Bonferroni<0.05) |\n| -------- | -------- | --------------------- | -------- | --------------------- |\n| Within   | 0.02     | 0.06                  | 0.03     | 0.04                  |\n| 10KB     | 0.03     | 0.10                  | 0.04     | 0.05                  |\n| 100KB    | 0.04     | 0.08                  | 0.05     | 0.06                  |\n| 1M       | 0.03     | 0.06                  | 0.04     | 0.05                  |\n| 10M      | 0.02     | 0.04                  | 0.03     | 0.04                  |\n| 10M+     | 0.01     | 0.02                  | 0.02     | 0.03                  |\n| Diff     | 0.80     | 0.65                  | 0.78     | 0.79                  |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "line",
+        "bbox": [
+            393,
+            521,
+            628,
+            674
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "chart",
+        "img_path": "images/7e5fb0e4d4495c4e835b4d552feeabf18b8d163f72e964da5129f85a54360cc8.jpg",
+        "content": "| Category | Count |\n|---|---|\n| WW only | 660 |\n| DS only | 514 |\n| WW ∩ DS | 777 |\n| WW ∩ SE QTLs of sRNA Clusters | 2187 |\n| DS ∩ WW | 904 |\n| WW ∩ DS | 2314 |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "other",
+        "bbox": [
+            652,
+            521,
+            836,
+            675
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "chart",
+        "img_path": "images/bf86e1dda1b7447174efe22bbe0b71b9a3571b948afb075b9dcd64d0129d16ae.jpg",
+        "content": "| Region | -logP |\n|--------|-------|\n| WW     | 16    |\n| Chr.1  | 2     |\n| 2      | 4     |\n| 3      | 4     |\n| 4      | 4     |\n| 5      | 16    |\n| 6      | 4     |\n| 7      | 4     |\n| 8      | 4     |\n| 9      | 4     |\n| 10     | 4     |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "scatter",
+        "bbox": [
+            139,
+            682,
+            327,
+            845
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "chart",
+        "img_path": "images/8a1bd9bf9038c473b7d341f246d3c41418616deda8b9d07bb77800531540aea0.jpg",
+        "content": "| Group | Condition | Expression of miR167c (RPM) |\n|-------|-----------|-----------------------------|\n| WW    | A         | ~1000                       |\n| WW    | G         | ~500                        |\n| DS    | A         | ~200                        |\n| DS    | G         | ~100                        |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "boxplot",
+        "bbox": [
+            327,
+            682,
+            495,
+            799
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "chart",
+        "img_path": "images/0c7ac021ff77a3d657b2030db97b22a4f2036d301c0bafc26d2bcb1e7e7e2d7d.jpg",
+        "content": "| Position | -logP |\n| -------- | ----- |\n| Chr.1    | 4     |\n| 2        | 6     |\n| 3        | 6     |\n| 4        | 6     |\n| 5        | 6     |\n| 6        | 6     |\n| 7        | 6     |\n| 8        | 6     |\n| 9        | 6     |\n| 10       | 6     |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "scatter",
+        "bbox": [
+            495,
+            682,
+            682,
+            844
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "chart",
+        "img_path": "images/40c26aa30082ec7e13b415b5e1f84a637db6360557e718a0becba5d8a1360fc6.jpg",
+        "content": "| Group | Condition | Expression of sR158798 (RPM) |\n|-------|-----------|------------------------------|\n| WW    | A         | 0.5                          |\n| WW    | G         | 1.0                          |\n| DS    | A         | 2.0                          |\n| DS    | G         | 3.0                          |",
+        "chart_caption": [
+            "Supplementary Results Fig. 3 | a. Workflow of eQTL analysis. Three steps with multiple analyses are shown for the detection of eQTLs based on the expression of drought-responsive sRNAs / drought-responsive sRNA clusters and genes. b and c. The number of drought-"
+        ],
+        "chart_footnote": [],
+        "sub_type": "boxplot",
+        "bbox": [
+            685,
+            682,
+            847,
+            797
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "aside_text",
+        "text": "84\n85\n86\n87\n88\n89\n90\n91\n92\n93\n94\n95\n96 ",
+        "bbox": [
+            75,
+            89,
+            102,
+            382
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "4 ",
+        "bbox": [
+            492,
+            913,
+            504,
+            923
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "aside_text",
+        "text": "97\n98\n99\n100 ",
+        "bbox": [
+            68,
+            833,
+            100,
+            902
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "responsive sRNAs (b) and drought-responsive sRNA clusters (c) associated with one seQTL (1 seQTL), two seQTLs (2 seQTLs), or more than 2 seQTLs (>2 seQTLs) with different thresholds of significance (indicated below the panels) under WW and DS conditions. d. Distribution of the distance between lead SNPs and their associated sRNA clusters, “Diff” on the right side of the graph indicates the lead SNP and sRNA cluster located on different chromosome. e. Numbers of seQTLs associated with the expression of drought-responsive sRNAs (s-traits, upper panel) and drought-responsive sRNA clusters (sc-traits, lower panel) under WW and DS conditions. f. The seQTL located on chromosome 5 is significantly associated with the expression of miR167c under WW but not DS conditions. g. The expression of miR167c is significantly higher in inbred lines with the A allele (N=21) than those carrying the G allele (N=313) at the lead SNP in the seQTL under WW but not DS conditions. The P values were calculated by two-sided Student’s t-test. h. The seQTL located on chromosome 5 is significantly associated with the expression of sRNA158798 under DS but not WW conditions. i. The expression of sRNA158798 is significantly higher in inbred lines with the A allele (N=225) than in those carrying the G allele (N=103) at the lead SNP in the seQTL under WW and DS conditions. The P values were calculated by Student’s t-test. For g and i, box middle line: median; box edges: 25th and 75th percentiles; whiskers: values that do not exceed ± IQR (interquartile range) × 1.5; further outliers are marked individually. ",
+        "bbox": [
+            122,
+            85,
+            873,
+            418
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/a5698976ebcc480371887e5c3359e86095aa75df594e45cfdcc4aa0cf76330aa.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            277,
+            425,
+            754,
+            613
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "chart",
+        "img_path": "images/0222d95c8742a13b3e8d5078eb9f1de99cf0b5efcb2c4f6dcb860442ff7d4c82.jpg",
+        "content": "| R²    | trans | cis  |\n|-------|-------|------|\n| 0.0   | 0.0   | 0.0  |\n| 0.2   | 4.0   | 1.0  |\n| 0.4   | 2.0   | 3.0  |\n| 0.6   | 1.0   | 2.0  |\n| 0.8   | 0.0   | 1.0  |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "line",
+        "bbox": [
+            273,
+            619,
+            512,
+            747
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "chart",
+        "img_path": "images/ae51c1e2f05e278de4013ab442bc630d95c759fefbdd156e77db033b3379e2be.jpg",
+        "content": "| R²    | trans | cis  |\n|-------|-------|------|\n| 0.0   | 0.0   | 0.0  |\n| 0.2   | 4.0   | 1.0  |\n| 0.4   | 2.0   | 3.0  |\n| 0.6   | 1.0   | 2.0  |\n| 0.8   | 0.0   | 0.0  |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "line",
+        "bbox": [
+            522,
+            624,
+            752,
+            747
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "chart",
+        "img_path": "images/59ca53e5a589e04cbdcc5797de7a7bcb8ea95776c1225947ff7f7975640b789d.jpg",
+        "content": "C\n| Category | Count | Percentage (%) |\n| :--- | :--- | :--- |\n| Shared | 3311 | 23.4 |\n| Environment-specific | 10862 | 76.6 |\nTotal eQTLs",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "pie",
+        "bbox": [
+            273,
+            753,
+            448,
+            876
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "chart",
+        "img_path": "images/0fce9277477fa6b4c7c94b5acc059701427af8e70eb38dcbcb8fd590f75a75f1.jpg",
+        "content": "Cis eQTLs\n| Category | Count | Percentage (%) |\n| :--- | :--- | :--- |\n| Shared | 1851 | 45.9 |\n| Environment-specific | 2184 | 54.1 |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "pie",
+        "bbox": [
+            457,
+            753,
+            606,
+            876
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "chart",
+        "img_path": "images/ec3e2aa66bf77888cc0697047a52d1e86be219895cc4f2b44568b725fb41dd0c.jpg",
+        "content": "Trans eQTLs\n| Category | Count | Percentage (%) |\n|---|---|---|\n| Shared | 1460 | 14.4 |\n| Environment-specific | 8678 | 85.6 |",
+        "chart_caption": [
+            "Supplementary Results Fig. 4 | a. Genome-wide distribution of meQTLs associated with "
+        ],
+        "chart_footnote": [],
+        "sub_type": "pie",
+        "bbox": [
+            613,
+            756,
+            761,
+            876
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "aside_text",
+        "text": "101\n102\n103\n104\n105\n106\n107\n108\n109\n110\n111\n112\n113\n114\n115\n116\n117\n118 ",
+        "bbox": [
+            67,
+            86,
+            102,
+            416
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "aside_text",
+        "text": "119\n120 ",
+        "bbox": [
+            68,
+            869,
+            100,
+            897
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "page_number",
+        "text": "5 ",
+        "bbox": [
+            492,
+            913,
+            504,
+            923
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "mRNA expression in 197 maize inbred lines grown under WW and DS conditions. The x-axis indicates the locations of meQTLs and the y-axis indicates the locations of genes in the order of their genomic coordinates. b. cis meQTLs show higher joint effects than trans meQTLs under both WW and DS conditions. c. Proportion of shared (detected under both WW and DS conditions) and environment-specific (detected under either WW or DS conditions) meQTLs for all meQTLs, cis mQTLs and trans meQTLs. ",
+        "bbox": [
+            122,
+            85,
+            873,
+            197
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Next, we mapped the eQTLs that controlled gene expression (mQTLs) via GWAS, based on the transcriptomes of the 197 accessions grown under WW and DS conditions (Supplementary Results Fig. 4a). We detected 14,173 meQTLs (MLM, $P { < } 5 . 1 5 \\times 1 0 ^ { - 9 } )$ as being associated with 11,038 genes under WW or DS conditions. Of these, 4,035 (28.5%) were cis meQTLs and 10,138 (71.5%) were trans meQTLs (Supplementary Results Fig. 4a). On average, cis meQTLs had a larger effect on gene expression than trans meQTLs (Supplementary Results Fig. 4b). We also detected more environment-specific meQTLs (76.6%) than shared meQTLs (23.4%), indicating that complex networks regulate gene expression during maize drought responses (Supplementary Results Fig. 4c). ",
+        "bbox": [
+            124,
+            208,
+            873,
+            435
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Cleavage of mRNAs by DRESH8-derived siRNAs ",
+        "text_level": 1,
+        "bbox": [
+            124,
+            449,
+            596,
+            467
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "siRNAs 21 nt to 24 nt in size are known to induce mRNA cleavage of their target genes 52 . Because DRESH8-derived sRNAs did not affect the expression of local genes, we hypothesized that they might function as siRNAs to mediate mRNA cleavage in trans. Based on a siRNA-target prediction pipeline 5 , and the negative correlations between sRNAs and gene expression profiles, we identified 150 putative targets for DRESH8-derived sRNAs. Of those, 34 (22.7%) had predicted roles in responses to abiotic stress and stimulus, and 57 (38%) potentially regulate plant development including seed development, indicating the broad roles of DRESH8 in regulating maize stress responses and development. We randomly selected 35 genes (out of the 150 mentioned above) for degradome analysis (5’ RACE-sequencing, Methods) in plant cells. Ten transcripts (28.6%) showed cleavage by their corresponding siRNAs, and their expression levels were significantly lower in maize plants with DRESH8 relative to those without DRESH8 under either WW or DS or both conditions (Supplementary Results Fig. 5a, b), indicating that DRESH8-derived siRNAs negatively regulate their putative target genes by mediating mRNA cleavage. ",
+        "bbox": [
+            122,
+            470,
+            873,
+            839
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "aside_text",
+        "text": "121\n122\n123\n124\n125\n126\n127\n128\n129\n130\n131\n132\n133\n134\n135\n136\n137\n138\n139\n140\n141\n142\n143\n144\n145\n146\n147\n148\n149\n150\n151\n152\n153 ",
+        "bbox": [
+            67,
+            86,
+            102,
+            838
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "page_number",
+        "text": "6 ",
+        "bbox": [
+            492,
+            913,
+            505,
+            923
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/0e659c997cbdebf5b29aab8139c3dce611b1ed6a5ba3a9daef6441ffe6ddb59a.jpg",
+        "image_caption": [
+            "Supplementary Results Fig. 5 | a. mRNA degradome assays showing the cleavage of the mRNAs for nine target genes by DRESH8-derived sRNAs. b. The expression of the nine target genes is significantly lower in inbred lines with DRESH8 (+, N=37) relative to those without DRESH8 (-, N=160) under WW or DS or both conditions. n.s., not significant. The P values were calculated by two-sided Student’s t test. Box middle line: median; box edges: 25th and 75th percentiles; whiskers: values that do not exceed ± IQR (interquartile range) × 1.5; further outliers are marked individually. "
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            221,
+            87,
+            784,
+            750
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "aside_text",
+        "text": "154\n155\n156\n157\n158\n159\n160\n161 ",
+        "bbox": [
+            68,
+            734,
+            100,
+            889
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "page_number",
+        "text": "7 ",
+        "bbox": [
+            492,
+            912,
+            504,
+            923
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Biogenesis of sRNAs in maize IR loci ",
+        "text_level": 1,
+        "bbox": [
+            124,
+            87,
+            487,
+            105
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "In Arabidopsis, four DICER-like enzymes (DCLs) have been identified that are responsible for the biogenesis of most sRNAs: DCL1 generates most miRNAs, whereas DCL4, DCL2, and DCL3 generate 21-, 22-, and 24-nt siRNAs, respectively 40 . Mature sRNAs are loaded into various ARGONAUTE (AGO) proteins to regulate gene expression 53 . In plants, transposon loci are transcribed by RNA polymerase IV (Pol IV) and the resulting transcripts serve as templates for dsRNA synthesis by RNA-Dependent RNA Polymerase 2 (RDR2). The resulting dsRNAs are further processed by DCL3 to produce 24-nt siRNAs to direct transcriptional silencing of homologous transposon loci through the RNA-dependent DNA methylation (RdDM) mechanism 54 . ",
+        "bbox": [
+            122,
+            110,
+            873,
+            336
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "To investigate the mechanisms of maize IR sRNA biogenesis, we isolated dcl2 (Zm00001d013796) mutant carrying a premature stop codon from a previously reported maize mutant library generated by EMS-induced mutagenesis (Supplementary Results Fig. 6a) 55 , and sequenced sRNAs from the dcl2 mutant and wild-type B73. sRNAs from dcl1 (Zm00001d027412), dcl4 (Zm00001d025830), pol iv (Zm00001d031459), rdr2 (Zm00001d003378), and the double mutant dcl1 dcl4 were collected from public databases (Methods). Overall sRNA accumulation levels of different size classes were compared among IRs of different lengths. In the dcl2 mutant, 22-nt sRNA levels clearly decreased for all size class IRs to around 30% of wild-type levels, and the degree of reduction increased as the IR length increased from <1 kb to >10 kb. 24-nt sRNA levels increased moderately in the dcl2 mutant among IRs of different lengths, relative to those measured in B73 plants; however, 21-nt sRNAs levels moderately increased in the dcl2 mutant among shorter IRs (<1 kb and 1-5 kb), but moderately decreased for longer IRs (5-10 kb and >10 kb, Supplementary Results Fig. 6b). These data confirmed that DCL2 is responsible for producing the majority of 22-nt IR-derived sRNAs and that it prefers long dsRNA substrates. The results also suggested that DCL2 competes with DCL3 for IR substrates of all lengths, while the mode of DCL2 interaction with DCL1/DCL4 on IR loci may vary according to the length of the IR in question. ",
+        "bbox": [
+            122,
+            342,
+            889,
+            778
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Analysis of sRNAs from pol iv and rdr2 mutants showed that levels of IR-derived 24-nt sRNAs were significantly reduced in both mutants, with a stronger reduction in pol iv (about 4\\~17% of wild-type levels) than in rdr2 (about 41\\~80% of wild-type levels), and both mutations had a greater influence on sRNA production from shorter IRs (<1 kb and 1-5 kb) than from longer IRs (5-10 kb and >10 kb) (Supplementary ",
+        "bbox": [
+            124,
+            782,
+            873,
+            894
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "aside_text",
+        "text": "162\n163\n164\n165\n166\n167\n168\n169\n170\n171\n172\n173\n174\n175\n176\n177\n178\n179\n180\n181\n182\n183\n184\n185\n186\n187\n188\n189\n190\n191\n192\n193\n194\n195\n196 ",
+        "bbox": [
+            67,
+            89,
+            102,
+            890
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "8 ",
+        "bbox": [
+            492,
+            913,
+            505,
+            923
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Results Fig. 6c, d). In contrast to its strong effect on 24-nt sRNA accumulation, the pol iv mutation only moderately affected 21-nt and 22-nt sRNA accumulation, while the rdr2 mutation clearly increased both 21-nt and 22-nt sRNA levels from IRs of all sizes (Supplementary Results Fig. 6c, d). These data indicated that POL IV and RDR2 both contribute to the accumulation of 24-nt sRNAs derived from IR loci, and that RDR2-mediated transcriptional repression of IR expression is antagonistic to 21-nt and 22-nt sRNA production from IRs. These results also supported the notion that these shorter sRNAs are processed from the hairpins formed by IR transcripts generated by POL II. Analysis of sRNAs from the dcl1 and dcl4 single mutants and the dcl1 dcl4 double mutant showed that the production of 21-nt sRNAs derived from short IRs mainly depends on DCL1 activity, while DCL4 only has a minor role in the production of 21-nt sRNAs derived from IRs (Supplementary Results Fig. 6e-g). ",
+        "bbox": [
+            122,
+            87,
+            873,
+            363
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "aside_text",
+        "text": "197\n198\n199\n200\n201\n202\n203\n204\n205\n206\n207\n208 ",
+        "bbox": [
+            67,
+            89,
+            100,
+            359
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "page_number",
+        "text": "9 ",
+        "bbox": [
+            492,
+            913,
+            505,
+            923
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/d48220feb0141c9a4276c65b7d5cece3ba55ce4476c6c7f5a2a9290675cc7af1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            137,
+            87,
+            477,
+            633
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "chart",
+        "img_path": "images/1ff6ba7dd7fd22fe15a147c0c057dba569b77c0fdbdb7a91b8c180039045cf6e.jpg",
+        "content": "",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "scatter",
+        "bbox": [
+            485,
+            95,
+            860,
+            273
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "chart",
+        "img_path": "images/b55b952bd652c8e55125a5a065af0f290da4ab4900b7509461e910a8e0363f9a.jpg",
+        "content": "",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "scatter",
+        "bbox": [
+            489,
+            274,
+            860,
+            451
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "chart",
+        "img_path": "images/ab7338f743ed3d026702a9dc94f16c79adb905a041f2ef3847116cdb4c58b566.jpg",
+        "content": "",
+        "chart_caption": [
+            "Supplementary Results Fig. 6 | a. dcl2 mutant. A premature stop codon at W793 is shown. b to g. Effects of dcl2 (b), pol iv (c), rdr2 (d), dcl1(e), dcl4 (f), and dcl1 dcl4 (g) mutations on IRsRNA biogenesis. Top panels, comparison of the expression levels of 21-nt, 22-nt, and 24-nt IRsRNAs in dcl2 (b), pol iv (c), rdr2 (d), dcl1(e), dcl4 (f), and dcl1 dcl4 (g) mutants and B73 (wildtype) plants, respectively. Bottom panels, average IR-sRNA expression levels in dcl2 (b), pol iv (c), rdr2 (d), dcl1(e), dcl4 (f), dcl1 dcl4 (g), and B73 plants, respectively. Colored dots (top panels) and colored columns (bottom panels) indicate IR-sRNAs generated from IRs of different sizes, with N=3669, 2774, 607, 1211 for IRs <1kb, 1-5kb, 5-10kb or >10kb, respectively. For b-g, Box middle line: median; box edges: 25th and 75th percentiles; whiskers: values that do not exceed ± IQR (interquartile range) × 1.5; further outliers are marked individually. "
+        ],
+        "chart_footnote": [],
+        "sub_type": "scatter",
+        "bbox": [
+            487,
+            455,
+            860,
+            634
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Reference ",
+        "text_level": 1,
+        "bbox": [
+            127,
+            854,
+            206,
+            868
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "52. Borges, F. & Martienssen, R.A. The expanding world of small RNAs in plants. ",
+        "bbox": [
+            126,
+            883,
+            873,
+            898
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "aside_text",
+        "text": "209\n210\n211\n212\n213\n214\n215\n216\n217\n218\n219\n220\n221\n222 ",
+        "bbox": [
+            67,
+            623,
+            102,
+            898
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "page_number",
+        "text": "10 ",
+        "bbox": [
+            489,
+            913,
+            509,
+            923
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [
+            "223 16, 727-741 (2015). ",
+            "224 53. Song, X., Li, Y., Cao, X. & Qi, Y. MicroRNAs and Their Regulatory Roles in Plant-Environment 225 Interactions.  70, 489-525 (2019). ",
+            "226 54. Henderson, I.R. & Jacobsen, S.E. Epigenetic inheritance in plants.  447, 418-424 (2007). ",
+            "227 55. Lu, X. et al. Gene-Indexed Mutations in Maize.  11, 496-504 (2018). "
+        ],
+        "bbox": [
+            67,
+            85,
+            870,
+            175
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "page_number",
+        "text": "11 ",
+        "bbox": [
+            489,
+            912,
+            507,
+            923
+        ],
+        "page_idx": 11
+    }
+]

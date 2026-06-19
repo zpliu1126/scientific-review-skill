@@ -1,0 +1,1321 @@
+# RESEARCH
+
+# Open Access
+
+# Dynamic roles of small RNAs and DNA methylation associated with heterosis in allotetraploid cotton (Gossypium hirsutum L.)
+
+![](images/9f1cb0dcc2e218a2102681b21e1c8cd44f2aeb2255204c61ad812ce225bb9376.jpg)
+
+Rasmieh Hamid1\* , Feba Jacob2†, Zahra Ghorbanzadeh3†, Leila Jafari4,5 and Omran Alishah1
+
+# Abstract
+
+Background Heterosis is a complex phenomenon wherein the hybrids outperform their parents. Understanding the underlying molecular mechanism by which hybridization leads to higher yields in allopolyploid cotton is critical for efective breeding programs. Here, we integrated DNA methylation, transcriptomes, and small RNA profles to comprehend the genetic and molecular basis of heterosis in allopolyploid cotton at three developmental stages.
+
+Results Transcriptome analysis revealed that numerous DEGs responsive to phytohormones (auxin and salicylic acid) were drastically altered in F1 hybrid compared to the parental lines. DEGs involved in energy metabolism and plant growth were upregulated, whereas DEGs related to basal defense were downregulated. Diferences in homoeologous gene expression in F1 hybrid were greatly reduced after hybridization, suggesting that higher levels of parental expression have a vital role in heterosis. Small RNAome and methylome studies showed that the degree of DNA methylation in hybrid is higher when compared to the parents. A substantial number of allele-specifc expression genes were found to be strongly regulated by CG allele-specifc methylation levels. The hybrid exhibited higher 24-nt-small RNA (siRNA) expression levels than the parents. The regions in the genome with increased levels of 24-ntsiRNA were chiefy related to genes and their fanking regulatory regions, demonstrating a possible efect of these molecules on gene expression. The transposable elements correlated with siRNA clusters in the F1 hybrid had higher methylation levels but lower expression levels, which suggest that these non-additively expressed siRNA clusters, reduced the activity of transposable elements through DNA methylation in the hybrid.
+
+Conclusions These multi-omics data provide insights into how changes in epigenetic mechanisms and gene expression patterns can lead to heterosis in allopolyploid cotton. This makes heterosis a viable tool in cotton breeding.
+
+Keywords Cotton, Methylome, Small RNA
+
+† Feba Jacob and Zahra Ghorbanzade contributed equally to this work.
+
+\*Correspondence:
+
+Rasmieh Hamid
+
+r.hamid@areeo.ac.ir; rasihamid@gmail.com
+
+1 Department of Plant Breeding, Cotton Research Institute of Iran (CRII), Agricultural Research, Education and Extension Organization (AREEO), Gorgan, Iran
+
+2 Centre for Plant Biotechnology and Molecular Biology, Kerala
+
+Agricultural University, Thrissur, India
+
+3 Department of Systems Biology, Agricultural Biotechnology Research
+
+Institute of Iran (ABRII), Agricultural Research, Education and Extension
+
+Organization (AREEO), Karaj, Iran
+
+4 Horticultural Science Department, Faculty of Agriculture and Natural Resources, University of Hormozgan, Bandar Abbas, Iran   
+5 Research Group of Agroecology in Dryland Areas, University of Hormozgan, Bandar Abbas, Iran
+
+![](images/33c653e978ff583478ed914502abf546b511135f29d6dfccdc9fefbde66263b8.jpg)
+
+![](images/442718066b0a045bc4d6deaf877d7a251a3e70f97626c778a0d56a4d80e07704.jpg)
+
+© The Author(s) 2023. Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/. The Creative Commons Public Domain Dedication waiver (http://creativecom mons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated in a credit line to the data.
+
+# Background
+
+Upland cotton (Gossypium hirsutum) is a premium fber, a source of edible oil, and one of the world’s most economic crops [1]. Te demand for cotton fber in the textile industry is increasing, but the supply is decreasing due to the small area under cultivation and the diferent yield potential of the varieties [2]. Plant breeders are working hard to overcome these obstacles to increase yields and resilience to biotic and abiotic stresses. In this context, heterosis breeding has led to signifcant progress [3].
+
+Te superior performance of F1 hybrid plants over their parents is known as heterosis or hybrid vigour [4]. Heterosis is widely used in commercial plant breeding to achieve better traits such as higher developmental rate, biomass production, grain yield, and stress tolerance [5, 6]. Despite increasing research data on cotton heterosis, the basic molecular processes that trigger heterosis are still largely not understood [6, 7]. Traditional genetic explanations include the ideas of epistasis, dominance, and overdominance [8]. However, the molecular basis of heterosis cannot be elucidated by these hypotheses and they do not suit the genome-level data. Several studies have shown that genomic and epigenetic alterations are involved in hybrid heterosis [9]. Te modifcations in histones and DNA methylation are epigenetic processes that afect gene expression while there is no change in the DNA sequence [10]. DNA methylation is a well-studied epigenetic process in plants, which occurs when a methyl group is attached to the 5’-carbon of the pyrimidine ring of cytosine nucleotides [11]. In plants, cytosine methylations are divided into CHH, CHG and CG contexts (H can be any nucleotide other than G) [12].
+
+In addition to DNA methylation and histone modifcation, small RNAs like microRNAs (miRNAs), transacting ta-siRNAs, and small interfering RNAs (siRNAs) also have vital roles in epigenetics [13]. Te initiation and maintenance of DNA methylation in plants are mediated by RNA-directed DNA methylation (RdDM), in all sequence contexts [14]. Small interfering RNAs (siRNAs) drive Domains Rearranged Methyltransferase 2 (DRM2), the de novo DNA methyltransferase, to methylation sites in genomic DNA. siRNAs afect gene expression by modulating DNA methylation, which is particularly important in transposon elements (TEs) and some protein-coding genes. Trans- and cis-regulatory miRNAs, on the other hand, regulate spontaneous variations in a variety of metabolic pathways that afect genome-wide methylation patterns [15, 16]. Numerous studies have been showed to examine the global patterns of naturally occurring variation in small RNAs and epigenetic modifcations, as well as the resulting efect on diversifcation of the transcriptome [17, 18]. For instance a group of researchers used Arabidopsis epiRILs with diferent degrees and distributions of DNA methylation, to demonstrate their impact on the genetic regulation of heterosis [19]. Tese epigenetic modifcations in hybrids infuence phenotypic aspects as well as biological pathways such as metabolism, growth, biomass, as well as hormone signaling, response to stress and senescence, fowering, fruiting, and yield [20].
+
+Te goal of this study was to conduct a detailed investigation of elite cotton hybrid and its parental lines through transcriptome sequencing, bisulfte sequencing, small RNA profling and genome resequencing. Te methylation patterns of CG, CHG, and CHH in cotton seedlings were examined and diferentially methylated regions (DMRs) were compared between the hybrid and its parents. Te patterns of methylation and the density of small RNA in the gene body and surrounding 5’ and 3’ regions of protein coding and TEs were compared with the expression level of TE and the genes. Te results suggest that transcriptional and epigenetic changes, as well as genome-wide reorganization of gene expression in the hybrid, play a key role in hybrid vigour.
+
+# Results
+
+# F1 hybrid shows signifcant morphological heterosis
+
+Te F1 hybrid, resulting from crossing Latif (maternal line) with Taban (paternal line), has a signifcantly higher number of bolls and higher fbre yield (Table S1). Te total seed cotton yield of the F1 line was 16% higher than the mean of the parents (MPV). Te higher number of bolls (about 20% higher than MPV) was the direct result of a signifcant increase in fruiting branches between F1 and the two parental lines, but it wasn’t due to a longer fowering period because the fowering period of F1 was between the two parental lines and all three genotypes were harvested simultaneously. Based on the increase in yield heterosis and its stability during two years of feld experiments, this hybrid can be considered suitable for studying the comparative genomics and the mechanisms controlling yield heterosis in cotton.
+
+Moreover, three growth parameters were phenotyped to evaluate the timing of heterosis initiation: plant weight (fresh and dry weight), shoot weight, shoot and root length at three developmental stages: 20 days (seedling stage), 40 days (squaring stage), and 60 days (fowering stage). We compared the MPV with the hybrid. At 20 days, all growth parameters showed a signifcant increase. However, at 40 days, the hybrid showed higher plant weight (36.7% more than the MPV), shoot height (18.33% more than the MPV), and root length (22.38% more than the MPV) (Fig.  1a-d). Similar results were obtained in the fowering stage. Among the diferent developmental stages, squaring stages was found to have higher growth in all growth parameters, indicating that the squaring stage has greater heterosis than the seedling and fowering stages, so samples from this stage were selected for downstream investigation (Fig. S1).
+
+![](images/872f1d2d0e0514e204aa828e4c7c035788575eed3ad6ad7d1b00481e0dd8eb12.jpg)
+
+<details>
+<summary>natural_image</summary>
+
+Three potted plant samples labeled Male, Hybrid, and Female under a white field, with a vertical ruler for scale (no text or symbols on plants themselves)
+</details>
+
+![](images/1c4c858d31a0d6195b53596e762b390b5c2fda707ddae918d1e91cd0e619e732.jpg)
+
+<details>
+<summary>boxplot</summary>
+
+| Day after sowing | Fresh (Male) | Fresh (F1) | Fresh (Female) | Dry (Male) | Dry (F1) | Dry (Female) |
+| --------------- | ------------ | ---------- | -------------- | ---------- | -------- | ------------ |
+| 20              | ~0.7         | ~0.9       | ~0.9           | ~0.1       | ~0.1     | ~0.1         |
+| 40              | ~2.0         | ~3.2       | ~2.5           | ~0.2       | ~0.3     | ~0.2         |
+| 60              | ~2.8         | ~4.0       | ~3.1           | ~0.3       | ~0.5     | ~0.4         |
+| 80              | ~0.8         | ~1.0       | ~0.8           | ~0.4       | ~0.6     | ~0.5         |
+</details>
+
+![](images/1a48728a4fb66ea7c39086bf3b40de169c1323923313cf2e4c8247115d2dbd51.jpg)
+
+![](images/e9ac254fef438dd04bb3fdfa7aae614fac9d5ea18d386796eb589856d634b456.jpg)
+
+<details>
+<summary>boxplot</summary>
+
+| Day after sowing | Root Male | Root Male | Root F1 | Root F1 | Root Female | Shoot Male | Shoot Male | Shoot F1 | Shoot Female |
+| --------------- | --------- | --------- | ------- | ------- | ----------- | ---------- | ---------- | -------- | ------------ |
+| 20              | ~8        | ~7        | ~10     | ~9      | ~8          | ~15        | ~14        | ~13      | ~12          |
+| 40              | ~28       | ~27       | ~38     | ~37     | ~32         | ~20        | ~27        | ~26      | ~24          |
+| 60              | ~38       | ~37       | ~48     | ~47     | ~43         | ~25        | ~33        | ~32      | ~30          |
+| 20              | ~7        | ~6        | ~9      | ~8      | ~7          | ~15        | ~14        | ~13      | ~12          |
+| 40              | ~20       | ~19       | ~27     | ~26     | ~24         | ~20        | ~27        | ~26      | ~24          |
+| 60              | ~25       | ~24       | ~33     | ~32     | ~30         | ~25        | ~33        | ~32      | ~30          |
+</details>
+
+Fig. 1 Heterosis performance of hybrid at three diferent developmental stages. a Phenotype of hybrid and its parental lines. b Fresh weight and dry weight of the hybrid and its parental lines. C Shoot weight of hybrid and its parental lines from day 20 to 60 after sowing (DAS). d Shoot and root length of hybrid and its parental lines. Values with diferent letters are considered statistically signifcant (shortest signifcant range; P < 0.01)
+
+# F1 hybrid have more actively expressed genes than its parents
+
+Te transcriptomes of F1 and its parents were evaluated for dynamic changes in three biological replicates by assessing transcripts in fower bud samples at the “match-head” (MH), “square growth midpoint” (SM), and one-day post anthesis (1DPA) ovule. Each library generated between 62 and 84  million reads (Table S2). Approximately 94.04% of the reads that were of high-quality, were mapped to the G. hirsutum reference genome. In each sample and genotype, approximately 90.84% of reads were mapped to exon regions. Intergenic regions and intron mappings accounted for less than 4.57% of the total (Fig. S2). Principal component analysis (PCA) revealed that the diferent tissues and genotypes were clearly distinguishable from each other (Fig. S3). In each dataset, around 6400 genes were expressed (Fig. S4). Te overall number of expressed genes in square growth midpoint” (SM) developing buds was much greater than in “match-head” (MH) and 1DPA ovules. To identify probable DEGs related to the heterotic phenotype, we compared the transcriptome profle of hybrid with MPV, which we named hybrid MPV-DEGs (Fig. S1, Table S3). It appears that at the three stages, in F1, most genes are expressed additively, with a considerable fraction of genes expressed non-additively (697–1426 or 10–22%) (Fig. 2a-c, & Fig. S5a). MH and SM were found to have more upregulated genes than downregulated genes in F1 (3.1-fold and 4-fold, respectively, χ2 test, P ≤ 0.01) (Fig. 2a, b). However, the number of upregulated genes was greater in 1DPA, although the diference was not signifcant (Fig. 2c).
+
+Furthermore, we examined the DEGs between the two parental lines (termed M-F DEGs) and found that between the two parental lines at each stage, 19.3%, 20.1%, and 20.4% of the total genes were diferentially expressed, respectively (|log2 FC|≥2, P-value ≤ 0.01; FDR ≤ 0.01) (Fig.  2d-f ). At all three developmental phases, a substantial proportion of these (53 − 89%) overlapped with the MPV-DEGs, implying that genes whose expression levels difered between the hybrid’s parents were overrepresented among those diferentially expressed genes in the hybrid (Fig. S5b).
+
+a.   
+![](images/fdc7efb94ae44fbb92cfbf572ea0650e5dda7c3a8b3fe7a3c02461daa3e55560.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| Regulation Type | Count |
+| --------------- | ----- |
+| Down regulated   | 210   |
+| Similar         | 5223  |
+| Up regulated     | 650   |
+</details>
+
+d.   
+![](images/014aa4c289bfe09b0c139155adf15d6e60585aa4a839c93322d123ed3b631b3a.jpg)
+
+<details>
+<summary>bar_stacked</summary>
+
+| Category | Similar | Different |
+| :--- | :--- | :--- |
+| All | 4903 | 1180 |
+| F1 | 713 | 147 |
+</details>
+
+b.   
+![](images/b3cf75f61cec3d42cde6d9a939b8745b64eee9d7b45f80a2d807018e06e2032f.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| Regulation Type | Count |
+| --------------- | ----- |
+| Down regulated  | 281   |
+| Similar         | 5787  |
+| Up regulated    | 1145  |
+</details>
+
+e.   
+![](images/35fff3f62330286e7083cab23bc2eaab7af07d784f14479cbc59d32b436b6666.jpg)
+
+<details>
+<summary>bar_stacked</summary>
+
+| Category | Value 1 | Value 2 |
+|---|---|---|
+| All | 5764 | 1449 |
+| F1 | 1300 | 126 |
+</details>
+
+C.   
+![](images/ceaf6c53c58672eb7476b9b835d3599e1dfe68d44410e0145da4471ea1586ee7.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| Regulation Type | Count |
+| --------------- | ----- |
+| Down regulated  | 310   |
+| Similar         | 5317  |
+| Up regulated    | 387   |
+</details>
+
+f.
+
+![](images/64be1d13fe1b94064326e14e4dab6ca1ac4498e45b71f974513f16e52bef8bd0.jpg)
+
+<details>
+<summary>bar_stacked</summary>
+
+| Category | Value 1 | Value 2 |
+| :--- | :--- | :--- |
+| All | 4229 | 1088 |
+| F1 | 578 | 119 |
+</details>
+
+Fig. 2 Overview of the genes diferentially expressed in the F1 hybrid compared with MPV (mean of the two parental values). a–c The number of genes diferentially expressed in the F1 hybrid compared with the expected MPV (P ≤ 0.01; false discovery rate ≤ 0.01) in MH, SM and 1DPA. d–f Genes that were diferentially expressed in the two parents were more frequently associated with diferentially expressed genes in the F1 hybrid (χ2 test, P ≤ 0.01)
+
+a.   
+![](images/a84675290cf6b168f39fde278c18a4e0006996418c519ff0a315a8103917fcd5.jpg)
+
+<details>
+<summary>bar</summary>
+
+| Stage | MH | SM | 1DPA |
+| --- | --- | --- | --- |
+| Additivity | 0 | 20 | 30 |
+| ELD-F | 820 | 600 | 540 |
+| ELD-M | 250 | 700 | 310 |
+| Transgressive down regulation | 0 | 10 | 150 |
+| Transgressive up regulation | 0 | 20 | 30 |
+| End | 0 | 20 | 130 |
+</details>
+
+d.
+
+![](images/3816e40f8740c128a3295a9f6b73e49bedb92bb08d8695e4b9b6d212b13fb11d.jpg)
+
+<details>
+<summary>other</summary>
+
+| Category | Value |
+|---|---|
+| MH | 118 |
+| SM | 226 |
+| DPA | 129 |
+| MH ∩ SM | 112 |
+| MH ∩ DPA | 109 |
+| SM ∩ DPA | 98 |
+| MH ∩ SM ∩ DPA | 69 |
+</details>
+
+![](images/246926bc39ac0cdee188bf1b6436a7ca06695a08bc854ba1f7245a675dd1e506.jpg)
+
+<details>
+<summary>other</summary>
+
+| Gene Expression Type | MH   | SM   | DPA  |
+|----------------------|------|------|------|
+| Non-Additively expressed genes | 632  | 819  | 477  |
+| ELD genes | 779  | 783  | 621  |
+| SM                   | 408  | 607  | 280  |
+</details>
+
+e.   
+![](images/f956181882c76cbf7961161acf7e9684a62dceeb0c2e73beccb30db018820693.jpg)
+
+<details>
+<summary>heatmap</summary>
+
+| Gene | MOH | SM | DPA |
+|---|---|---|---|
+| starch metabolic process |  |  |  |
+| sucrose metabolic process |  |  |  |
+| response to carbohydrate |  |  |  |
+| signal transduction |  |  |  |
+| response to hormone |  |  |  |
+| defense response |  |  |  |
+| response to stress |  |  |  |
+| response to chitin |  |  |  |
+| response to fungus |  |  |  |
+| response to bacterium |  |  |  |
+| response to virus |  |  |  |
+| cellular response to jasmonic acid |  |  |  |
+| cellular response to salicylic acid |  |  |  |
+| response to water deprivation |  |  |  |
+| response to heat |  |  |  |
+| response to salt |  |  |  |
+| response to cold |  |  |  |
+</details>
+
+Fig. 3 Parental expression level dominance (ELD) genes in the allotetraploid cotton hybrid. Genes with an expression level in the F1 hybrid similar to that of the female parent are designated ELD -F; genes with an expression level in the F1 hybrid similar to that of the male parent are designated ELD -M. a Expression patterns of twelve types of diferentially expressed genes (DEGs). M, male parent; H, hybrid; F, female parent. b Number of genes in each of the 12 types of DEGs in MH, SM, and 1DPA. c Venn diagram showing the number of genes that were unique or overlapped in ELDs and DEGs in each tissue. d The highly enriched GO terms that are unique or overlapped in all three developmental stages. e Highly enriched GO terms of ELD genes
+
+# Importance of high‑parental expression level dominance in hybrid performance
+
+Te phenomenon, in which genes with varying expression in parental lines, have expression levels in F1 that are statistically comparable to that of one of the parents, is called Expression Level Dominance (ELD) [21]. ELD has been observed in allopolyploid plants [22]. To determine the amplitude and direction of expression in intraspecifc F1 cotton hybrid, DEGs were classifed into 12 possible groups (Fig. 3a) [23]. Te results revealed that the expression levels of most genes in the hybrid were comparable to the parent. In contrast, just a few genes in these samples are additively or transgressively regulated. Some ELD genes expressed as strongly as the parent with the strongest expression (high parental ELDs; classes 3 and 5 in Fig.  3a), whereas others expressed as weakly as the weakest expressing parent (low parental ELDs; classes 4 and 6 in Fig.  3a). More than 72% (1107/1520), 78% (1290/1648), and 58% (851/1460) of the ELD genes were high parental ELDs in MH, SM, and 1DPA at all three stages, respectively (Fig. 3b). A substantial proportion of MPV-DEGs of the hybrid coincided with genes with high parental ELD (22.42% in MH, 27.47% in SM, and 20.31% in 1DPA, Fig. 3c). Tese fndings imply that high parental ELD genes, in combination with a nonadditive mechanism, may contribute to hybrid heterosis.
+
+To test this hypothesis in more depth, four gene groups (3 to 6 class) were pooled and GO and KEGG (www.kegg.jp/kegg/kegg1.html [24–26]) enrichment analysis was executed to investigate the probable role of ELD genes with high parental content in F1. Te highly enriched GO terms overlapped at all three developmental stages [71.25% for MH, 74.4% for SM, and 66.8% for 1DPA, Fig. 3d).], indicating that genes with high parental content ELD may be engaged in comparable biological functions at all three stages. Genes with high parental ELD were observed to be highly enriched in GO terms related to starch metabolic process, sucrose metabolic process, signal transduction, response to hormone, and defense (Fig. 3e).
+
+# F1 hybrid exhibit substantial allelic expression trans‑regulation
+
+It is unknown how F1 regulates two diferent alleles of one gene from diferent parental lines. Te contributions of each parental allele to the overall expression of gene in F1 were distinguished using single nucleotide polymorphisms (SNPs) markers, and the origin and level of expression of the allele in F1 was also determined. Both parents’ genomes were re-sequenced with 165 coverage, and allelic SNPs were identifed in the exonic regions of all the annotated genes by mapping their genome sequences to the G. hirsutum reference genome. Only the transcripts containing allelic SNPs found both in the re-sequenced genome and the transcriptome were taken into account for the read mapping and expression comparison in order to test the efcacy of parental allelic discrimination.
+
+a.   
+![](images/45a7ee0d31de42c00c37bbc7e07f2f070bb3df02b310f5d9754d9f47f1801eb8.jpg)
+
+b.   
+![](images/3e3b254b27354c8c38ba5c8fde9ffd37cf93aef70d26e331f54e231807da92ef.jpg)
+
+<details>
+<summary>bar_stacked</summary>
+
+| Category | Subgroup | Blue Segment | Gray Segment | Pink Segment | Yellow Segment |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| ALL | MH | 4099 | 292 | 380 | 325 |
+| ALL | SM | 4513 | 238 | 446 | 333 |
+| ALL | 1DPA | 3999 | 250 | 392 | 299 |
+| ELD | MH | 80 | 28 | 114 | 45 |
+| ELD | SM | 99 | 50 | 185 | 59 |
+| ELD | 1DPA | 79 | 26 | 99 | 33 |
+| DEG | MH | 90 | 19 | 37 | 31 |
+| DEG | SM | 85 | 23 | 45 | 39 |
+| DEG | 1DPA | 33 | 17 | 20 | 18 |
+</details>
+
+Fig. 4 Distribution of genes with cis- and/or trans-efects in MH, SM and 1DPA. a Flow chart showing quantifcation of cis- and trans-efects and classifcation of the transcripts with cis- and/or trans-efects. F, gene expression level in female parent; M, gene expression level in male parent; HF, female parental allelic expression level in hybrid; HM, male parental allelic expression level in hybrid. b Number and percentage of the genes without a cis- and trans-efects, with a cis- or trans-efects only, or with both cis- and trans-efects amongst the expression level dominance (ELD) genes, diferentially expressed genes (DEGs) between the F1 hybrid and mid-parent value, and all expressed genes in each tissue
+
+Using the principles described by X Shi et  al. [27], we determined whether an allele in F1 was cis- or transregulated (Fig.  4a). To assess transregulation, we used P-value A (PA, χ2-test) to determine alterations in the expression between the two alleles of the hybrid from the parents and their relative expression patterns in the two parents. If these diferences in expression between the parental alleles in F1 difered noticeably from the diference in expression between the two parents, it was assumed that the alleles were controlled by a trans efect $\left( \mathrm { P A } \leq 0 . 0 5 \right)$ . Te two parental alleles are tested for equivalent expression in the hybrid with a P-value of B (PB, χ2-test). If the expression levels of the two parental alleles were signifcantly diferent in the hybrid $\left( \mathrm { P B } \leq 0 . 0 5 \right)$ , the cis efect was considered to regulate them (Fig.  4a). Based on the test data of PA and PB, four diferent categories of regulatory efects were identifed: trans efects only, cis efects only, cis and trans efects together, and no cis and trans efects (Fig.  4b). Following the elimination of genes which had higher similarity in the sequence between the two parental alleles (i.e., low SNP coverage) or low levels of expression [FPKM < 2], approximately 4950 to 5530 genes with signifcant allelic expression differences were detected in F1 at all three developmental stages. In MH, 380 (7.5%), 292 (5.0%), and 325 (6.37%) genes were detected as afected by the trans efect only, by the cis efect only, or by both (cis-trans) (Fig. 4b). Te remaining 4099 (80.43%) genes showed no diferences in allelic expression between parents or F1 progeny (i.e., no cis-trans). Te relative pattern of the four categories of regulatory efects in the SM and 1DPA samples was comparable to MH, with a slightly larger proportion of trans efects (5.1–10.5%) than in the MH sample.
+
+Across multiple samples, 897 genes from the ELD genes and 457 genes from the hybrid MPV genes showed signifcant allelic expression diferences in F1. Te percentage of ELD genes with only trans efects was signifcantly greater for MH (42.69%), SM (47.07%), and 1DPA (41.77%) than the all genes (7.4% for MH, 8.6% for SM, and 7.9% for 1DPA) (Fig.  4b). Te signifcance of trans regulation for the ELD genes in the G. hirsutum F1 hybrid is revealed by these fndings. Cis-trans efects and trans efects both appear to have had an impact on how the hybrid MPV-DEGs functioned. Cis efects had a minimal regulatory efect on the ELD gene and the hybrid MPV-DEGs (Fig. 4b). Tese fndings suggest that trans efects are more signifcant than cis efects in determining the expression patterns of genes diferentially expressed in F1.
+
+To investigate the function of trans-efects in heterosis, we performed GO and KEGG enrichment analyses for all trans-efects in genes in all datasets. Enrichment analysis revealed that trans efects were highly enriched in the GO terms " hormone transport,“ “response to stress,“ and processes related to energy metabolism in all samples $( \mathrm { F D R } \leq 0 . 0 1 ) $ (Fig. S6a). Te addition of these factors resulted in a hybrid with better energy performance and tolerance to environmental cues than the parental lines. Moreover, trans-efects were enriched for the terms “biosynthesis of secondary metabolites,“ “nitrogen metabolism,“ and “metabolic pathways” (Fig. S6b). Accordingly, our results suggest that F1 is able to adapt to a variety of environments and promote critical developmental processes by using dominant alleles and expressing them at high levels.
+
+# Lower divergence of homoeologous gene pair expression in the F1 hybrid
+
+In order to study the extent of homoeologous gene expression in the $\mathrm { A } _ { \mathrm { n } }$ and $\mathrm { D } _ { \mathrm { n } }$ subgenomes of F1 hybrid, frst the homoeologous genes expressed in both parents and their F1 hybrid during the three developmental stages were determined. 6044, 7105, and 6033 homoeologous genes were found in MH, SM, and 1DPA, respectively. All samples and genotypes showed stronger expression of $\mathrm { D } _ { \mathrm { n } }$ homoeologous than the corresponding $\mathrm { A } _ { \mathrm { n } }$ homoeologous (i.e., $\mathrm { D } _ { \mathrm { n } } > \mathrm { A } _ { \mathrm { n } } ;$ Fig.  5a). Next, fold changes in expression levels between homoeologous gene pairs between F1 and its parents were calculated. We observed that in comparison with parents, F1 has fewer DEG pairs. For instance, F1 had a signifcantly lower number of homoeologous gene pairs with a 15-fold diference in expression [i.e. lo $\gamma 2 ( \mathrm { A _ { n } } / \mathrm { D _ { n } } ) \geq 3 . 0$ or ≤-3.0] at MH (412), SM (423), and 1DPA (301), than that of either parent (Student’s t-test, P ≤ 0.01, Fig. 5b).
+
+In addition, the extent of variation in gene expression between homoeologous gene pairs between parents and their hybrid (MPV and F1) was examined and for most homoeologous gene pairs, F1 had a smaller diference in expression between homologous gene pairs than MPV [i.e., log2 (F1/MPV) ≤ 0)] (Fig.  5c), suggesting that hybridization reduces the divergence of homologous expression. In addition, greater log2 (F1/MPV) values (i.e., diverged more from MPV) were found for homoeologous gene pairs with higher expression in $\mathrm { D } _ { \mathrm { n } }$ subgenome than in $\mathrm { A } _ { \mathrm { n } }$ subgenome (i.e., log2(An/Dn ≤ 0)) than for those that had higher expression in the $\mathrm { A } _ { \mathrm { n } }$ subgenome than in $\mathrm { D } _ { \mathrm { n } }$ subgenome (Fig. 5c). Tis resulted from the $\mathrm { D } _ { \mathrm { n } }$ subgenome having more highly expressed homoeologous (Fig.  5a). Overall, our fndings indicate that following hybridization, variations in the expression of homoeologous in F1 were signifcantly reduced.
+
+# siRNA profling, and genomic distribution
+
+Te 27 sRNA-seq libraries yielded 213  million reads (48  bp per read), with approximately 6  million distinct sRNAs detected for all three genotypes (Table S4). Te 21- and 24-nt classes, according to analysis of the fltered reads’ class distribution, were most abundant in F1 and the two parental lines at all three stages (Fig. S7a). Te expression of about 280,000–300,000 clusters of 24-nt siRNA were observed in SM, MH, and 1DPA. At all three stages, most clusters of 24 nt siRNA ranged from 100 to 1000 nt, with 150–250 nt clusters predominant (Fig. S7b).
+
+![](images/f92e1e30fbfa0ad5c34901b312db3fcebebe2fb8fe275de3a3c6c14f03203861.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| Group | Gender | Dn>An (%) | An>Dn (%) |
+|---|---|---|---|
+| MH | Male | 60 | 40 |
+| MH | Female | 67 | 33 |
+| MH | F1 | 63 | 37 |
+| SM | Male | 63 | 37 |
+| SM | Female | 63 | 37 |
+| SM | F1 | 65 | 35 |
+| 1DPA | Male | 65 | 35 |
+| 1DPA | Female | 65 | 35 |
+| 1DPA | F1 | 70 | 30 |
+</details>
+
+![](images/b225561707d42b7aeeb82fb7b06785e02d60538f73a1aac6ae4b257a0b6d97f6.jpg)
+
+<details>
+<summary>line</summary>
+
+| Group | Gender | Number of gene pairs |
+| :--- | :--- | :--- |
+| MH | Male | 565 |
+| MH | Female | 747 |
+| MH | MPV | 659 |
+| MH | F1 | 412 |
+| SM | Male | 666 |
+| SM | Female | 780 |
+| SM | MPV | 725 |
+| SM | F1 | 423 |
+| 1DPA | Male | 499 |
+| 1DPA | Female | 660 |
+| 1DPA | MPV | 579 |
+| 1DPA | F1 | 301 |
+</details>
+
+![](images/663f526ad42d2c7648e7cc17c7f458606217298f0271b65f4ada93ae7919a17e.jpg)
+
+<details>
+<summary>line</summary>
+
+| Fold change of subgenome homoeolog expression level | MH     | SM     | DPA    |
+| --------------------------------------------------- | ------ | ------ | ------ |
+| -8                                                  | -1.8   | -1.7   | -1.75  |
+| -6                                                  | -1.5   | -1.4   | -1.45  |
+| -4                                                  | -0.8   | -0.7   | -0.65  |
+| -2                                                  | -0.2   | -0.1   | 0.0    |
+| 0                                                   | 0.0    | 0.2    | 0.1    |
+| 2                                                   | -0.3   | -0.4   | -0.35  |
+| 4                                                   | -0.6   | -0.7   | -0.65  |
+| 6                                                   | -0.8   | -0.9   | -0.85  |
+| 8                                                   | -1.0   | -1.1   | -1.05  |
+</details>
+
+Fig. 5 The expression patterns of homoeologous genes of the $\mathsf { A } _ { \mathfrak { n } }$ and $\mathsf { D } _ { \mathsf { n } }$ subgenomes in Gossypium hirsutum.a Percentage of the homoeologous genes with a higher or lower expression level in the $\mathsf { D } _ { \mathsf { n } }$ subgenome than in the $\mathsf { A } _ { \mathfrak { n } }$ subgenome. b Number of homoeologous gene pairs with a 15-fold (i.e. log2(An/Dn) ≥ 4.0 or ≤ − 4.0) expression diference in the two subgenomes of G. hirsutum. MPV, mid-parent value. c Distribution of the homoeologous gene pairs based on their expression changes between the $\mathsf { F } _ { 1 }$ hybrid and MPV [log2(F1/MPV)] and their expression diference between the $\mathsf { A } _ { \mathsf { n } }$ and $\mathsf { D } _ { \mathsf { n } }$ homoeologs $[ \mathsf { l o g } _ { 2 } ( \mathsf { A } _ { \mathsf { n } } / \mathsf { D } _ { \mathsf { n } } ) ]$ in each tissue
+
+Te diferential expression of the 24-nt siRNA clusters in the parental and hybrid line were examined to evaluate the impact of 24-nt siRNA clusters on gene expression. When hybrid and parental lines were compared, it was found that 78.8% of 24-nt siRNA clusters were diferentially expressed in F1 and parental lines (Fig.  6a). At all three developmental stages, there were signifcantly more clusters of 24-nt siRNA with expression levels above MPV (67.6% in MH, 72.4% in SM and 66.5% in 1DPA) than clusters of 24-nt siRNA with expression levels below MPV (32.4% in MH, 27.6% in SM and 33.5% in 1DPA) (paired Student’s t-test, P ≤ 0.001) (Fig.  6b). Considering this, most of the 24-nt siRNA clusters had a log2FC (F1/MPV) value of 0.3 (Fig.  6c), which difered signifcantly from the null expectation [i.e., F1/MPV log2 (F1/ MPV) = 0]. Te number of 24-nt siRNA clusters found in F1 and their expression level were plotted on a 2D graph to evaluate the level of expression of 24-nt siRNA clusters in F1 and both parents (MPV) (Fig. 6d). Despite the peak around MPV, the distribution of 24-nt siRNA clusters at all three stages was negatively skewed (skewness > 0), indicating that the expression of 24-nt siRNA clusters in F1 was greater than that in MPV.
+
+Te 24-nt siRNA clusters were detected on all chromosomes, and their abundance was examined in three genomic regions: (i) gene-coding regions, (ii) the 2-kbfanking regions of a gene, and (iii) TEs. More than 74.3% of 24-nt siRNA clusters were colocalized with TEs in both parents and F1 hybrid; nevertheless, the 2-kb-fanking regions had a greater number of 24-nt siRNA clusters than the gene-coding regions (gene related siRNA, 24%) (Fig. S7c, Table S5). Furthermore, the expression patterns of the TEs that gave rise to clusters of 24-nt-siRNA in both parents and F1 were examined to determine whether the transcription of the TEs was afected by the non-additively expressed 24 nt siRNA clusters from the TE. Of the nearly 1127–1800 TEs detected as diferentially expressed between MPV and F1 in SM, MH and 1DPA, the number of TEs with lower expression levels in F1 than in MPV was signifcantly higher than the number of TEs with higher expression levels in MPV (71–75%, Student’s t-test, P ≤ 0.01; Fig. 6e). Considering this result, more than half of the TEs that produced 24-nt siRNAs, had log2(F1/MPV) values between − 0.2 and − 0.6, which difered from the predicted log2(F1/MPV) value of 0 (see
+
+a.   
+![](images/4b06c4dfa1bb65a010c9cfbf0a7267d05bf835b8bc4d95e3e5b3e6e7dac132cb.jpg)
+
+<details>
+<summary>pie</summary>
+
+| Category | Value |
+|---|---|
+| Additative | 21/2 |
+| Non-additative | 78.8 |
+| NAdE % | 35/32 |
+| NAdR% | 64/68 |
+</details>
+
+d.   
+![](images/6db2c18034f2ba771d323d780cd2537f0e9c3f8a9a28b88bf0bf69bcb00da5c5.jpg)
+
+<details>
+<summary>line</summary>
+
+| Expression Level | MH   | SM   | 1DPA |
+| ---------------- | ---- | ---- | ---- |
+| Low parent       | 0    | 0    | 0    |
+| High parent      | 5000 | 6500 | 5500 |
+</details>
+
+g.   
+![](images/aba5d5469ed81d45043cbdd7f68b5b6f652a3e57b4db490ffd594edb32ac0133.jpg)
+
+<details>
+<summary>other</summary>
+
+| Category         | Count |
+| ---------------- | ----- |
+| MH               | 225   |
+| Downstream       | 222   |
+| Coding region    | 155   |
+| Outside          | 55    |
+| Both             | 41    |
+| Outside          | 39    |
+| Outside          | 129   |
+</details>
+
+b.   
+![](images/5f857fa55646df30ec1e61bf4b49119e27bcabcb789fe9b6bef7cdba35d8c25d.jpg)
+
+<details>
+<summary>bar</summary>
+
+| F1 Range | MH    | SM    | 1DPA  |
+| -------- | ----- | ----- | ----- |
+| F1<MPV   | 45000 | 38000 | 47000 |
+| F1>MPV   | 95000 | 102000| 93000 |
+</details>
+
+e.   
+![](images/06820e5015a3390c8c3577f852693a857f12b4b072c06b33df5e5b8e3bb60a29.jpg)
+
+<details>
+<summary>bar_stacked</summary>
+
+| Category | Downregulated | Upregulated |
+| :--- | :--- | :--- |
+| MH | 1012 | 375 |
+| SM | 1360 | 440 |
+| 1DPA | 808 | 219 |
+</details>
+
+![](images/f96f7427a4d3a01a1c58aba9a99b656d1e308262efe7e4630ef97139716556d5.jpg)
+
+<details>
+<summary>other</summary>
+
+| Category         | Count |
+| ---------------- | ----- |
+| SM only          | 281   |
+| Downstream only  | 255   |
+| Coding region    | 155   |
+| SM ∩ Downstream | 174   |
+| SM ∩ Coding region | 90    |
+| SM ∩ Coding region | 100   |
+| SM ∩ Downstream | 75    |
+</details>
+
+C.   
+![](images/9a0aa55dd34c266b7bda1a55483b4754d936893d218aac6bedb7ab08b0739ad1.jpg)
+
+<details>
+<summary>line</summary>
+
+| Fold change of the expression level Log₂(F₁/MPV) | MH    | SM    | 1DPA  |
+| ----------------------------------------------- | ----- | ----- | ----- |
+| -4                                              | 0     | 0     | 0     |
+| -2                                              | 5000  | 5000  | 5000  |
+| 0                                               | 22000 | 22000 | 18000 |
+| 2                                               | 5000  | 5000  | 5000  |
+| 4                                               | 0     | 0     | 0     |
+</details>
+
+f.   
+![](images/1cd0f3cad5ff402f41bc4b0d9875902533c6ff5fb20a2c7c868fb2da0017d953.jpg)
+
+<details>
+<summary>line</summary>
+
+| Fold change of the expression level | MH   | SM   | 1DPA |
+| ----------------------------------- | ---- | ---- | ---- |
+| -3.0                                | 0    | 0    | 0    |
+| -2.4                                | 20   | 20   | 10   |
+| -1.8                                | 60   | 60   | 30   |
+| -1.2                                | 120  | 120  | 80   |
+| -0.6                                | 240  | 240  | 240  |
+| 0.0                                 | 250  | 240  | 240  |
+| 0.6                                 | 200  | 180  | 160  |
+| 1.2                                 | 100  | 70   | 50   |
+| 1.8                                 | 40   | 30   | 20   |
+| 2.4                                 | 10   | 5    | 5    |
+| 3.0                                 | 0    | 0    | 0    |
+</details>
+
+![](images/6d4a5c8ca05b9ad91d8e586a6b872314587cb279b40c8edbe7c80a847ebc31b3.jpg)
+
+<details>
+<summary>other</summary>
+
+| Category             | Value |
+| -------------------- | ----- |
+| 1DPA only            | 120   |
+| Downstream 1kb       | 94    |
+| Coding region        | 47    |
+| 1DPA ∩ Downstream 1kb | 30    |
+| 1DPA ∩ 1DPA only     | 50    |
+| 1DPA ∩ 1DPA ∩ Coding region | 22    |
+| 1DPA ∩ 1DPA ∩ Downstream 1kb | 46    |
+</details>
+
+Fig. 6 Expression patterns of the 24-nucleotide (nt) siRNA clusters in the F1 hybrid. a Non-additive expression of 24-nt siRNA clusters in hybrid compared to MPV. b Number of the 24-nt siRNA clusters that have a higher or lower expression level in the F1 hybrid compared with the mid-parent value (MPV). c Distribution of the number of the 24-nt siRNA clusters based on their expression level changes between the F1 hybrid and MPV in each tissue. d Distribution of the number of the 24-nt siRNA clusters based on their expression levels in the F1 hybrid compared with those in the two parents and MPV. e Number of transposable elements (TEs) that were up- or downregulated in the F1 hybrid compared with MPV (fold change > 1.5). f Distribution of the number of TEs based on their expression level changes in the F1 hybrid and MPV in each tissue. g Venn diagram showing the number of the non-additively expressed genes that had siRNA clusters in coding regions or 1-kb fanking regions in MH, SM and 1DPA.
+
+Fig. 6f ). Tis indicates that in F1, the TEs’ activity related to the 24-nt siRNA clusters was reduced.
+
+According to the distribution study, most of the 24-nt siRNA clusters associated with genes were detected in 2-kb regions upstream or downstream of non-additively expressed genes. siRNA clusters were found in 2-kb upstream regions in 450, 620 and 222 genes; in 2-kb downstream regions in 445, 619 and 220 in the hybrid MPV-DEGs; and in coding regions in 290, 420 and 145 genes in MH, SM and 1DPA, respectively (Fig.  6g). In addition, the 24-nt siRNA clusters are diferentially expressed in 335 (28%), 641 (38%), and 250 (42%) nonadditively expressed genes in the hybrid MPV-DEGs in MH, SM, and 1DPA, respectively (Table S5).
+
+MiRNAs are non‑additively repressed more in the F1 hybrid To examine the possible contribution of miRNA to the heterosis in G. hirsutum, the expression patterns of hybrid and both its parents were analyzed at three developmental stages. In total, 105 known miRNAs from 65 families were found in three genotypes. At the three stages, 83 (38 families) of the 105 conserved miR-NAs were identifed as not additively expressed between hybrid and parental lines (P ≤ 0.01, FDR ≤ 0.05, Table S6a). Out of the 83 diferentially expressed miRNAs, there was non-additive repression of 14, 24, and 12 miR-NAs in MH, SM, and 1DPA, respectively, whereas nonadditive activation of 11, 10, and 12 miRNAs in MH, SM, and 1DPA, respectively. Some of the best functionally characterized miRNAs conserved between monocot and eudicot were found in this category (for example, miR159/160, miR164/166, miR319, miR393, miR396, and miR408) (Fig.  7a). Over and above the known miRNAs, 32, 46, and 34 novel miRNAs were found in MH, SM, and 1DPA, respectively (Table S6a). Based on their expression levels in F1 and parental lines, we found that F1 had more down-regulated novel miRNAs than up-regulated novel miRNAs in MH (21/32, 65.25%), SM (34/46, 73.91%) and 1DPA (24/34, 70.58%).
+
+Using gene models from G. hirsutum genome annotation [28, 29], and psRNAtarget analysis, we could predict the target genes of these non-additively expressed miR-NAs (DEmiRs) [30]. 9789 targets were found, including 4961 for 83 known miRNAs and 4828 for 112 novel miR-NAs (Table S6b&c). Te majority of miRNAs processed a wide range of target gene families, including MAP kinase, UDP Glycosyltransferase superfamily protein, Expansin, growth-regulating factors (GRFs), GRAS family transcription factor, Starch synthase 2, calcium-dependent protein kinase, and Ethylene response factors. Te correlations between targets and miRNAs were assessed using the Pearson correlation coefcient approach [31]. A strong negative correlation (r = 0.78) was observed between the expression levels of the known miRNAs and their corresponding target genes. To better understand the likely involvement of suppressed miRNAs in heterosis, their target genes were subjected to GO enrichment analysis. Most of the target genes were functionally annotated in eight biological processes, nine molecular components, and four cellular components, including auxin signalling, plant development, stress response, sequencespecifc DNA-binding transcription factor, and ion binding (P ≤ 0.01) (Fig. 7b).
+
+# Global methylation profle of hybrid and its parental lines
+
+To investigate the role of epigenetic regulation in heterosis, we used bisulfte sequencing to create maps of methylated cytosines at single-base resolution at the SM stage of the hybrid and its parental lines. A total of 1641 million (about 268 million per sample) clean bisulfte sequencing reads with an average length of 150 bp were gained from the parental lines and their hybrid. 82.25% of a total read, were uniquely mapped to the reference genome of G. hirsutum, representing more than 10-fold coverage (Table S7a). Based on mapping efciency of 0.4–0.6% against the chloroplast DNA reference genome coverage, samples from both parents and hybrid had > 99% bisulfte conversion efciency in replicates (Table S7b). PCA showed that the diferent genotypes could be clearly distinguished from each other (Fig. S8a). Pearson correlation analysis was employed to test the reproducibility of the results, and a high correlation (0.92–0.96) was observed between the biological replicates of each sample (Fig. S8b).
+
+Te dynamics of cytosine methylation at CG, CHG, and in the CHH context vary genome-wide between the parental lines and their hybrid. In comparison to either parent, the hybrid displayed lower average methylation in the CHH context and higher average methylation in the CG and CHG contexts (Fig.  8a). In addition, methylated cytosine frequencies in the F1 hybrid and its parental lines ranged from 33.67 to 37.17% (Table S7c). Te proportion of mCs in three genotypes was approximately 48.2–56.3%, 26.1–30.5%, and 13.3–25.6% in CG (CpG), CHG, and CHH respectively (Fig.  8b). Of note, the hybrid had a 1.18-fold higher mCs content (56.3 and 30.45%, respectively) in the CG and CHG contexts but a 1.98-fold lower mCs content in the CHH methylation context compared with both parents (Fig.  8b). Average methylation across all 26 chromosomes in all three genotypes was higher in the CG and CHG contexts than in the CHH context, according to chromosome-by-chromosome segmentation of average methylation (Fig.  8c). In addition, the hybrid and male parent had higher methylation than the female parent in chromosomal regions chrD08, chrA07, and chrA09. However, compared to the male, the hybrid’s methylation of the same chromosomes was slightly lower (Fig. 8c).
+
+Te parental lines and their hybrid were tested for the mCs’ pattern in several genomic regions (Fig. Sa-f ). Approximately 40% of these mCs sites were found to be gene-related, whereas 60% were found associated with transposon elements (TEs). Te methylation pattern within the bodies of transposable elements (TE-bodies) and their 2  kb fanking regions for DNA elements, long terminal repeats (LTRs; copia and gypsy), and non-LTRs (LINEs and SINEs) was examined (Fig. S9a-c). For all TE types in TE body sequence, the hybrid showed higher levels of methylation than both parents in all methylation contexts (Fig. S9b-c). For DNA elements and non-LTRs, the methylation pattern was similar in all contexts, i.e. the methylation level was preferentially higher at the TE body than in the fanking regions (Fig. S9 a &c). In contrast, for LTRs, the methylation pattern was diferent in the diferent contexts: in the CG context, the TE body had higher methylation levels than the fanking regions, whereas in the CGH and CHH contexts, the fanking regions had higher levels of methylation (Fig. S9b).
+
+![](images/224eabc6532eddcdc90b8c774a2f35c3d5769d725b1d4aa0d23b127482b799ad.jpg)
+
+<details>
+<summary>bar_stacked</summary>
+
+| Category | MH | SM | DPA |
+|---|---|---|---|
+| miR156a-3p | 0 | 0 | 0 |
+| miR156b | 0 | 0 | 0 |
+| miR157 | 0 | 0 | 0 |
+| miR157d | 0 | 0 | 0 |
+| miR159a | 0 | 0 | 0 |
+| miR159e-3p | 0 | 0 | 0 |
+| miR160 | 0 | 0 | 0 |
+| miR160b-5p | 0 | 0 | 0 |
+| miR160d-5p | 0 | 0 | 0 |
+| miR160f | 0 | 0 | 0 |
+| miR162 | 0 | 0 | 0 |
+| miR164c | 0 | 0 | 0 |
+| miR165 | 0 | 0 | 0 |
+| miR166 | 0 | 0 | 0 |
+| miR166e | 0 | 0 | 0 |
+| miR166e-5p | 0 | 0 | 0 |
+| miR166g-3p | 0 | 0 | 0 |
+| miR166j-5p | 0 | 0 | 0 |
+| miR166k-3p | 0 | 0 | 0 |
+| miR166l-5p | 0 | 0 | 0 |
+| miR166n | 0 | 0 | 0 |
+| miR167 | 0 | 0 | 0 |
+| miR168 | 0 | 0 | 0 |
+| miR169a | 0 | 0 | 0 |
+| miR169a-3p | 0 | 0 | 0 |
+| miR169e-5p | 0 | 0 | 0 |
+| miR169f | 0 | 0 | 0 |
+| miR169g-3p | 0 | 0 | 0 |
+| miR169l-5p | 0 | 0 | 0 |
+| miR169p | 0 | 0 | 0 |
+| miR169r-5p | 0 | 0 | 0 |
+| miR170 | 0 | 0 | 0 |
+| miR170-3p | 0 | 0 | 0 |
+| miR171 | 0 | 0 | 0 |
+| miR171f | 0 | 0 | 0 |
+| miR171g | 0 | 0 | 0 |
+| miR172 | 0 | 0 | 0 |
+| miR2111 | 0 | 0 | 0 |
+| miR2949a-3p | 0 | 0 | 0 |
+| miR319 | 0 | 0 | 0 |
+| miR-319a | 0 | 0 | 0 |
+| miR-319c | 0 | 0 | 0 |
+| miR-319e | 0 | 0 | 0 |
+| miR3476-3p | 0 | 0 | 0 |
+| miR3476-5p | 0 | 0 | 0 |
+| miR390a | 0 | 0 | 0 |
+| miR390b | 0 | 0 | 0 |
+| miR390c | 0 | 0 | 0 |
+| miR393a | 0 | 0 | 0 |
+| miR393c | 0 | 0 | 0 |
+| miR394b-3p | 0 | 0 | 0 |
+| miR395 | 0 | 0 | 0 |
+| miR395d | 0 | 0 | 0 |
+| miR395e | 0 | 0 | 0 |
+| miR396 | 0 | 0 | 0 |
+| miR396-3p | 0 | 0 | 0 |
+| miR396c | 0 | 0 | 0 |
+| miR396d | 0 | 0 | 0 |
+| miR396g-3p | 0 | 0 | 0 |
+| miR396k-3p | 0 | 0 | 0 |
+| miR397-5p | 0 | 0 | 0 |
+| miR397a-5p | 0 | 0 | 0 |
+| miR398a | 0 | 0 | 0 |
+| miR398c-3p | 0 | 0 | 0 |
+| miR399a | 0 | 0 | 0 |
+| miR399b | 0 | 0 | 0 |
+| miR399c d<fcel>25 (with a small number) in the image. The image is a schematic representation of the horizontal bars. The labels on the bars are explicitly provided in the code.
+</details>
+
+![](images/c868973a0effed41af07f0ec9c4c88be7e3331b938fb4e223e91ba80061f74c9.jpg)
+
+<details>
+<summary>bubble</summary>
+
+| Category                          | Value       | Count |
+| --------------------------------- | ----------- | ----- |
+| Transferase activity              | 0.4         | 40    |
+| Oxidoreductase activity           | 0.4         | 40    |
+| Catalytic activity                | 0.3         | 3     |
+| Anion binding                     | 0.3         | 3     |
+| Anzyme regulatorore activity       | 0.3         | 3     |
+| Protein binding                   | 0.3         | 3     |
+| Cell                              | 0.25        | 2     |
+| Plant type primary cell wall biogenesis | 0.25        | 2     |
+| Sequence-specific DNA-binding transcription factor | 0.2         | 3     |
+| Nucleotide binding                | 0.2         | 2     |
+| Auxin signalling                  | 0.2         | 3     |
+| Plasma membrane                  | 0.15        | 1     |
+| Response to stress                | 0.1         | 7     |
+| Ion binding                       | 0.1         | 2     |
+| Purine nucleotide binding         | 0.1         | 1     |
+| Plant development                 | 0.1         | 4     |
+| Cell wall                         | 0.1         | 1     |
+| Carbohydrate derivative binding   | 0.1         | 1     |
+| Response to hormone               | 0.1         | 1     |
+| Transcription factor              | 0.1         | 1     |
+</details>
+
+Fig. 7 Changes of miRNAs and their targets in the F1 hybrid. a Expression changes of the diferentially expressed conserved miRNAs in the F1 hybrid compared with the mid-parent value (MPV) in the three samples. b Signifcantly enriched Gene Ontology terms of the diferentially suppressed miRNAs targets in the F1 hybrid
+
+In addition, mCs within genes body or within 2  kb fanking regions were also examined. Te average gene body methylation (GBM) was highest in the CG context, followed by the CHG and CHH contexts, for both the hybrid and its parental lines (Fig. S9d).Te degree of gene body methylation (GBM) in the CG and CHG contexts resembled the 2 kb fanking area and was highest in the hybrid, followed by the female and male parents. Te GBM in the CHH context had signifcantly lower methylation than the 2  kb fanking regions. Remarkably, the hybrid had the lowest average GBM in the CHH context; however, the methylation frequencies in both paternal lines were comparable (Fig. S9d). To avoid potential noise from transposable elements, the GBM was divided into exonic and intronic regions. Methylation of the exonic body was lower than that of the fanking regions, whereas methylation of the intronic body was higher than that of the fanking regions in all contexts in the three genotypes (Fig. S9e&f). When we compared the methylations in the hybrid and the parents in three diferent contexts, we found that the hybrid in the exonic body had lower methylation levels than its parents. In the intronic body, the methylation level of the hybrid genome followed the same pattern, except in the CHH context (Fig. S9e&f).
+
+![](images/dc825d36ac8ad6ba827eeddd437706241b5b164f2268e983a6539e616dc4c51a.jpg)
+
+<details>
+<summary>bar</summary>
+
+| Genotypes | CG (%) | CHG (%) | CHH (%) |
+|---|---|---|---|
+| Female | 74 | 54 | 12 |
+| F1 | 78 | 56 | 8 |
+| Male | 74 | 52 | 10 |
+</details>
+
+![](images/c7b42681832ab7cafc32b8f95b31bbc44dec4c02663cac9a221d9de84b668d9a.jpg)
+
+<details>
+<summary>bar_stacked</summary>
+
+| Gender | mCG (%) | mCHG (%) | mCHH (%) |
+|---|---|---|---|
+| Female | 48.7 | 26.1 | 25.2 |
+| F1 | 56.3 | 30.5 | 13.2 |
+| Male | 45.1 | 29.3 | 25.6 |
+</details>
+
+![](images/d8726a6b76fc74458072040b5db9abde41b3f32227ef84902d0bdfc207ac1235.jpg)
+
+<details>
+<summary>radar</summary>
+
+| Position | CG    | CHG   | CHH   |
+|--------|-------|-------|-------|
+| A01    | 0.6   | 0.4   | 0.2   |
+| A02    | 0.7   | 0.5   | 0.3   |
+| A03    | 0.8   | 0.6   | 0.4   |
+| A04    | 0.9   | 0.7   | 0.5   |
+| A05    | 1.0   | 0.8   | 0.6   |
+| A06    | 1.1   | 0.9   | 0.7   |
+| A07    | 1.2   | 1.0   | 0.8   |
+| A08    | 1.3   | 1.1   | 0.9   |
+| A09    | 1.4   | 1.2   | 1.0   |
+| A10    | 1.5   | 1.3   | 1.1   |
+| A11    | 1.6   | 1.4   | 1.2   |
+| A12    | 1.7   | 1.5   | 1.3   |
+| A13    | 1.8   | 1.6   | 1.4   |
+</details>
+
+![](images/e21099105a02faf6f5a4e32eea3169844f9edac07e3d2c86905b806bede727d2.jpg)
+
+<details>
+<summary>other</summary>
+
+| Genotype | Female | Hybrid | Male |
+|----------|--------|--------|------|
+| D01      | 0.6    | 0.4    | 0.2  |
+| D02      | 0.5    | 0.3    | 0.15 |
+| D03      | 0.4    | 0.25   | 0.1  |
+| D04      | 0.3    | 0.2    | 0.05 |
+| D05      | 0.2    | 0.15   | 0.05 |
+| D06      | 0.15   | 0.1    | 0.05 |
+| D07      | 0.1    | 0.05   | 0.05 |
+| D08      | 0.05   | 0.05   | 0.05 |
+| D09      | 0.05   | 0.05   | 0.05 |
+| D10      | 0.05   | 0.05   | 0.05 |
+| D11      | 0.05   | 0.05   | 0.05 |
+| D12      | 0.05   | 0.05   | 0.05 |
+| D13      | 0.05   | 0.05   | 0.05 |
+| CHG      | 0.6    | 0.4    | 0.2  |
+| CHH      | 0.4    | 0.3    | 0.2  |
+</details>
+
+Fig. 8 Global methylome maps and DNA methylation landscapes of hybrid and parental lines. a Average methylation, (b) methylated cytosine (mCs) proportion, and (c) average methylation distribution across 26 G. hirsutum at CG, CHG, and CHH methylation context
+
+# Diferentially methylated regions analysis in hybrid and its parental lines
+
+A total of 15,488, 8199, and 3603 unique DMRs were identifed in the methylation contexts CG, CHG, and CHH, respectively, by analysing the diferentially methylated regions (DMRs) between the hybrid and its parental lines (female, male) (Table S8). Methylation levels varied signifcantly (either higher or lower) from MPVs in 94.25% (27,289) of the detected DMRs, indicating a nonadditive methylation interaction (interactive DMRs (I)) in these regions (Table S8). In contrast, a limited number (5.75%) of DMRs were categorized as noninteractive (NI), indicating that they were present in an additive manner (P-value ≤ 0.001). Diferentially methylated regions were divided into transchromosomal methylation (TCM), in which hybrid had signifcantly higher methylation levels than MPVs, and transchromosomal demethylation (TCdM), in which hybrid had signifcantly lower methylation levels (FDR ≤ 0.01). Of the 27,289 DMRs identifed in the hybrid, there were 14,402 TCM DMRs and 12,887 TCdM DMRs (Table S8). Comparison of the percentage of methylation contributed by the parental lines in the hybrid revealed that 73% of the loci in the hybrid were methylated by both parents. It was observed that Latif and Taban uniquely each contributed 2.92% and 4.26% of the methylation in the hybrid, respectively (Fig.  9a). Interestingly 4.72% of loci had no methylation in the parents but were methylated in the hybrid (de novo methylation). Tis might explain why F1 has a higher degree of methylation. Te frequency distribution of methylation levels of individual bases shows that there was no change in the number of highly methylated cytosines, but there was a decrease in the unmethylated cytosines in F1 (Fig.  9b), indicating that the decrease in unmethylated cytosines was mainly responsible for the increase in methylation levels in F1. Furthermore, analysis of the genomic distribution of DMRs revealed that the majority of DMRs in the hybrid and its parents originated from intergenic regions of the genome (Fig. 9c–e). DMRs from intergenic, intragenic, and promoter areas accounted for about 82.2-86.84%, 4.2–4.8%, and 6.8–8.2% of total DMRs in female versus hybrid, respectively (Fig.  9c). Similarly, in male vs. hybrid, of total DMRs, 80.6–85.7%, 3.8–8.2%, and 4.9–8.2% were from intergenic, intragenic, and promoter regions, respectively (Fig. 9d). Also, comparing female vs. hybrid, all intergenic, intragenic, and promoter DMRs were hyper-methylated in the CG and CHG methylation contexts, but hypo-methylated in the CHH methylation context (Fig.  9c). In male vs. hybrid and male vs. female, intergenic DMRs were hypo-methylated in all the three methylation contexts (Fig. 9d, e).
+
+a.   
+![](images/9e910b4ea9020476ec553b506302bea14a3a85ad7dd7327d77631ad512b8132b.jpg)
+
+<details>
+<summary>pie</summary>
+
+| Category | Percentage (%) |
+| :--- | :--- |
+| Female Male F1 | 73 |
+| Male Male F1 | 10 |
+| Methylated | 5 |
+| Not Methylated | 4 |
+| Male X O X | 3 |
+| Male X O X | 2 |
+| Male XX X | 1 |
+| Male XX X | 2 |
+| Male XXX X | 1 |
+</details>
+
+b.   
+![](images/fa5eb5cf3b66dd19a9281bd6e7b8fa066adc16f3d55d237249df6267c1953201.jpg)
+
+<details>
+<summary>bar</summary>
+
+| % Methylation per Base | Male | F1 | Female |
+|---|---|---|---|
+| 0 | 28 | 26 | 30 |
+| 0~5 | 6 | 5.5 | 5.5 |
+| 5~10 | 4.5 | 3.5 | 4.5 |
+| 10~90 | 31 | 23 | 30 |
+| 90~95 | 11 | 8 | 10 |
+| 95~100 | 19.5 | 17 | 18 |
+| 100 | 21 | 19 | 20 |
+</details>
+
+C. Female vs Hybrid   
+![](images/722d6ee078faa8921047fc84cc3cdce42a97beeeae423036115cf6a2bff6a474.jpg)
+
+<details>
+<summary>bar</summary>
+
+| Group | Category | Hyper | Hypo |
+|---|---|---|---|
+| CG | Intergenic | 2850 | 750 |
+| CG | Intragenic | 100 | 80 |
+| CG | Promoter | 100 | 120 |
+| CHG | Intergenic | 1630 | 360 |
+| CHG | Intragenic | 50 | 40 |
+| CHG | Promoter | 80 | 60 |
+| CHH | Intergenic | 120 | 680 |
+| CHH | Intragenic | 20 | 60 |
+| CHH | Promoter | 20 | 180 |
+</details>
+
+d. Male vs Hybrid   
+![](images/826dbabeb41dc7b9d69d1545b756fb19800e81bdfd5095280a42410d6aba5678.jpg)
+
+<details>
+<summary>bar</summary>
+
+| Category | Type | Hyper | Hypo |
+| :--- | :--- | :--- | :--- |
+| CG | Intergenic | 500 | 1500 |
+| CG | Intragenic | 80 | 80 |
+| CG | Promoter | 80 | 80 |
+| CHG | Intergenic | 320 | 860 |
+| CHG | Intragenic | 30 | 20 |
+| CHG | Promoter | 60 | 60 |
+| CHH | Intergenic | 70 | 560 |
+| CHH | Intragenic | 40 | 20 |
+| CHH | Promoter | 60 | 20 |
+</details>
+
+e.Male vs Female   
+![](images/f350a725956bec53b0ec588da1915b4cce4ad726c855c35637c74eec51362c52.jpg)
+
+<details>
+<summary>bar</summary>
+
+| Category | Subcategory | Hyper | Hypo |
+| :--- | :--- | :--- | :--- |
+| CG | Intergenic | 1600 | 7000 |
+| CG | Intragenic | 200 | 150 |
+| CG | Promoter | 200 | 150 |
+| CHG | Intergenic | 800 | 3500 |
+| CHG | Intragenic | 150 | 50 |
+| CHG | Promoter | 200 | 100 |
+| CHH | Intergenic | 400 | 500 |
+| CHH | Intragenic | 150 | 50 |
+| CHH | Promoter | 150 | 150 |
+</details>
+
+f.   
+![](images/44a7b2fed10b1e7062cd96b52cb863d9a9ccfdeffa7b6b74ef28778c3d57db06.jpg)
+
+<details>
+<summary>line</summary>
+
+| Gene body | CG methylation (Line 1) | CG methylation (Line 2) | CG methylation (Line 3) | CG methylation (Line 4) |
+| --------- | ------------------------ | ------------------------ | ------------------------ | ------------------------ |
+| -3kb      | 0.12                     | 0.11                     | 0.10                     | 0.09                     |
+| -1.5      | 0.08                     | 0.07                     | 0.06                     | 0.05                     |
+| 0         | 0.05                     | 0.04                     | 0.03                     | 0.02                     |
+| 1.5       | 0.08                     | 0.07                     | 0.06                     | 0.05                     |
+| 3kb       | 0.11                     | 0.10                     | 0.09                     | 0.08                     |
+</details>
+
+![](images/04a8b1a9d9ef2a6ee479c5f5dafe73bef63fd8810f12966f1e6287f2166d91c0.jpg)
+
+<details>
+<summary>line</summary>
+
+| Gene body | CHG methylation |
+| --------- | --------------- |
+| -3kb      | 0.1             |
+| -1.5      | 0.08            |
+| 0         | 0.04            |
+| 1.5       | 0.06            |
+| 3kb       | 0.1             |
+</details>
+
+![](images/2227571939b06e3ad22767dec207aae99f57d1f75c6c1f1929f094a6b0a015d7.jpg)
+
+<details>
+<summary>line</summary>
+
+| Gene body | High  | Mid-High | Mid-low | Low   |
+| --------- | ----- | -------- | ------- | ----- |
+| -3kb      | 0.18  | 0.17     | 0.10    | 0.10  |
+| -1.5      | 0.22  | 0.21     | 0.14    | 0.13  |
+| 0         | 0.23  | 0.22     | 0.16    | 0.14  |
+| 1.5       | 0.12  | 0.11     | 0.10    | 0.09  |
+| 3kb       | 0.11  | 0.10     | 0.09    | 0.08  |
+</details>
+
+Fig. 9 Methylation patterns in the two parents and their F1 hybrid. a Distribution (by per cent of total) of the eight methylation patterns. b Histogram showing the distribution frequency of the cytosine methylation level. c-e Bar plots representing DMRs distribution at intergenic, intragenic, and promoter regions in (c) Female vs. hybrid, (b) Male vs. hybrid, and (c) Male vs. Female. f Relationships between CG (left), CHG (middle) and CHH (right) methylation and expression levels of genes, which were divided into four quartiles (high, blue; mid-high, yellow; mid-low, pink; and low, gray)
+
+In addition, we examined the methylation level in DEGs and found that of the 1912 nonadditively expressed genes in F1, 925 (74%), 946 (75%), and 748 (59%) had different levels of DNA methylation in 1 kb upstream, 1 kb downstream, and coding regions, respectively, which we termed diferentially methylated genes (DMGs). We categorized DMGs into four groups according to their level of expression (from low to high) and compared them with DNA methylation alterations so as to further examine the connection between gene expression and methylation level. Te methylation level in the gene body was found to be inversely related to the gene expression level (in all three contexts), but genes with diferent CHH methylation level in the upstream region had the highest expression level, proving that altered DNA methylation levels afect the gene expression level in the hybrid (Fig. 9f).
+
+# Higher levels of DNA methylation in hybrid are associated with the 24‑nt siRNA clusters
+
+siRNAs can induce DNA methylation at loci with homologous sequences in plants through a process known as RNA-directed DNA methylation (RdDM). To investigate the involvement of this process in the epigenic regulation of heterosis, we analysed the probable association between DNA methylation and 24-nt siRNA using our data. Te results showed that siRNA-containing regions in hybrid and parental lines had signifcantly higher DNA methylation levels than non-siRNA-containing regions in all contexts (Fig.  10a-d), suggesting that the RdDM pathway infuences a substantial portion of the methylation sites at these loci. To determine whether siRNA is involved in hybrid-methylome interactions or not, we searched for clusters of 24-nt siRNA in the TCdM and TCM DMRs. We found clusters of 24-nt siRNA in 75.88% of hybrid TCM DMRs and 79.63% of hybrid TCdM DMRs (Table S9). Te presence of 24-nt siRNA clusters at diferent methylation sites was not randomly distributed and followed a particular pattern, namely more siR-NAs at CHH methylation sites followed by CG and CHG (Table S9). In the hybrid, 74.34% (TCM) and 79.65% (TCdM) of the clusters of 24-nt siRNA were equally contributed by both the parents. Approximately 3–6% of the clusters of 24-nt siRNA of the parents were exclusive, whereas 42–46% of the clusters of 24-nt siRNA of the hybrid were from the parents (Table S9). In addition, there were some DMR regions (\~ 2-5% in the hybrid) in which clusters of 24-nt siRNA were present only in the hybrid but not in the parental lines. Tese 24-nt siRNA clusters in the hybrid line could be the result of trans generation of a parent that led to DNA methylation in the hybrid line. Categorisation of the small 24-nt-siRNA clusters based on the level of methylation in the parental lines also revealed that the 24-nt-siRNA clusters containing regions that were diferentially methylated in the parental lines accounted for 74% of the increase in methylation in the hybrid line (Fig. 10e).
+
+We also investigated the connection between 24-ntsiRNA clusters, methylation, and DMG expression levels. Te results showed that CHH methylation on rich-siRNA regions was signifcantly lower in F1 than in the parental lines (Fig. S10). Tis result, indicating that siRNA abundance does not positively correlate with levels of DNA methylation in the CHH context. Te ability of 24-nt siRNA clusters to move and thus facilitate epigenetic regulation makes them an attractive possibility for regulating transgressive phenotypes in hybrid.
+
+# Trade‑of between growth vigour and plant‑pathogen interaction
+
+To comprehend the molecular mechanism underlying allotetraploid cotton heterosis, we performed GO and KEGG enrichment analyses for the MPV-DEGs. Te enrichment analyses revealed 150 signifcantly enriched GO terms (Fisher’s exact test $\mathrm { P } \leq 0 . 0 1 ; \mathrm { F D R } \leq 0 . 0 5 )$ (Table S10, Fig.  11). Among the diferent sub-ontologies (BP, MF, CC), Biological Process (BP) had the highest number of signifcant terms (FDR < 0.05). Te signifcantly enriched biological categories over these lists of GO terms were clustered using REViGO. Te most notable functional clusters that moved to F1 were “Plant-pathogen interaction” (1075 genes), “Biosynthetic process of plant hormones and signal transduction” (869 genes) and, “Regulation of transcription-DNA-directed” (676 genes). Tese clusters, accounting for more than half of the biological terms (FDR < 0.05), might be related to the observed heterosis (Table S10).
+
+Plant-pathogen interaction” in F1 hybrid was one of the most enriched biological terms. Notably, there was a down-regulation in several known pathogen response genes in the F1 hybrid, including R genes (Gh-D05G3723), F-box protein (Gh-A01G0235), MLO-like protein (Gh-A02G0615), Pathogenesis Related Gene 1 (PR1, Gh-A05G0022), chitinase-3-like protein (Gh-A04G1304), disease resistance protein
+
+A.   
+![](images/21dd7ac04307d384846d878d852fbcebdf521dd3446204eb4dc3d837bec0463b.jpg)
+
+<details>
+<summary>bar</summary>
+
+| Genotypes | CG with small RNA (%) | CG without small RNA (%) | CG total (%) |
+|---|---|---|---|
+| Male | 0.9 | 0.62 | 0.72 |
+| F1 | 0.92 | 0.62 | 0.77 |
+| Female | 0.9 | 0.55 | 0.75 |
+a, b indicate statistical significance; 'a' indicates no significant difference between CG with small RNA and CG without small RNA in Male; 'b' indicates no significant difference in CG without small RNA in Female. The bars are labeled with lowercase letters (a, b) above each pair of bars.
+</details>
+
+![](images/16775a083c273babdedb3038e3cc5d51c3d2ccadbd8a5856409b71da56409f99.jpg)
+
+<details>
+<summary>bar</summary>
+
+| Genotypes | Regions with small RNA (%) | Regions without small RNA (%) | Whole genome (%) |
+|---|---|---|---|
+| Male | 0.79 | 0.40 | 0.45 |
+| F1 | 0.77 | 0.38 | 0.48 |
+| Female | 0.75 | 0.36 | 0.50 |
+a, b, c denote statistical significance; a, b, c denote significance levels respectively.
+</details>
+
+B.   
+![](images/21007327713b4c394f3de43c26d1e4755758b6f1bbd04c6d5145a139af3d0e31.jpg)
+
+<details>
+<summary>bar</summary>
+
+| Genotypes | CHG with small RNA (%) | CHG without small RNA (%) | CHG total (%) |
+|---|---|---|---|
+| Male | 0.8 | 0.45 | 0.55 |
+| F1 | 0.78 | 0.43 | 0.58 |
+| Female | 0.76 | 0.39 | 0.52 |
+a, b indicates statistical significance.
+</details>
+
+E.
+
+![](images/073b84e1f330c29f33b8ff883845bc51943c1bc4b86a6794c9d9eff3535fe275.jpg)
+
+<details>
+<summary>pie</summary>
+
+| Category | Percentage (%) |
+| :--- | :--- |
+| Female <Male | 40 |
+| Female>Male | 34 |
+| Female=Male=0 | 12 |
+| Female=Male<0 | 14 |
+</details>
+
+![](images/f750402b982ebebba6a13f2c1824ef0e08d7f483058d265033b8eb70d48b7f99.jpg)
+
+<details>
+<summary>bar</summary>
+
+| Genotypes | CHH with small RNA (%) | CHH without small RNA (%) | CHH total (%) |
+|---|---|---|---|
+| Male | 0.18 | 0.14 | 0.39 |
+| F1 | 0.20 | 0.12 | 0.31 |
+| Female | 0.16 | 0.10 | 0.36 |
+a indicates statistical significance; b and c denote significant differences between groups.
+</details>
+
+Fig. 10 The genomic distribution of 24-nt siRNAs clusters in hybrid and its expression. Regions covered by 24-nt siRNA account for most of the methylation increase in CG (a), CHG (b), and CHH (c) cytosine contexts in hybrid. d Contribution to increased DNA methylation in F1 hybrid by the regions with and without 24-nt siRNA in comparison with the whole genome. Duncan’s analysis was employed to test statistical signifcance. Diferent alphabets indicated in the graphs revealed signifcant diferences between the groups at P < 0.05 level of signifcance. e Contribution to increased DNA methylation in F1 hybrid by the regions with or without 24-nt siRNA. The cytosine positions of the genome were divided into four categories based on the methylation levels of the parental lines (i) positions highly methylated in Maternal line than paternal line (Female > Male), (ii) positions highly methylated in paternal line than Maternal line (Male < Female), (iii) positions where methylation was detected but levels were equal in Maternal line and paternal line (Female = Male > 0) and (iv) positions lacking detectable methylation in both Maternal and paternal lines (Female = Male = 0)
+
+![](images/0adf5e4efe0fa0770803b66b8f5b3d1554542970257e0347e3c2b943453708fa.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+    A["Chorismate"] --> B["Isochorismate"]
+    C["Phenylalanine"] --> D["Cinnamic acid"]
+    D --> E["C4H"]
+    E --> F["4-Hydroxy cinnamic acid"]
+    G["Salicylic acid"] --> H["NPR1"]
+    H --> I["TGF"]
+    I --> J["PR genes"]
+    
+    K["Ethylene responsive"] --> L["ETRs"]
+    L --> M["CTR1"]
+    M --> N["EIN2"]
+    N --> O["SA biosynthensis"]
+    P["Auxin pathway"] --> Q["Tryptophan"]
+    Q --> R["IPA"]
+    R --> S["IAD"]
+    S --> T["AUXIN(IAA)"]
+    T --> U["NIIT2"]
+    U --> V["Indole glucosinate"]
+    V --> W["IAOX"]
+    X["p-Coumaroyl COA"] --> Y["Narigenin chalcone"]
+    Y --> Z["Nargenin"]
+    Z --> AA["F3H"]
+    AA --> AB["Dihydro-kaempferol"]
+    AB --> AC["Quercetin"]
+    AC --> AD["kaempferol"]
+    
+    subgraph SA pathway
+        B -->|ICS1| E
+        D -->|C4H| F
+        F --> G
+        G --> H
+        H --> I
+        I --> J
+        J --> K
+        K --> L
+        L --> M
+        M --> N
+        N --> O
+        O --> P
+        P --> Q
+        Q --> R
+        R --> S
+        S --> T
+        T --> U
+        U --> V
+        V --> W
+        W --> X
+    end
+    
+    subgraph Ethylene responsive
+        L --> M
+        N --> O
+        P --> Q
+        Q --> R
+        R --> S
+        S --> T
+        T --> U
+        U --> V
+        V --> W
+        W --> X
+    end
+    
+    subgraph Auxin pathway
+        Q --> R
+        R --> S
+        S --> T
+        T --> U
+        U --> V
+        V --> W
+        W --> X
+    end
+    
+    subgraph Flavonoid pathway
+        Y --> Z
+        Z --> AA
+    end
+    
+    note right of A: log2(FPKM)
+    note right of K: GH_A12G2643; GH_Sca123822G01; GH_A01G1839; GH_A07G1564; GH_D11G2259; GH_D13G2458; GH_A13G2057; GH_A05G0186; GH_A07G0084; GH_D12G2207; GH_D08G2555; GH_A02G0029; GH_A05G3499; GH_A08G0770; GH_A08G0771; GH_A12G1761; GH_A12G2416; GH_A05G0953; GH_A07G1744; GH_A01G0260; GH_A10G0517; GH_D10G1560; GH_D13G2504; GH_D13G2502; GH_A07G2321; GH_A10G0596; GH_A11G2241; GH_A13G0889; GH_A13G1315; GH_D09G1041; GH_D13G1655; GH_A12G0367; GH_D12G0299; GH_D07G1197
+    note right of A: Male Female MPV F1
+```
+</details>
+
+Fig. 11 Role of diferentially expressed genes (DEGs) and diferentially methylated genes (DMGs: methylated-hybrid-MPV DEGs) in the hybrid. DEG Patterns in several key regulatory networks associated with heterosis, including plant growth (auxin and favonoid pathways), defence (SA pathway and favonoid pathway), and stress response (SA pathway and ethylene pathway), are presented for the hybrid. Suppressed expression of methylated genes results in altered response in defence, SA and favonoid pathway. Heatmap showing log2 (fold change) of altered expression patterns of genes involved in the auxin biosynthesis pathway SA pathway, ethylene pathway, and favonoid pathway. Gene names are colour coded to show the change in expression between hybrid
+
+(RPS2, Gh-A03G2102), and Lipid Transfer Protein 3 (LTP3, Gh-A02G0264). Tere is a close relationship between SA and plant defense responses. A wide range of genes induced by SA, from pathogenesis genes to WRKY transcription factors, were down-regulated in F1 (Fig. 11). Te decrease of SA and expression of relevant genes for defense mechanism in F1 hybrid could release more resources for plant growth. TBF1 (Tl1 Binding Transcription Factor1) is a transcription factor activated by SA that afects the allocation of resources between defense and growth. TBF1 inhibits genes involved in plant growth, such as chloroplast proteins, while it increases the expression of genes involved in plant defense. TBF1 expression was found to be more than fve times lower in F1 hybrid than in MPV. Te parental lines showed either down-regulation (maternal) or up-regulation (paternal) of TBF1 and a number of TBF1-controlled genes. Te decreased expression of TBF1, like that of other SA-responsive genes (Fig. 11), was mainly due to a substantial decrease in expression of the maternal allele. Chloroplast-associated genes, one of TBF1’s downstream targets, were upregulated, whereas TBF1-induced defense genes were downregulated, mainly by alteration in the maternal allele expression (Table S3). Similarly, several Ethylene Response Factors (ERF) (SA-repressed genes) involved in plant growth and response to abiotic stress, including as ERF114, ERF112, ERF117, and ERF118, were unregulated in the hybrid (Fig. 11). Te altered expression pattern of defense-related genes observed in F1 indicates that the basic defense system of hybrid may be reduced. Te reduced activity of hybrid defense cells could be a critical component for improved growth if we consider the opposed association between plant development and plant immunity.
+
+Te growth and development of plants are regulated by hormones. According to enrichment analysis, the most important hormone associated with the term “plant hormone signal transduction” is auxin (Indoleacetic Acid (IAA)). Although no genes for main auxin biosynthesis pathway were detected in the DEGs of the MPV hybrid, the auxin transporter protein (AUX1) and genes responsive to auxin (SAUR, IAA17, and NIT2) were signifcantly enriched and upregulated in the F1 hybrid, suggesting that the rapid response of the hybrid to auxin may stimulate plant growth (Fig. 11). Over and above the changes in auxin biosynthesis, changes in auxin transport afecting local auxin concentrations could also lead to variations in auxin responsiveness. Flavonoids are repressors of auxin transport [32], and the hybrid exhibited downregulation of favonoid biosynthesis genes, refecting a decrease in the level of favonoids in the hybrid and possibly increased IAA transport rates compared with the parental lines. Te downregulation of favonoid production has far-reaching consequences for the transcriptome of the hybrid, as shown by the overrepresentation of genes regulating favonoids genes in an enrichment pattern associated with a drop in favonoid concentration (Fig. 11). Tese impacts of lower synthesis of favonoid on the transcriptome of the hybrid seem to be facilitated in part by changes in localized concentrations of IAA, as evidenced by the fact that more than half (60%) of favonoid-regulated diferentially expressed F1 genes are also controlled by auxin. Tese coregulated genes include those that are extremely sensitive to variations in the concentration of auxin (i.e., typical auxin-inducible target genes). Among the auxinindependent favonoid-responsive genes discovered in the GO analysis are those associated with metabolism of glucose, transport and responses to abiotic stresses (Fig.  11). Despite improvement in the transport of auxin, variation in favonoid production accounted for only 24% of the diferentially expressed F1 genes regulated by auxin, suggesting that changes in biosynthesis of auxin were the main mechanism impacting auxin responsiveness in hybrid.
+
+For qRT-PCR validation, 15 DEGs including 8 DEMs were randomly selected. We compared the qRT-PCR results with the RNA-seq data, and the expression patterns were consistent, with a correlation of $\mathrm { R } ^ { 2 } = 0 . 8 2 0 5$ (Table S11, Fig.  12), demonstrating that the RNA-seq data were credible.
+
+# Discussion
+
+Heterosis means that an ofspring surpasses either parent in desired traits. Hybrid breeding has harnessed the power of heterosis to increase the quality and quantity of crops worldwide. Traits contributing to cotton yield exhibit heterosis in both intraspecifc and interspecifc crosses. Researchers are making great eforts to fgure out the complicated genetic basis of crop heterosis. However, much work is still needed, especially with the complicated genome of tetraploid cotton. We generated temporally dynamic transcriptome, small RNAome, and DNA methylome atlases in an elite hybrid and its parents during the three fowering developmental stages, which allowed us to identify diferences in coexpression networks between the hybrid and its parents that underpin dynamic regulation of growth heterosis. Our results show that the hybrid and its parents have highly conserved gene regulatory networks with diferent levels of module gene expression and structural network patterns.
+
+# Dominant role of non‑additive expression in establishing cotton heterosis
+
+Variations in gene expression patterns may result in hybrid heterosis. Gene expression patterns can be classifed as additive or non-additive based on transcriptome data from hybrids and parents [33]. According to some studies, non-additive expression hampers plant heterosis [34]. For instance, a transcriptomic investigation of mature embryos from the parental lines and an elite super-hybrid rice called LYP9 revealed that additive expression was the major cause of heterosis while nonadditive expression was detrimentally related to heterosis [35]. Furthermore, a considerable number of genes display additive expression patterns in genome-wide transcript analysis of maize hybrids and their inbred parents, which are assumed to be the main source of yield heterosis [36]. However among diferent species with diverse heterotic rates such as tea [37], Soybean [38], cotton [39], and rice [40], when compared to hybrids without heterosis, hybrids with heterosis are more likely to exhibit non-additive expression. A high fraction of genes with non-additive expression patterns were identifed as the source of heterosis in pepper [41]. Increase
+
+<table><tr><td rowspan="2">Methylation Context</td><td colspan="2">Level Methylation</td><td></td><td colspan="3">RNA-Seq Expression</td><td colspan="4">qRT-PCR Expression</td></tr><tr><td>Female</td><td>Hybrid</td><td>%Meth.Diff</td><td>Female</td><td>Hybrid</td><td>log2-FC</td><td>Female</td><td>Hybrid</td><td>log2-FC</td><td>Sig.Statuse</td></tr><tr><td>CG</td><td></td><td></td><td>33.57</td><td></td><td></td><td>-9.29</td><td></td><td></td><td>-2.03</td><td>*</td></tr><tr><td>CG</td><td></td><td></td><td>40.36</td><td></td><td></td><td>-15.29</td><td></td><td></td><td>-5.14</td><td>**</td></tr><tr><td>CHG</td><td></td><td></td><td>25.52</td><td></td><td></td><td>-5.8</td><td></td><td></td><td>-3.23</td><td>**</td></tr><tr><td>CHG</td><td></td><td></td><td>23.25</td><td></td><td></td><td>-3.6</td><td></td><td></td><td>-1.16</td><td>*</td></tr><tr><td>CHH</td><td></td><td></td><td>11.39</td><td></td><td></td><td>-4.16</td><td></td><td></td><td>-5.68</td><td>*</td></tr><tr><td>CHH</td><td></td><td></td><td>-3.21</td><td></td><td></td><td>4.97</td><td></td><td></td><td>2.75</td><td>***</td></tr><tr><td>CHH</td><td></td><td></td><td>-8.59</td><td></td><td></td><td>5.44</td><td></td><td></td><td>2.38</td><td>*</td></tr><tr><td>CHH</td><td></td><td></td><td>-4.64</td><td></td><td></td><td>6.32</td><td></td><td></td><td>5.89</td><td>**</td></tr></table>
+
+Gh\_A09G1836 Pathogenesis-related thaumatin superfamily protein
+
+Gh\_D06G1865 LRR and NB-ARC domains-containing disease resistance protein
+
+Gh\_A13G0237 Laccase 11
+
+Gh\_D11G1910 Methyl esterase 1
+
+Gh\_D05G1757 Cinnamyl alcohol dehydrogenase 9
+
+Gh\_A12G0813 Auxin response factor 6
+
+Gh\_A11G0290 NAC domain containing protein 100
+
+Gh\_A12G1524 Sucrose transporter 2
+
+<table><tr><td rowspan="2">Methylation Context</td><td colspan="2">Level Methylation</td><td></td><td colspan="3">RNA-Seq Expression</td><td colspan="4">qRT-PCR Expression</td></tr><tr><td>Male</td><td>Hybrid</td><td>%Meth.Diff</td><td>Male</td><td>Hybrid</td><td>log2-FC</td><td>Male</td><td>Hybrid</td><td>log2-FC</td><td>Sig.Statuse</td></tr><tr><td>CG</td><td></td><td></td><td>31.23</td><td></td><td></td><td>-7.28</td><td></td><td></td><td>-3.09</td><td>**</td></tr><tr><td>CG</td><td></td><td></td><td>34.52</td><td></td><td></td><td>-12.28</td><td></td><td></td><td>-6.2</td><td>***</td></tr><tr><td>CHG</td><td></td><td></td><td>17.60</td><td></td><td></td><td>-10.79</td><td></td><td></td><td>-4.29</td><td>*</td></tr><tr><td>CHG</td><td></td><td></td><td>20.64</td><td></td><td></td><td>-1.59</td><td></td><td></td><td>-2.22</td><td>*</td></tr><tr><td>CHH</td><td></td><td></td><td>12.49</td><td></td><td></td><td>-2.15</td><td></td><td></td><td>-4.74</td><td>**</td></tr><tr><td>CHH</td><td></td><td></td><td>-1.33</td><td></td><td></td><td>6.98</td><td></td><td></td><td>1.69</td><td>**</td></tr><tr><td>CHH</td><td></td><td></td><td>-7.68</td><td></td><td></td><td>7.45</td><td></td><td></td><td>1.32</td><td>**</td></tr><tr><td>CHH</td><td></td><td></td><td>-1.35</td><td></td><td></td><td>7.33</td><td></td><td></td><td>4.83</td><td>*</td></tr></table>
+
+Gh\_A09G1836 Pathogenesis-related thaumatin superfamily protein
+
+Gh\_D06G1865 LRR and NB-ARC domains-containing disease resistance protein
+
+Gh\_A13G0237 Laccase 11
+
+GhD11G1910 Methyl esterase 1
+
+Gh\_D05G1757 Cinnamyl alcohol dehydrogenase 9
+
+Gh\_A12G0813 Auxin response factor 6
+
+Gh\_A11G0290 NAC domain containing protein 100
+
+Gh\_A12G1524 Sucrose transporter 2
+
+<table><tr><td rowspan="2">Methylation Context</td><td colspan="2">Level Methylation</td><td></td><td colspan="3">RNA-Seq Expression</td><td colspan="4">qRT-PCR Expression</td></tr><tr><td>Female</td><td>Male</td><td>%Meth.Diff</td><td>Female</td><td>Male</td><td>log2-FC</td><td>Female</td><td>Male</td><td>log2-FC</td><td>Sig.Statuse</td></tr><tr><td>CG</td><td></td><td></td><td>18.12</td><td></td><td></td><td>-3.4</td><td></td><td></td><td>-2.6</td><td>**</td></tr><tr><td>CHH</td><td></td><td></td><td>-2.45</td><td></td><td></td><td>4.7</td><td></td><td></td><td>3.9</td><td>*</td></tr></table>
+
+Gh\_A09G1836 Pathogenesis-related thaumatin superfamily protein   
+Gh\_A12G1524 Sucrose transporter 2
+
+![](images/8d2f3d9c492332ef57f5e76811d72cc9a0bc09d3d0122c7d17eac08851b972c9.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| Log2FC (RNA-Seq) | Log2FC (qRT-PCR) |
+| ---------------- | ---------------- |
+| -15              | -5               |
+| -10              | -10              |
+| -5               | -5               |
+| 0                | 0                |
+| 5                | 5                |
+| 10               | 10               |
+</details>
+
+Gene ID   
+• Gh\_A12G0813   
+• Gh D06G1415   
+• Gh\_A13G0929   
+Gh\_A11G0290   
+Gh\_A09G1836   
+• Gh D06G1865   
+• Gh\_A13G0237   
+• Gh\_A12G1524   
+• Gh\_D05G0202   
+Gh\_D09G1715   
+• Gh\_A07G0427   
+• Gh\_A01G0650   
+• Gh\_D11G1910   
+Gh\_D05G1757   
+Gh\_A05G2518
+
+![](images/0d15123c78aa3f6eedf6760342634fd6144b3195c9a1fa95651864b53c65966a.jpg)  
+Fig. 12 Gene expression observed in quantitative real-time (qRT) PCR analysis. a Eight (8) signifcantly (p-value < 0.01) diferentially expressed genes (DE-Gs) showing negative correlation with promoter methylation in parental lines and their hybrid. LFC represents expression in log2 fold change and signifcant p values were denoted by \* <0.05; \*\* <0.01; \*\*\* <0.001. b qRT-PCR analysis of gene expression compared with the RNA-seq data. Relative quantifcation was obtained through 2−(ΔΔCT) method using GhHIS3 as reference gene
+
+in photosynthetic capacity, cell size, and cell count are caused by non-additively expressed genes in Arabidopsis, suggesting that these genes may be crucial for biomass heterosis [42]. In this study, we detected signifcant transcriptional reprogramming after hybridization in the G. hirsutum, with 10–22% of genes showing non-additive expression. Of all non-additive genes, 69–71% showed dominance of the higher parent (ELD) and 5% showed over-dominance. Tis outcome is congruent with a study on B. napus, in which between 70 and 80% of the non-additive genes in the F1 hybrid had strong parental expression throughout the early stages of fower formation [43]. Analysis of homeolog expression in resynthesized allopolyploid canola showed that ELD is primarily responsible for growth vigour [22]. According to the traditional genetic concept, the genomes of the two parents release their benefcial alleles into the F1 hybrids’ nucleus, which results in dominance of the higher parent and growth vigour of the hybrid [44]. Tese results support the concept that while numerous molecular processes contribute to heterosis, the dominance of high parental levels may be particularly relevant [45].
+
+Following that, we ran GO and KEGG enrichment analysis for the genes with nonadditive expression. Most of the genes were discovered to be enriched in pathways that are fundamentally associated with heterosis, including signal transduction for plant hormones, defense, and primary metabolism. Among the DEGs related to defense and hormones, found in the hybrid, PRs and DEGs encoding the enzymes involved in SA and auxin production showed signifcantly diferent expression patterns than MPV. Notably, most PR genes that were downregulated in the hybrid were methylated. Te altered gene activity may be responsible for the development of the heterotic phenotype, since auxin and SA have vital roles in plant defense and in the control of structure and growth [46–48]. Te genes involved in SA were signifcantly downregulated in F1 compared with MPV, with the exception of PAL1 and PAL17. Several studies have found that lower SA levels are associated with greater cell wall expansion and higher green biomass [49, 50]. Notably, reduced expression of basal defense genes in hybrid plants may lead to lower disease resistance. Tese results suggest that expansion is favored over disease resistance. In the absence of disease infestations, the hybrid may exhibit a weaker basal defense response but may spend more energy on metabolism.
+
+In addition, hybrid plants have better auxin signalling, resulting in faster development. High expression of auxin-related genes has promoted heterosis in crop plants such as Arabidopsis [51, 52], rice [53] and maize [54]. Four genes inducible by auxin, SAUR, IAA1, IAA24, and PIF4, were overexpressed and unmethylated in the hybrid, possibly afecting plant vigour. Te gene SAUR was found to be involved in the auxin signal transduction pathway [55]. In line with what we observed, Huang et al. showed that the gene SAUR can alter the auxin distribution and plays a putative regulatory role in hybrid seed size in Euryale ferox Salisbury hybrid seeds [56]. In Arabidopsis hybrids, Phytochrome-Interacting Factor (PIF4), which regulates auxin biosynthesis and action, has a vital role in the development of the hybrid vigour phenotype [51]. Pallavi, et  al. (2020), stated that gene activity directed toward IAA was frequently associated with a heterotic phenotype with higher leaf cell number, whereas gene activity directed toward SA was negatively associated with heterosis [9]. High auxin levels are associated with increases in cell wall-modifying enzymes that activate molecular pathways that promote plant growth and development [51]. In addition, changes in favonoid biosynthetic pathway genes negatively afect polar transport of auxin, and a slight reduction in favonoid biosynthetic pathway genes can promote plant growth [57]. In potato hybrids, genes related to favonoid biosynthesis were down-regulated, whereas genes involved in auxin signaling were signifcantly up-regulated [45]. Here the F1 hybrid also showed downregulation and methylation of two genes (FL and F3H) of the favonoid biosynthesis pathway compared with MPV.
+
+Plant energy metabolism GO terms such as “lipid and carbohydrate metabolic processes,“ “cellular nitrogen compound catabolic processes”, and “photosynthesis,“ were also enhanced, according to the GO enrichment study. F1 exhibited signifcantly higher expression of DEGs involved in various metabolic pathways than the parental lines. Sugar transporters (SWEET17 and STP1) and nitrogen and sugar metabolism (sucrose synthase (Sus), starch synthase, and cellulose synthase (CESAs)) were increased in the hybrids compared to MPV, indicating an increase in carbohydrate metabolism. Tis could be due to the better growth performance of the hybrids [58]. In addition, we observed higher expression of energy-related genes, suggesting that the hybrid has a more efcient energy metabolism. Since most of these genes were up-regulated, they were found to be unmethylated. Sucrose synthase and other metabolic genes related to heterosis have previously been found in cotton [59], pigeon pea [9] and rice hybrids [58]. Tese fndings suggest that heterosis induces fundamental alterations in energy production and response to environmental stimuli in F1 hybrid plants.
+
+# miRNAs key regulators in hybrid performance
+
+Tere is evidence that hybrid plants exhibit diferent expression patterns for miRNAs involved in development and vigour compared to their parents [41, 60]. Nonadditive expression of miRNAs in Chinese cabbage results in nonadditive expression of their targets, which might impact growth and vigour of hybrid [61]. We observed that many miRNAs, including several miRNAs with well-characterized functions, were expressed in hybrid cells non-additively. A signifcant percentage of nonadditively expressed miRNAs were found to be inhibited in F1 hybrid. Tis is similar with fndings from research on pepper [60], and Chinese cabbage [61] which demonstrate that other regulators or methylation-type changes can afect mRNA target expression. In the hybrid, the expression of miR164, miR169, and miR408 families are primarily reduced, suggesting overexpression of NAC1, an ABA-responsive transcription factor, and CALS6, which enhances auxin signaling, and controls plant growth and stress tolerance, respectively [62]. Growthregulating factor (GRF) genes regulate plant growth and development [63]. In addition to six GRF genes, ectopic overexpression of miR396 also inhibits the expression of GIF1, which is a GRF-interacting transcription coactivator involved in proliferation of leaf cell [64]. MiR396 targets in cotton are likewise GRF genes, and our investigation found that miR396 was over dominantly suppressed. Because GRFs may control cell division, it is plausible that miR396 suppression, which leads to GRF induction, increases hybrid biomass relative to its parental inbred lines. Tis fnding is consistent with previous fndings in B. rapa [61] and B. napus [43] indicating that the miR396-GRF pathway is preserved and may be involved in heterosis biomass.
+
+Te Squamosa-Promoter Binding Protein-Like (SPL) transcription family is targeted by miR156 [65]. SPL transcription factors perform a variety of tasks. SPL transcription factors, according to omics research, not only have metabolic roles but also have an efect on developmental processes through the regulation of other transcription factor families [66, 67]. Tere has been a lot of research done on SPL transcription factors in plants, specifcally in relation to plant development, especially the shift from vegetative to reproductive stages [68]. In the current study, miR156 was over-suppressed, which results in overexpression of SPL transcription factors. OsSPL14 overexpression in rice increased panicle branching and increased grain yield [69]. Interestingly, three G. hirsutum OsSPL10 homologs in F1 appear to exhibit enhanced expression throughout the squaring stage (Gh-D11G0821, Gh-D12G0947, and Gh-A12G0866). As a result, it is possible that the miR156-SPL pathway, which is not additively controlled, plays a role in the heterosis of biomass and boll number in G. hirsutum hybrid.
+
+In addition, there was a noticeable downregulation of the miR164, miR166, miR167, miR169, miR171, and miR390 in F1 compared to the parental lines. MiRNAs 164, 166, 167, and 390 targeted ARF genes and were controlled by IAA, signifying that they are also associated with the IAA response pathways [70]. Nuclear factor Y (NF-Y), also known as Heme Activator Protein or CCAAT binding factor (CBF), is a miR169 target found in plants, animals, and other eukaryotes (HAP) [71]. Te NF-Y complex is comprised of three subunits: NF-YA (CBF-B/HAP2), NF-YB (CBF-A/HAP3), and NF-YC (CBF-C/HAP5), all three of which are vital for CCAAT box binding [72]. Numerous studies in Arabidopsis and other plant species have elucidated the biological functions of each NF-Y subunit and demonstrated that this complex is involved in embryogenesis, gametogenesis, fowering time regulation, seed development, drought tolerance, abscisic acid signalling, endoplasmic reticulum stress response, and primary root elongation [73, 74]. According to these studies, NF-Y genes play a vital part in many aspects of plant life and are important for their survival. Most miR169 family members were signifcantly repressed in this study, possibly afecting NFY gene expression and thus ABA-dependent transcription, leading to increased internode growth potential in the hybrid. Another family, miR171, targets transcription factors such as SCL6, which control the development of the plant and have links to such biological processes as cell proliferation, diferentiation, and branching [75]. Overall, these data indicated that F1 hybrids’ growth vigour and adaptability are most likely controlled by non-additively expressed miRNAs.
+
+# siRNAs act as genetic bufers by suppressing TEs activity and afecting gene expression in the F1 hybrid by manipulating methylation levels
+
+Te importance of siRNA-mediated epigenetic changes in the genomic stability of interspecifc hybrids and allopolyploids has been demonstrated [76]. Depending on the diferences in the 24-nt siRNA clusters presence at certain loci, hybrids might have hyper- (TCMDMRs) or hypo-methylation (TCMDMRs) [77]. In our study, the methylation sites were usually associated with the clusters of 24-nt siRNA in hybrid. About 38% of the methylated loci showed a signifcant density of 24-ntsiRNA clusters, demonstrating their importance in DNA methylation [78]. In this context, we studied the possible connection between the level of methylation of DNA and expression of 24-nt siRNA clusters in F1 compared with its parents. TCM-DMRs and TCdM-DMRs were found to have a strong correlation with clusters of 24-nt siRNA. TCdM-DMRs had higher 24-nt siRNA expression than TCM genomic regions. TCdM-DMRs are associated with a decrease in CHH methylation, which is thereafter followed by CG and CHG methylation. Te variations in methylation loss between contexts of cytosine methylation are most likely due to diferences in the mechanisms that keep each context alive [79].
+
+Te increased expression of 24-nt-siRNAs identifed in the G. hirsutum hybrid is comparable to what has been observed in other plant species such as Brassica napus, Oryza sativa, Arabidopsis thaliana, and Cajanus cajan, where an increase in 24-nt-siRNAs has been observed after hybridization [9, 43, 80, 81]. Additionally, the majority of the G. hirsutum hybrid’s increased methylation came from unmethylated cytosines in both parents, suggesting de novo DNA methylation and trans chromosomal methylation activity (TCM) [82]. We observed that the intergenic area, as opposed to the genic region (including 2 kb upstream/downstream of genes and geneencoding regions), typically contains up to 70% of the methylated cytosines produced by de novo DNA methylation or TCM processes, implying its regulatory role in heterosis [83]. Indeed, the level of methylation in the coding region of a gene is not necessarily directly related to its expression level. A study of Brassica napus found that methylation of three quarters of the genes occurred in their immediate vicinity, which includes 1  kb downstream and upstream of the annotated gene [43]. Moreover, Pallavi, et  al. (2020) also observed that promoter methylation and methylation of transcriptional regions of protein-coding genes, may have a vital function in gene activity regulation [9]. We also discovered DNA methylation in the promoter and other regulatory transcription regions of protein-coding genes, signifying that it may be important for regulating gene activity [84]. Moreover, the majority of the methylation was observed in the repetitive regions of the DNA and in transposable elements. By limiting their activity, a steady repressive epigenetic process in these regions promotes stability of the genome [85]. Tese fndings imply that clusters of 24-nt siRNA are required for higher methylation of DNA in hybrids, and the TCM/TCdM-DMRs context pattern suggests that 24-nt siRNA clusters are associated with the lower activity of TE in hybrids.
+
+# Conclusions
+
+Heterosis occurs as a result of genome interactions and leads to complex variation at genetic, epigenetic, and metabolic levels [86]. It is generally inefective to assess complex biological traits using only a single omics technique. Tis study, the hybrid with superior yield was screened through multi-location feld trials during different years. Phenotypic evaluation suggested that this hybrid yielded on average 16% more seed cotton than its mean parent. Several -omics experiments were carried out on this hybrid and its two inbred parent lines, using diferent samples collected throughout the squaring stage to acquire comprehensive evidence on the function of crucial changes in gene expression and epigenetic mechanisms which lead to heterosis. Comparative transcriptomic analysis revealed signifcant variations in gene expression (MPV-DEGs) in the hybrid and its parents. Tese genes were primarily associated with hormone transduction, metabolic pathways, response to stress, ATP and protein binding, cell wall, sugar metabolism, and signal transduction of plant hormones. Analysis of the dominance of expression levels revealed that most of the DEGs of the hybrid were biased toward the high parental expressions. Te amount of 24-nt small RNA (siRNA) in the hybrid was higher than in the parents at the loci where there was a discernible diference in the amount of 24-nt siRNA between the parents. Most of these regions with elevated levels of 24-nt sRNA were related with transposon elements, genes, and the regions fanking them, which may impact gene expression. Moreover, epigenetic changes were also observed in DEGs involved in heterosis-related regulatory pathways. In the hybrid, we also discovered a number of common and unique miRNAs that are crucial regulators of target genes related to plant development, defense, and stress tolerance. In addition, we observed that 24-nt-sRNA levels correlated with variation in DNA methylation of TEs and expression of protein-coding genes. We suggest that such epigenetically driven changes in gene activity may lead to hybrid vigour and that epigenetic variation between hybrids and parents may lead to increased variability in allele expression, which may contribute to heterosis. Taken together, we propose that hormones, plant growth regulators, plant-pathogen interactions and stress responses controlled by both miRNAs and DNA methylation due to variation in 24-nt siRNAs are the primary mechanisms by which ELD and non-additively expressed genes contribute to heterosis. Tus, our results shed light on the key regulatory networks and genes associated with hybrid vigour in allotetraploid cotton.
+
+# Materials and methods
+
+# Plant material, growth conditions and trait investigation
+
+In 2018, our research team used 10 inbred parent lines to produce 21 intraspecifc F1 upland cotton hybrids. A trial was conducted for two years to measure the degree of heterosis in yield traits between the hybrids and their parents, with seed sown in mid-April of each year for two years. Number of bolls per plant (BN), boll weight (BW), seed cotton yield (SCY), lint yield (LY), and lint percentage (LP); number of reproductive branches, and number of fruit units were measured. Mean parental value (MPV) was calculated as follows: MPV = ((F1-MP)/ MP)100%, and better parental heterosis (BPH) was calculated as follows: BPH = (F1-BP)/ BP, wherein F1 indicates the trait performance value for each trait in the F1 ofspring, MP indicates the mean value of this trait for the parents, and BP indicates the value of this trait for the better parent [87]. Te t-test was used to evaluate the hypotheses. On the basis of the degree of phenotypic heterosis in yield parameters, a high hybrid and its inbred line parents were selected for transcriptome, small RNAome and methylome studies at the squaring stage, the beginning of the reproductive phase in cotton. Cotton seeds were collected from Cotton Research Institute of Iran (Gorgan, Iran) and planted at Hashem Abad research station (Gorgan, Iran) under controlled climatic conditions of 70% relative humidity and 20/15 C (14 h/10 h) day/night temperature regime. Seed collection and the whole experiment were carried out according to the national guidelines [88]. Te inbred lines utilized in this study underwent six generations of self-fertilization to ensure their purity.
+
+# Whole‑genome DNA resequencing, mRNA, sRNA, bisulfate sequencing, and bioinformatics analysis
+
+Methods S1 provides detailed information on plant material, growth conditions and trait assays, nucleic acid extraction, whole genome DNA resequencing, mRNA (RNA sequencing) and small RNA (miRNA and siRNA) sequencing, bisulfate sequencing (DNA methylation sequencing), bioinformatics analyses and quantitative RTqPCR expression validation of DEGs and DMGs (Fig. S1).
+
+# Abbreviations
+
+SA Salicylic acid
+
+ARF Auxin response factor
+
+cDNA Complementary DNA
+
+DEMs Diferentially expressed miRNAs
+
+FDR False Discovery Rate
+
+GO Gene Ontology
+
+<table><tr><td>KEGG</td><td>Kyoto Encyclopedia of Genes and Genomes</td></tr><tr><td>MiRNA-seq</td><td>Micro-RNA sequencing</td></tr><tr><td>miRs</td><td>miRNAs</td></tr><tr><td>NCBI</td><td>National Center for Biotechnology Information</td></tr><tr><td>GBM</td><td>Gene Body Methylation</td></tr><tr><td>MH</td><td>Match-Head</td></tr><tr><td>SM</td><td>Square Growth Midpoint</td></tr><tr><td>1DPA</td><td>One-Day Post Anthesis</td></tr><tr><td>DEGs</td><td>Differentially expressed genes</td></tr><tr><td>ELD</td><td>Expression Level Dominance</td></tr><tr><td>SNPs</td><td>Single Nucleotide Polymorphisms</td></tr><tr><td>TEs</td><td>Transposon Elements</td></tr><tr><td>TCM</td><td>Transchromosomal Methylation</td></tr><tr><td>TCdM</td><td>Transchromosomal Demethylation</td></tr><tr><td>DMRs</td><td>Differentially Methylated Regions</td></tr><tr><td>RdDM</td><td>RNA-directed DNA methylation</td></tr></table>
+
+# Supplementary Information
+
+The online version contains supplementary material available at https://doi. org/10.1186/s12870-023-04495-2.
+
+Additional fle 1: Table S1. Mean of mid and better parent heterosis observed for yield traits in two location and two-year feld experimentation. Table S2. Statistics of RNA sequencing data production. Table S3. Overlapping diferentially expressed genes among the in MH, SM, and 1DPA in hybrid. Table S4. Statistics of small RNA sequencing data production. Table S5. Number of the non-additively expressed genes had siRNA clusters in coding regions or 2kb fanking regions in MH, SM, and 1DPA. Table S6a. List of known diferentially expressed miRNA in F1 and its Parents. S6b. List of target prediction of known miRNAs. S6c. List of target prediction of novel miRNAs. Table S7. Alignment summary statistics of whole-genome bisulfte sequencing (WGBS). Table S8. List of common DMRs among parental lines and hybrids. Table S9. Association of DMRs and sRNA among hybrid and its parental lines. Table S10. REVIGO combines the biological process GO with hybrid MPV DEGs. The unifed terms of REVIGO GO are organized by major groups. To make understanding the data even easier, clusters are grouped into "main clusters" with broad categories. Table S11. Details of the primers used to validate RNA-seq and bisulfte sequencing data.
+
+Additional fle 2: Figure S1. The overall workfow was carried out to study the heterosis mechanism in cotton. Hybrid and its parental lines were selected for this analysis. First, the parental lines and hybrid were phenotypically characterized at 20, 40, and 60 days after sowing. The 40-day seedlings were used to prepare libraries RNA sequencing, small RNA, and DNA methylation. Several bioinformatics pipelines were used to decipher the genome-wide data and answer the biological questions. As mentioned in the fgure, we performed several diferent analyses on the datasets to understand heterosis in allotetraploid cotton. Figure S2. The mapped region’s statistics of all 27 sequenced libraries of parents and hybrid. Here, MH: match-head, SM: square growth midpoint, 1DPA: a day post anthesis ovule, (a) paternal line, and (b) F1, and (c) represents Maternal line respectively. Figure S3. Principal component analysis for all samples. In the fgure, MH: match-head, SM: square growth midpoint, 1DPA: a day post anthesis ovule, maternal parent, paternal parent and F1 are represented in diferent colour (three biological replicates). Figure S4. Total number of expressed genes for each sample. In this fgure, MH: match-head, SM: square growth midpoint, 1DPA: a day post anthesis ovule, maternal parent, paternal parent and F1 are represented in diferent colour (three biological replicates). Figure S5. (a) Breakdown of DEGs in the F1 hybrid showing the number of diferentially expressed genes that were unique in one sample or overlapping in two or three samples used in this study. (b) Overlapping genes between MPV-DEGs and M-F DEGs in all three developmental stages. Figure S6. Prominent GO terms enriched in the genes with a trans efect. (a) Gene Ontology (GO) and (b) KEGG enrichment analyses for all trans efects in genes in all datasets (www.kegg.jp/kegg/kegg1.html, For previous uses, the Kanehisa laboratory have happily provided permission). Figure S7. (a). Class distribution analysis of fltered reads in hybrid and parental lines showed that 21 and
+
+24 nucleotide classes were the most abundant groups. (b) Distribution of the 24-nucleotide siRNA clusters in the 2 kb upstream, 2 kb downstream, transcribed region and transposable elements in the three samples. (c) Length distribution of the 24-nucleotide siRNA clusters in the three samples. Figure S8. (a) Principal component analysis for all samples (two replicates). (b) Pearson correlation coefcients between diferent sample replicate used for whole-genome bisulfte sequencing (WGBS) analysis.
+
+Figure S9. Average methylation distribution across diferent genomic regions. Metaplots representing methylation distribution at genomic elements and their fanking regions (a–d) transposable-elements (TEs) body including DNA-elements, LTRs, non-LTRs and gene-body, respectively, along with their 1.5 kb fanking regions. Methylation at gene/TE -body and fanking regions was analyzed across 20 and 30 bins, respectively. (e, f ) exon-body and intron body methylation along with their 1.5 kb fanking regions. Figure S10. Boxplots showing the methylation levels of CG, CHG, and CHH on Rich-siRNA clusters and Poor-siRNA clusters in hybrid and its parent.
+
+Additional fle 3. Methods S1.
+
+# Acknowledgements
+
+The authors would also like to thank Eng. Neda Hamid for her energetic help with data analysis and preparation of graphs.
+
+# Authors’ contributions
+
+R.H. sample collection, and executed laboratory procedures of the project; performed data analysis, data visualization, as well as writing, review, and editing the manuscript; F.J. review, and editing the manuscript, Z.GH. data visualization also assisted in data analysis. L.J. performed qRT-PCR, O.A. guided throughout the experiment, and editing the manuscript.
+
+# Funding
+
+The current work was funded by the Cotton Research institute of Iran (CRII) support under the scheme 99272.
+
+# Availability of data and materials
+
+All data supporting the fndings of this study are available from the corresponding author upon reasonable request. All the raw sequences for the samples were compiled at https://www.ncbi.nlm.nih.gov/bioproject/ PRJNA973929 with the SRA ID SRR24677352, SRR24676578, SRR24676581, SRR24676223, SRR24675764, SRR24676220, SRR24676178, SRR24676002, SRR24675763, and SRR24675543.
+
+# Declarations
+
+# Ethics approval and consent to participate
+
+All experimental studies on plants were complied with relevant institutional, national, and international guidelines and legislation.
+
+# Consent for publication
+
+Not applicable.
+
+# Competing interests
+
+The authors declare no competing interests.
+
+# Received: 17 May 2023 Accepted: 28 September 2023
+
+Published online: 13 October 2023
+
+# References
+
+1. Hamid R, Jacob F, Marashi H, Rathod V, Tomar RS. Uncloaking lncRNAmeditated gene expression as a potential regulator of CMS in cotton (Gossypium hirsutum L). Genomics. 2020;112(5):3354–64.   
+2. Hamid R, Marashi H, Tomar RS, Malekzadeh Shafaroudi S, Sabara PH. Transcriptome analysis identifed aberrant gene expression in pollen developmental pathways leading to CGMS in cotton (Gossypium hirsutum L). PLoS ONE. 2019;14(6): e0218381.
+
+3. Sun W, Shahrajabian M, Khoshkharam M, Shen H, Cheng Q. Cultivation of cotton in China and Iran with considering biological activities and its health benefts. Cercetari Agronomice in Moldova. 2020;1(181):105–20.   
+4. Labroo MR, Studer AJ, Rutkoski JE. Heterosis and hybrid crop breeding: a multidisciplinary review. Front Genet. 2021;12: 643761.   
+5. Fujimoto R, Uezono K, Ishikura S, Osabe K, Peacock WJ, Dennis ES. Recent research on the mechanism of heterosis is important for crop and vegetable breeding systems. Breed Sci. 2018;68:17155.   
+6. Hamid R, Tomar RS, Marashi H, Shafaroudi SM, Golakiya BA, Mohsenpour M. Transcriptome profling and cataloging diferential gene expression in foral buds of fertile and sterile lines of cotton (Gossypium hirsutum L). Gene. 2018;660:80–91.   
+7. Rehman Au, Dang T, Qamar S, Ilyas A, Fatema R, Kafe M, Hussain Z, Masood S, Iqbal S, Shahzad K. Revisiting Plant Heterosis—From Field Scale to Molecules. Genes. 2021;12(11): 1688.   
+8. Ryder P, McKeown PC, Fort A, Spillane C. Epigenetics and heterosis in crop plants. Epigenetics in Plants of Agronomic Importance: Fundamentals and Applications: Transcriptional Regulation and Chromatin Remodelling in Plants. 2019;129–47.   
+9. Sinha P, Singh VK, Saxena RK, Kale SM, Li Y, Garg V, Meifang T, Khan AW, Kim KD, Chitikineni A. Genome-wide analysis of epigenetic and transcriptional changes associated with heterosis in pigeonpea. Plant Biotechnol J. 2020;18(8):1697–710.   
+10. Yao Q, Chen Y, Zhou X. The roles of microRNAs in epigenetic regulation. Curr Opin Chem Biol. 2019;51:11–7.   
+11. Akhter Z, Bi Z, Ali K, Sun C, Fiaz S, Haider FU, Bai J. In response to abiotic stress, DNA methylation confers epigenetic changes in plants. Plants. 2021;10(6): 1096.   
+12. Han J, Lopez-Arredondo D, Yu G, Wang Y, Wang B, Wall S, Zhang X, Fang H, Barragán-Rosillo A, Pan X. Genome-wide chromatin accessibility analysis unveils open chromatin convergent evolution during polyploidization in cotton. Proc Natl Acad Sci. 2022;119(44): e2209743119.   
+13. Singh RK, Prasad A, Maurya J, et al. Regulation of small RNA-mediated high temperature stress responses in crop plants. Plant Cell Rep. 2022;41:765–73. https://doi.org/10.1007/s00299-021-02745-x.   
+14. Zhang H, Lang Z, Zhu J-K. Dynamics and function of DNA methylation in plants. Nat Rev Mol Cell Biol. 2018;19(8):489–506.   
+15. Chhabra R. miRNA and methylation: a multifaceted liaison. ChemBio-Chem. 2015;16(2):195–203.   
+16. Ghorbanzadeh Z, Hamid R, Jacob F, Mirzaei M, Zeinalabedini M, Abdirad S, Atwells BJ, Haynes PA, Ghafari MR, Salekdeh GH. MicroRNA profling of root meristematic zone in contrasting genotypes reveals novel insight into in rice response to water defciency. J Plant Growth Regul. 2023;42(6):3814–34.   
+17. Thiebaut F, Hemerly AS, Ferreira PCG. A role for epigenetic regulation in the adaptation and stress responses of non-model plants. Front Plant Sci. 2019;10: 246.   
+18. Lloyd JP, Lister R. Epigenome plasticity in plants. Nat Rev Genet. 2022;23(1):55–68.   
+19. Dapp M, Reinders J, Bediee A, Balsera C, Bucher E, Theiler G, Granier C, Paszkowski J. Heterosis and inbreeding depression of epigenetic Arabidopsis hybrids. Nat Plants. 2015;1(7):1–8.   
+20. Kakoulidou I, Avramidou EV, Baránek M, Brunel-Muguet S, Farrona S, Johannes F, Kaiserli E, Lieberman-Lazarovich M, Martinelli F, Mladenov V. Epigenetics for crop improvement in times of global change. Biology. 2021;10(8): 766.   
+21. Wei Y, Li G, Zhang S, Zhang S, Zhang H, Sun R, Zhang R, Li F. Analysis of transcriptional changes in diferent Brassica napus synthetic allopolyploids. Genes. 2021;12(1): 82.   
+22. Wu J, Lin L, Xu M, Chen P, Liu D, Sun Q, Ran L, Wang Y. Homoeolog expression bias and expression level dominance in resynthesized allopolyploid Brassica napus. BMC Genomics. 2018;19(1):1–13.   
+23. Shahzad K, Zhang X, Guo L, Qi T, Bao L, Zhang M, Zhang B, Wang H, Tang H, Qiao X. Comparative transcriptome analysis between inbred and hybrids reveals molecular insights into yield heterosis of upland cotton. BMC Plant Biol. 2020;20(1):1–18.   
+24. Kanehisa M. Toward understanding the origin and evolution of cellular organisms. Protein Sci. 2019;28(11):1947–51.   
+25. Kanehisa M, Furumichi M, Sato Y, Kawashima M, Ishiguro-Watanabe M. KEGG for taxonomy-based analysis of pathways and genomes. Nucleic Acids Res. 2023;51(D1):D587-592.
+
+26. Kanehisa M, Goto S. KEGG: kyoto encyclopedia of genes and genomes. Nucleic Acids Res. 2000;28(1):27–30.   
+27. Shi X, Ng DW, Zhang C, Comai L, Ye W, Jefrey Chen Z. Cis-and trans-regulatory divergence between progenitor species determines gene-expression novelty in Arabidopsis allopolyploids. Nat Commun. 2012;3(1):950.   
+28. Arora S, Chaudhary B. Global expression dynamics and miRNA evolution profle govern foral/fber architecture in the modern cotton (Gossypium). Planta. 2021;254(3):1–20.   
+29. Zhou Y, Myat AA, Liang C, Meng Z, Guo S, Wei Y, Sun G, Wang Y, Zhang R. Insights into MicroRNA-mediated regulation of fowering time in cotton through small RNA sequencing. Front Plant Sci. 2022;13:761244.   
+30. Cai C, Li C, Sun R, Zhang B, Nichols RL, Hake KD, Pan X. Small RNA and degradome deep sequencing reveals important roles of microRNAs in cotton (Gossypium hirsutum L.) response to root-knot nematode Meloidogyne incognita infection. Genomics. 2021;113(3):1146–56.   
+31. Dodge Y, Rousson V. From correlation to Direction Dependence Analysis. Direction Depend Stat Modeling: Methods Anal; 2020. p. 13.   
+32. Besseau S, Hofmann L, Geofroy P, Lapierre C, Pollet B, Legrand M. Flavonoid accumulation in Arabidopsis repressed in lignin synthesis afects auxin transport and plant growth. Plant Cell. 2007;19(1):148–62.   
+33. Schnable PS, Springer NM. Progress toward understanding heterosis in crop plants. Annu Rev Plant Biol. 2013;64:71–88.   
+34. Shi X, Li W, Guo Z, Wu M, Zhang X, Yuan L, Qiu X, Xing Y, Sun X, Xie H. Comparative transcriptomic analysis of maize ear heterosis during the inforescence meristem diferentiation stage. BMC Plant Biol. 2022;22(1):1–18.   
+35. Ge X, Chen W, Song S, Wang W, Hu S, Yu J. Transcriptomic profling of mature embryo from an elite super-hybrid rice LYP9 and its parental lines. BMC Plant Biol. 2008;8(1):1–20.   
+36. Guo M, Rupe MA, Yang X, Crasta O, Zinselmeier C, Smith OS, Bowen B. Genome-wide transcript analysis of maize hybrids: allelic additive gene expression and yield heterosis. Theor Appl Genet. 2006;113(5):831–45.   
+37. Zheng Y, Wang P, Chen X, Sun Y, Yue C, Ye N. Transcriptome and metabolite profling reveal novel insights into volatile heterosis in the tea plant (Camellia Sinensis). Molecules. 2019;24(18): 3380.   
+38. Chen L, Zhu Y, Ren X, Yao D, Song Y, Fan S, Li X, Zhang Z, Yang S, Zhang J. Heterosis and Diferential DNA methylation in soybean hybrids and their parental lines. Plants. 2022;11(9): 1136.   
+39. Shahzad K, Zhang X, Guo L, Qi T, Tang H, Zhang M, Zhang B, Wang H, Qiao X, Feng J. Comparative transcriptome analysis of inbred lines and contrasting hybrids reveals overdominance mediate early biomass vigor in hybrid cotton. BMC Genomics. 2020;21(1):1–16.   
+40. Zhou S, Xing M, Zhao Z, Gu Y, Xiao Y, Liu Q, Xue H. DNA methylation modifcation in heterosis initiation through analyzing rice hybrid contemporary seeds. Crop J. 2021;9(5):1179–90.   
+41. Yang S, Zhang Z, Chen W, Li X, Zhou S, Liang C, Li X, Yang B, Zou X, Liu F. Integration of mRNA and miRNA profling reveals the heterosis of three hybrid combinations of Capsicum annuum varieties. GM Crops & food. 2021;12(1):224–41.   
+42. Fujimoto R, Taylor JM, Shirasawa S, Peacock WJ, Dennis ES. Heterosis of Arabidopsis hybrids between C24 and Col is associated with increased photosynthesis capacity. Proceedings of the National Academy of Sciences. 2012;109(18):7109–14.   
+43. Shen Y, Sun S, Hua S, Shen E, Ye CY, Cai D, Timko MP, Zhu QH, Fan L. Analysis of transcriptional and epigenetic changes in hybrid vigor of allopolyploid Brassica napus uncovers key roles for small RNA s. Plant J. 2017;91(5):874–93.   
+44. Virmani SS. Heterosis and hybrid rice breeding. Springer Science & Business Media; 2012: p 48-55.   
+45. Li D, Lu X, Zhu Y, Pan J, Zhou S, Zhang X, Zhu G, Shang Y, Huang S, Zhang C. The multi-omics basis of potato heterosis. J Integr Plant Biol. 2022;64(3):671–87.   
+46. Groszmann M, Gonzalez-Bayon R, Lyons RL, Greaves IK, Kazan K, Peacock WJ, Dennis ES. Hormone-regulated defense and stress response networks contribute to heterosis in Arabidopsis F1 hybrids. Proc Natl Acad Sci. 2015;112(46):E6397-6406.   
+47. Saleem M, Fariduddin Q, Castroverde CDM. Salicylic acid: a key regulator of redox signalling and plant immunity. Plant Physiol Biochem. 2021;168:381–97.   
+48. Ghorbanzadeh Z, Hamid R, Jacob F, Asadi S, Salekdeh GH. Ghafari MR. Non-coding RNA: Chief architects of drought-resilient roots. Rhizosphere; 2022. p. 100572.
+
+49. Gall HL, Philippe F, Domon J-M, Gillet F, Pelloux J, Rayon C. Cell wall metabolism in response to abiotic stress. Plants. 2015;4(1):112–66.   
+50. Liu W, He G, Deng XW. Biological pathway expression complementation contributes to biomass heterosis in Arabidopsis. Proc Natl Acad Sci. 2021;118(16): e2023278118.   
+51. Wang L, Wu LM, Greaves IK, Zhu A, Dennis ES, Peacock WJ. PIF4-controlled auxin pathway contributes to hybrid vigor in Arabidopsis thaliana. Pro ceedings of the National Academy of Sciences. 2017;114(17):E3555–62.   
+52. Shen H, He H, Li J, Chen W, Wang X, Guo L, Peng Z, He G, Zhong S, Qi Y. Genome-wide analysis of DNA methylation and gene expression changes in two Arabidopsis ecotypes and their reciprocal hybrids. Plant Cell. 2012;24(3):875–92.   
+53. Wang C, Tang S, Zhan Q, Hou Q, Zhao Y, Zhao Q, Feng Q, Zhou C, Lyu D, Cui L. Dissecting a heterotic gene through GradedPool-Seq mapping informs a rice-improvement strategy. Nat Commun. 2019;10(1):1–12.   
+54. Wang P, Wang Z, Pan Q, Sun X, Chen H, Chen F, Yuan L, Mi G. Increased biomass accumulation in maize grown in mixed nitrogen supply is mediated by auxin synthesis. J Exp Bot. 2019;70(6):1859–73.   
+55. Wang P, Lu S, Xie M, Wu M, Ding S, Khaliq A, Ma Z, Mao J, Chen B. Identifcation and expression analysis of the small auxin-up RNA (SAUR) gene family in apple by inducing of auxin. Gene. 2020;750: 144725.   
+56. Huang Z, Bao K, Jing Z, Wang Q, Duan H, Zhu Y, Zhang S, Wu Q. Small Auxin up RNAs infuence the distribution of indole-3-acetic acid and play a potential role in increasing seed size in Euryale ferox Salisb. BMC Plant Biol. 2020;20(1):1–13.   
+57. Peer WA, Murphy AS. Flavonoids and auxin transport: modulators or regulators? Trends Plant Sci. 2007;12(12):556–63.   
+58. Chodavarapu RK, Feng S, Ding B, Simon SA, Lopez D, Jia Y, Wang G-L, Meyers BC, Jacobsen SE, Pellegrini M. Transcriptome and methylome interactions in rice hybrids. Proceedings of the National Academy of Sciences. 2012;109(30):12040–5.   
+59. Ding Y, Zhang R, Zhu L, Wang M, Ma Y, Yuan D, Liu N, Hu H, Min L, Zhang X. An enhanced photosynthesis and carbohydrate metabolic capability contributes to heterosis of the cotton (Gossypium hirsutum) hybrid ‘Huaza Mian H318’, as revealed by genome-wide gene expression analysis. BMC Genomics. 2021;22(1):1–11.   
+60. Shu H-y, Zhou H, Mu H-l, Wu S-h, Jiang Y-l, Yang Z, Hao Y-y, Zhu J, Bao W-l. Cheng S-h: Integrated Analysis of mRNA and non-coding RNA transcriptome in Pepper (Capsicum chinense) hybrid at Seedling and Flowering Stages. Front Genet. 2021;12: 685788.   
+61. Li P, Su T, Zhang D, Wang W, Xin X, Yu Y, Zhao X, Yu S, Zhang F. Genomewide analysis of changes in miRNA and target gene expression reveals key roles in heterosis for chinese cabbage biomass. Hortic Res. 2021;8:8.   
+62. Dong Q, Hu B, Zhang C. microRNAs and their roles in plant development. Front Plant Sci. 2022;13:824240.   
+63. Baloglu MC. Genome-wide in silico identifcation and comparison of growth regulating factor (GRF) genes in Cucurbitaceae family. Plant Omics. 2014;7(4):260–70.   
+64. Omidbakhshfard MA, Proost S, Fujikura U, Mueller-Roeber B. Growth-regulating factors (GRFs): a small transcription factor family with important functions in plant biology. Mol Plant. 2015;8(7):998–1010.   
+65. Xu M, Hu T, Zhao J, Park M-Y, Earley KW, Wu G, Yang L, Poethig RS. Developmental functions of miR156-regulated SQUAMOSA PROMOTER BINDING PROTEIN-LIKE (SPL) genes in Arabidopsis thaliana. PLoS Genet. 2016;12(8): e1006263.   
+66. Liu M-Y, Wu X-M, Long J-M, Guo W-W. Genomic characterization of miR156 and SQUAMOSA promoter binding protein-like genes in sweet orange (Citrus sinensis). Plant Cell Tissue and Organ Culture (PCTOC). 2017;130(1):103–16.   
+67. Preston JC, Jorgensen SA, Orozco R, Hileman LC. Paralogous SQUAMOSA PROMOTER BINDING PROTEIN-LIKE (SPL) genes diferentially regulate leaf initiation and reproductive phase change in petunia. Planta. 2016;243(2):429–40.   
+68. Wang J-W. The Multifaceted Roles of miR156-targeted SPL Transcription Factors in Plant Developmental Transitions. In: Gonzalez DH, editor. Plant Transcription Factors. Academic Press; 2016. p. 281-293. ISBN 9780128008546. https://doi.org/10.1016/B978-0-12-800854-6.00018-X.   
+69. Lian L, Xu H, Zhang H, He W, Cai Q, Lin Y, Wei L, Pan L, Xie X, Zheng Y. Overexpression of OsSPL14 results in transcriptome and physiology changes in indica rice ‘MH86.’ Plant Growth Regul. 2020;90(2):265–78.
+
+70. Liu H, Yu H, Tang G, Huang T. Small but powerful: function of microRNAs in plant development. Plant Cell Rep. 2018;37(3):515–28.   
+71. Laloum T, De Mita S, Gamas P, Baudin M, Niebel A. CCAAT-box binding transcription factors in plants: Y so many? Trends Plant Sci. 2013;18(3):157–66.   
+72. Zhang T, Zhang D, Liu Y, Luo C, Zhou Y, Zhang L. Overexpression of a NF-YB3 transcription factor from Picea wilsonii confers tolerance to salinity and drought stress in transformed Arabidopsis thaliana. Plant Physiol Biochem. 2015;94:153–64.   
+73. Swain S, Myers ZA, Siriwardana CL, Holt BF III. The multifaceted roles of NUCLEAR FACTOR-Y in Arabidopsis thaliana development and stress responses. Biochim et Biophys Acta (BBA)-Gene Regul Mech. 2017;1860(5):636–44.   
+74. Wang J, Jin Z, Zhou M, Yu Y, Liang M. Characterization of NF-Y transcription factor families in industrial rapeseed (Brassica napus L.) and identifcation of BnNF-YA3, which functions in the abiotic stress response. Ind Crops Prod. 2020;148: 112253.   
+75. Wang L, Mai Y-X, Zhang Y-C, Luo Q, Yang H-Q. MicroRNA171c-targeted SCL6-II, SCL6-III, and SCL6-IV genes regulate shoot branching in Arabidopsis. Mol Plant. 2010;3(5):794–806.   
+76. Wei Y, Li F, Zhang S, Zhang S, Zhang H, Sun R. Analysis of small RNA changes in diferent Brassica napus synthetic allopolyploids. PeerJ. 2019;7: e7621.   
+77. Li Y, Varala K, Moose SP, Hudson ME. The inheritance pattern of 24 nt siRNA clusters in arabidopsis hybrids is infuenced by proximity to transposable elements. PLoS ONE. 2012;7(10): e47043.   
+78. Huang P, Huang H, Lin X, Liu P, Zhao L, Nie WF, Zhu JK, Lang Z. MSI4/ FVE is required for accumulation of 24-nt siRNAs and DNA methylation at a subset of target regions of RNA‐directed DNA methylation. Plant J. 2021;108(2):347–57.   
+79. Ingouf M, Selles B, Michaud C, Vu TM, Berger F, Schorn AJ, Autran D, Van Durme M, Nowack MK, Martienssen RA. Live-cell analysis of DNA methylation during sexual reproduction in Arabidopsis reveals context and sex-specifc dynamics controlled by noncanonical RdDM. Genes Dev. 2017;31(1):72–83.   
+80. Zhang L, Peng Y, Wei X, Dai Y, Yuan D, Lu Y, Pan Y, Zhu Z. Small RNAs as important regulators for the hybrid vigour of super-hybrid rice. J Exp Bot. 2014;65(20):5989–6002.   
+81. Groszmann M, Greaves IK, Albertyn ZI, Scofeld GN, Peacock WJ, Dennis ES. Changes in 24-nt siRNA levels in Arabidopsis hybrids suggest an epigenetic contribution to hybrid vigor. Proc National Acad Sci. 2011;108(6):2617–22.   
+82. Zhang H, Zhu J-K. New discoveries generate new questions about RNAdirected DNA methylation in Arabidopsis. Natl Sci Rev. 2017;4(1):10–5.   
+83. Shi Y, Zhang X, Chang X, Yan M, Zhao H, Qin Y, Wang H. Integrated analysis of DNA methylome and transcriptome reveals epigenetic regulation of CAM photosynthesis in pineapple. BMC Plant Biol. 2021;21(1):1–14.   
+84. Elsahookie M, Al-Khafaji M, Dawood A. Genomics and epigenomics in maize hybrid kernel. Iraqi J Agricultural Sci. 2018;49(6):960.   
+85. You J, Li M, Li H, Bai Y, Zhu X, Kong X, Chen X, Zhou R. Integrated Methylome and Transcriptome Analysis widen the knowledge of cytoplasmic male sterility in cotton (Gossypium barbadense L.). Front. Plant Sci. 2022:13:770098.   
+86. Das AK, Choudhary M, Kumar P, Karjagi CG, Kr Y, Kumar R, Singh A, Kumar S, Rakshit S. Heterosis in genomic era: advances in the Molecular understanding and techniques for Rapid Exploitation. CRC Crit Rev Plant Sci. 2021;40(3):218–42.   
+87. Nyombayire A, Derera J, Sibiya J, Ngaboyisonga C. Combining ability analysis and heterotic grouping for grain yield among maize inbred lines selected for the mid-altitude and highland zones of Rwanda. Maydica. 2021;66(1):10.   
+88. Pedrini S, Dixon KW. International principles and standards for native seeds in ecological restoration. Restor Ecol. 2020;28:286-S303.
+
+# Publisher’s Note
+
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional afliations.

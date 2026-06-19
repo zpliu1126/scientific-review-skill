@@ -1,0 +1,13 @@
+{
+  "original_pdf": "papers\\smallRNA\\Hamid_2023_BMC Plant Biology.pdf",
+  "source_pdf": "mineru-parsed\\Hamid_2023_BMC Plant Biology\\source.pdf",
+  "data_id": "Hamid_2023_BMC_Plant_Biology",
+  "batch_id": "3040cf5c-2118-4d46-ad21-30db195fef99",
+  "state": "done",
+  "full_zip_url": "https://cdn-mineru.openxlab.org.cn/result/2026-06-07/8d4f475f-e636-4c8b-bcf8-616332ef6d3b.zip",
+  "parsed_time": "2026-06-07T05:09:06.700988+00:00",
+  "model_version": "vlm",
+  "language": "en",
+  "full_md_zip_member": "full.md",
+  "content_list_zip_member": "027c8e43-16fb-4182-b1fa-9ae83e7e2ce3_content_list.json"
+}

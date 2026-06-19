@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "id": "1a2b3c4d5e6f7081",
+      "type": "file",
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 240,
+      "file": "Literature/Axtell 2013 - Classification and Comparison of Small RNAs from Plants.md"
+    },
+    {
+      "id": "2b3c4d5e6f708192",
+      "type": "file",
+      "x": 460,
+      "y": -180,
+      "width": 300,
+      "height": 180,
+      "file": "Concepts/Plant small RNAs.md"
+    },
+    {
+      "id": "3c4d5e6f708192a3",
+      "type": "file",
+      "x": 900,
+      "y": -300,
+      "width": 280,
+      "height": 160,
+      "file": "Concepts/Hairpin RNA.md"
+    },
+    {
+      "id": "4d5e6f708192a3b4",
+      "type": "file",
+      "x": 900,
+      "y": 20,
+      "width": 280,
+      "height": 160,
+      "file": "Concepts/Small interfering RNA.md"
+    },
+    {
+      "id": "5e6f708192a3b4c5",
+      "type": "file",
+      "x": 1300,
+      "y": 20,
+      "width": 280,
+      "height": 160,
+      "file": "Concepts/Phased secondary siRNA.md"
+    },
+    {
+      "id": "6f708192a3b4c5d6",
+      "type": "file",
+      "x": 460,
+      "y": 240,
+      "width": 330,
+      "height": 190,
+      "file": "Evidence/Axtell 2013 - claim evidence.md"
+    }
+  ],
+  "edges": [
+    {
+      "id": "708192a3b4c5d6e7",
+      "fromNode": "1a2b3c4d5e6f7081",
+      "fromSide": "right",
+      "toNode": "2b3c4d5e6f708192",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "seeds concept"
+    },
+    {
+      "id": "8192a3b4c5d6e7f8",
+      "fromNode": "2b3c4d5e6f708192",
+      "fromSide": "right",
+      "toNode": "3c4d5e6f708192a3",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "primary class"
+    },
+    {
+      "id": "92a3b4c5d6e7f809",
+      "fromNode": "2b3c4d5e6f708192",
+      "fromSide": "right",
+      "toNode": "4d5e6f708192a3b4",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "primary class"
+    },
+    {
+      "id": "a3b4c5d6e7f8091a",
+      "fromNode": "4d5e6f708192a3b4",
+      "fromSide": "right",
+      "toNode": "5e6f708192a3b4c5",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "subclass"
+    },
+    {
+      "id": "b4c5d6e7f8091a2b",
+      "fromNode": "1a2b3c4d5e6f7081",
+      "fromSide": "bottom",
+      "toNode": "6f708192a3b4c5d6",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "claim table"
+    }
+  ]
+}

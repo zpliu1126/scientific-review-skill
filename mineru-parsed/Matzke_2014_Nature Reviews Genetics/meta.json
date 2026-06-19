@@ -1,0 +1,13 @@
+{
+  "original_pdf": "papers\\smallRNA\\Matzke_2014_Nature Reviews Genetics.pdf",
+  "source_pdf": "mineru-parsed\\Matzke_2014_Nature Reviews Genetics\\source.pdf",
+  "data_id": "Matzke_2014_Nature_Reviews_Genetics",
+  "batch_id": "3040cf5c-2118-4d46-ad21-30db195fef99",
+  "state": "done",
+  "full_zip_url": "https://cdn-mineru.openxlab.org.cn/result/2026-06-07/15a19d2b-b44f-4611-933e-e2e07462446c.zip",
+  "parsed_time": "2026-06-07T05:09:11.129136+00:00",
+  "model_version": "vlm",
+  "language": "en",
+  "full_md_zip_member": "full.md",
+  "content_list_zip_member": "07fe13f6-8a61-46b7-90e7-1391f3eb6206_content_list.json"
+}

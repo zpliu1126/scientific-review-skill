@@ -1,0 +1,13 @@
+{
+  "original_pdf": "papers\\smallRNA\\Wang_2015_eLife.pdf",
+  "source_pdf": "mineru-parsed\\Wang_2015_eLife\\source.pdf",
+  "data_id": "Wang_2015_eLife",
+  "batch_id": "3040cf5c-2118-4d46-ad21-30db195fef99",
+  "state": "done",
+  "full_zip_url": "https://cdn-mineru.openxlab.org.cn/result/2026-06-07/e191f9cc-d833-41e6-b2ee-834d79ce2b1a.zip",
+  "parsed_time": "2026-06-07T05:09:32.291280+00:00",
+  "model_version": "vlm",
+  "language": "en",
+  "full_md_zip_member": "full.md",
+  "content_list_zip_member": "01be032e-343b-4482-b87e-c2362691cc6b_content_list.json"
+}

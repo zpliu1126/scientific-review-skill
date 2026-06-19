@@ -1,0 +1,13 @@
+{
+  "original_pdf": "papers\\smallRNA\\Borges_2015_Nature Reviews Molecular Cell Biology.pdf",
+  "source_pdf": "mineru-parsed\\Borges_2015_Nature Reviews Molecular Cell Biology\\source.pdf",
+  "data_id": "Borges_2015_Nature_Reviews_Molecular_Cell_Biology",
+  "batch_id": "3040cf5c-2118-4d46-ad21-30db195fef99",
+  "state": "done",
+  "full_zip_url": "https://cdn-mineru.openxlab.org.cn/result/2026-06-07/f5cec600-0728-4677-baf9-8ce4f10afa9e.zip",
+  "parsed_time": "2026-06-07T05:08:57.271431+00:00",
+  "model_version": "vlm",
+  "language": "en",
+  "full_md_zip_member": "full.md",
+  "content_list_zip_member": "eb0439dc-94ba-4b4f-89d1-e7a9c97f1215_content_list.json"
+}
